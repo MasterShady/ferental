@@ -1,0 +1,78 @@
+PODS:
+  - AEAlertView (2.3.5)
+  - Alamofire (5.6.2)
+  - EmptyDataSet-Swift (5.0.0)
+  - ESPullToRefresh (2.9.3)
+  - ETNavBarTransparent (1.1.3)
+  - HandyJSON (5.0.2)
+  - JXPhotoBrowser (3.1.3)
+  - Kingfisher (7.4.1)
+  - LookinServer (1.1.2):
+    - LookinServer/Core (= 1.1.2)
+  - LookinServer/Core (1.1.2)
+  - MBProgressHUD (1.2.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Parchment (3.2.0)
+  - SnapKit (5.6.0)
+  - SwiftyJSON (5.0.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AEAlertView
+  - EmptyDataSet-Swift (~> 5.0.0)
+  - ESPullToRefresh
+  - ETNavBarTransparent
+  - HandyJSON
+  - JXPhotoBrowser (~> 3.0)
+  - Kingfisher (~> 7.0)
+  - LookinServer
+  - MBProgressHUD
+  - Moya (~> 15.0)
+  - Parchment (~> 3.2)
+  - SnapKit (~> 5.6.0)
+  - SwiftyJSON
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - AEAlertView
+    - Alamofire
+    - EmptyDataSet-Swift
+    - ESPullToRefresh
+    - ETNavBarTransparent
+    - HandyJSON
+    - JXPhotoBrowser
+    - Kingfisher
+    - LookinServer
+    - MBProgressHUD
+    - Moya
+    - Parchment
+    - SnapKit
+    - SwiftyJSON
+    - YYKit
+
+SPEC CHECKSUMS:
+  AEAlertView: 734ac91ad28d3300de0a395a9bb9e8b6ebc0fa31
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
+  ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
+  ETNavBarTransparent: dd05fd593b31d5d786e05631149ceea1e13b30ef
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  JXPhotoBrowser: d32e94e1226d43bf5ed83164e3f5b651fed625e0
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  LookinServer: bb667a77f1ee594a8e91226e729dbe49f3401f5c
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Parchment: a43c440b22c8a60f7e0196b74339446d4d1d18ea
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 1066ce368274092470ab1bda370d79ed5ec386a0
+
+COCOAPODS: 1.11.3
