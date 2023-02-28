@@ -100,7 +100,7 @@ extension Chain where Base: UIButton {
     
     @discardableResult
     public func normalTitleColor(string: String) -> Self {
-        let color = UIColorFromHex(string)
+        let color = UIColor(hexColor: string)
         base.setTitleColor(color, for: .normal)
         return self
     }
@@ -113,10 +113,18 @@ extension Chain where Base: UIButton {
     
     @discardableResult
     public func selectedTitleColor(string: String) -> Self {
-        let color = UIColorFromHex(string)
+        let color = UIColor(hexColor: string)
         base.setTitleColor(color, for: .selected)
         return self
     }
+
+    
+    @discardableResult
+    public func disableTitleColor(color: UIColor?) -> Self {
+        base.setTitleColor(color, for: .disabled)
+        return self
+    }
+    
 
     
     
@@ -162,6 +170,13 @@ extension Chain where Base: UIButton {
         base.setBackgroundImage(backgroundImage, for: .selected)
         return self
     }
+    
+    @discardableResult
+    public func disabledBackgroundImage(_ backgroundImage: UIImage?) -> Self {
+        base.setBackgroundImage(backgroundImage, for: .disabled)
+        return self
+    }
+    
     
     
     @discardableResult

@@ -1,0 +1,1025 @@
+2023-01-12 02:05:43 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7f80005c9e60; archive(resolved)="<IDEArchive: 0x6000110a05a0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7f80005c9e60; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x7f800059b670; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f7ff6ce9b60; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f8023237ec0; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f802367a730; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f802367a530; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f8023237830; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f8023237630; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f80005ca310; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600006f96a80; teamID='6475J8L3PC', teamName='shaolei Wang', teamType='Individual', username='wangshlzhw@163.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f80005d47b0; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="(null)">
+	<IDEDistributionContext: 0x7f80250a9a30; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="(null)">
+	<IDEDistributionContext: 0x7f80250a9830; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="(null)">
+	<IDEDistributionContext: 0x7f80005b1b80; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000077a31a0>", team="(null)">
+	<IDEDistributionContext: 0x7f7ff63cf0c0; archive = "<IDEArchive: 0x6000110a05a0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x7f80005c9e60>
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionCreateDestRootStep
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionCopyItemStep
+2023-01-12 02:05:43 +0000  Running /usr/bin/ditto '-V' '/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app'
+2023-01-12 02:05:43 +0000  >>> Copying /Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app 
+2023-01-12 02:05:43 +0000  copying file ./_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  23217 bytes for ./_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./AppIcon60x60@2x.png ... 
+2023-01-12 02:05:43 +0000  5995 bytes for ./AppIcon60x60@2x.png
+2023-01-12 02:05:43 +0000  copying file ./holder.png ... 
+2023-01-12 02:05:43 +0000  3746 bytes for ./holder.png
+2023-01-12 02:05:43 +0000  copying file ./lazyload.html ... 
+2023-01-12 02:05:43 +0000  1336 bytes for ./lazyload.html
+2023-01-12 02:05:43 +0000  copying file ./app.css ... 
+2023-01-12 02:05:43 +0000  2316 bytes for ./app.css
+2023-01-12 02:05:43 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2023-01-12 02:05:43 +0000  925 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+2023-01-12 02:05:43 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2023-01-12 02:05:43 +0000  1197 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2023-01-12 02:05:43 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2023-01-12 02:05:43 +0000  258 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2023-01-12 02:05:43 +0000  2062 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2023-01-12 02:05:43 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2023-01-12 02:05:43 +0000  896 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2023-01-12 02:05:43 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2023-01-12 02:05:43 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./test.html ... 
+2023-01-12 02:05:43 +0000  4330 bytes for ./test.html
+2023-01-12 02:05:43 +0000  copying file ./Assets.car ... 
+2023-01-12 02:05:43 +0000  1864408 bytes for ./Assets.car
+2023-01-12 02:05:43 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+7563 bytes for ./AppIcon76x76@2x~ipad.png
+copying file ./jquery-2.2.0.js ... 
+2023-01-12 02:05:43 +0000  258388 bytes for ./jquery-2.2.0.js
+2023-01-12 02:05:43 +0000  copying file ./游易租 ... 
+2023-01-12 02:05:43 +0000  950528 bytes for ./游易租
+2023-01-12 02:05:43 +0000  copying file ./Podfile ... 
+2023-01-12 02:05:43 +0000  858 bytes for ./Podfile
+2023-01-12 02:05:43 +0000  copying file ./jquery.lazyload.js ... 
+2023-01-12 02:05:43 +0000  9056 bytes for ./jquery.lazyload.js
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/SwiftyJSON.framework/SwiftyJSON ... 
+2023-01-12 02:05:43 +0000  342144 bytes for ./Frameworks/SwiftyJSON.framework/SwiftyJSON
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/SwiftyJSON.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  789 bytes for ./Frameworks/SwiftyJSON.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/YYKit.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/YYKit.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/YYKit.framework/YYKit ... 
+2023-01-12 02:05:43 +0000  2283360 bytes for ./Frameworks/YYKit.framework/YYKit
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/YYKit.framework/Info.plist ... 
+779 bytes for ./Frameworks/YYKit.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Moya.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/Moya.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Moya.framework/Moya ... 
+2023-01-12 02:05:43 +0000  566320 bytes for ./Frameworks/Moya.framework/Moya
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Moya.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  779 bytes for ./Frameworks/Moya.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Kingfisher.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/Kingfisher.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Kingfisher.framework/Kingfisher ... 
+2023-01-12 02:05:43 +0000  2380624 bytes for ./Frameworks/Kingfisher.framework/Kingfisher
+copying file ./Frameworks/Kingfisher.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  790 bytes for ./Frameworks/Kingfisher.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/RxRelay.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/RxRelay.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/RxRelay.framework/RxRelay ... 
+2023-01-12 02:05:43 +0000  109424 bytes for ./Frameworks/RxRelay.framework/RxRelay
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/RxRelay.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  783 bytes for ./Frameworks/RxRelay.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/libswift_Concurrency.dylib ... 
+2023-01-12 02:05:43 +0000  558736 bytes for ./Frameworks/libswift_Concurrency.dylib
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/HandyJSON.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/HandyJSON.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/HandyJSON.framework/HandyJSON ... 
+2023-01-12 02:05:43 +0000  547792 bytes for ./Frameworks/HandyJSON.framework/HandyJSON
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/HandyJSON.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  787 bytes for ./Frameworks/HandyJSON.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  4316 bytes for ./Frameworks/ESPullToRefresh.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh ... 
+2023-01-12 02:05:43 +0000  406752 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  2056 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeDirectory ... 
+2023-01-12 02:05:43 +0000  173 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeDirectory
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements-1 ... 
+2023-01-12 02:05:43 +0000  221 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements-1
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeSignature ... 
+2023-01-12 02:05:43 +0000  4862 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeSignature
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements ... 
+2023-01-12 02:05:43 +0000  192 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/icon_pull_to_refresh_arrow@2x.png ... 
+2023-01-12 02:05:43 +0000  918 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/icon_pull_to_refresh_arrow@2x.png
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/Info.plist ... 
+2023-01-12 02:05:43 +0000  776 bytes for ./Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ESPullToRefresh.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  801 bytes for ./Frameworks/ESPullToRefresh.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Parchment.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/Parchment.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Parchment.framework/Parchment ... 
+2023-01-12 02:05:43 +0000  998320 bytes for ./Frameworks/Parchment.framework/Parchment
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Parchment.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  787 bytes for ./Frameworks/Parchment.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ETNavBarTransparent.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/ETNavBarTransparent.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent ... 
+2023-01-12 02:05:43 +0000  174240 bytes for ./Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/ETNavBarTransparent.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  809 bytes for ./Frameworks/ETNavBarTransparent.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/MBProgressHUD.framework/MBProgressHUD ... 
+2023-01-12 02:05:43 +0000  170384 bytes for ./Frameworks/MBProgressHUD.framework/MBProgressHUD
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/MBProgressHUD.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  795 bytes for ./Frameworks/MBProgressHUD.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/AEAlertView.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/AEAlertView.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/AEAlertView.framework/AEAlertView ... 
+2023-01-12 02:05:43 +0000  759696 bytes for ./Frameworks/AEAlertView.framework/AEAlertView
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/AEAlertView.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  791 bytes for ./Frameworks/AEAlertView.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/SnapKit.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/SnapKit.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/SnapKit.framework/SnapKit ... 
+2023-01-12 02:05:43 +0000  399344 bytes for ./Frameworks/SnapKit.framework/SnapKit
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/SnapKit.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  784 bytes for ./Frameworks/SnapKit.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Alamofire.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/Alamofire.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/Alamofire.framework/Alamofire ... 
+2023-01-12 02:05:43 +0000  3208592 bytes for ./Frameworks/Alamofire.framework/Alamofire
+copying file ./Frameworks/Alamofire.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  788 bytes for ./Frameworks/Alamofire.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/RxCocoa.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/RxCocoa.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/RxCocoa.framework/RxCocoa ... 
+2023-01-12 02:05:43 +0000  1843072 bytes for ./Frameworks/RxCocoa.framework/RxCocoa
+copying file ./Frameworks/RxCocoa.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  783 bytes for ./Frameworks/RxCocoa.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/EmptyDataSet_Swift.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/EmptyDataSet_Swift.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift ... 
+2023-01-12 02:05:43 +0000  219696 bytes for ./Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/EmptyDataSet_Swift.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  807 bytes for ./Frameworks/EmptyDataSet_Swift.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/RxSwift.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/RxSwift.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/RxSwift.framework/RxSwift ... 
+2023-01-12 02:05:43 +0000  2699616 bytes for ./Frameworks/RxSwift.framework/RxSwift
+copying file ./Frameworks/RxSwift.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  783 bytes for ./Frameworks/RxSwift.framework/Info.plist
+copying file ./Frameworks/JXPhotoBrowser.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:43 +0000  1798 bytes for ./Frameworks/JXPhotoBrowser.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser ... 
+2023-01-12 02:05:43 +0000  499040 bytes for ./Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser
+2023-01-12 02:05:43 +0000  copying file ./Frameworks/JXPhotoBrowser.framework/Info.plist ... 
+2023-01-12 02:05:43 +0000  797 bytes for ./Frameworks/JXPhotoBrowser.framework/Info.plist
+2023-01-12 02:05:43 +0000  copying file ./embedded.mobileprovision ... 
+2023-01-12 02:05:43 +0000  36497 bytes for ./embedded.mobileprovision
+2023-01-12 02:05:43 +0000  copying file ./Info.plist ... 
+2023-01-12 02:05:43 +0000  1414 bytes for ./Info.plist
+2023-01-12 02:05:43 +0000  copying file ./PkgInfo ... 
+2023-01-12 02:05:43 +0000  8 bytes for ./PkgInfo
+2023-01-12 02:05:43 +0000  /usr/bin/ditto exited with 0
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionEmbedProfileStep
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f1980; bundleID='org.cocoapods.AEAlertView', path='<DVTFilePath:0x600009ce3790:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.AEAlertView', executablePath='<DVTFilePath:0x60000dec5ce0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework/AEAlertView'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ee0a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x600009ce3330:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x60000dec7480:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f02a0; bundleID='org.cocoapods.ESPullToRefresh', path='<DVTFilePath:0x600009aceb80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460370; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ESPullToRefresh', executablePath='<DVTFilePath:0x60000de2a3e0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110edc20; bundleID='org.cocoapods.ETNavBarTransparent', path='<DVTFilePath:0x600005a9ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461e00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ETNavBarTransparent', executablePath='<DVTFilePath:0x60000dec5ab0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ef1e0; bundleID='org.cocoapods.EmptyDataSet-Swift', path='<DVTFilePath:0x600009acc500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.EmptyDataSet-Swift', executablePath='<DVTFilePath:0x60000dec7720:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ef420; bundleID='org.cocoapods.HandyJSON', path='<DVTFilePath:0x60000de2ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011462ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.HandyJSON', executablePath='<DVTFilePath:0x60000dec57a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework/HandyJSON'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000111b1ec0; bundleID='org.cocoapods.JXPhotoBrowser', path='<DVTFilePath:0x600005a9f600:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466850; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.JXPhotoBrowser', executablePath='<DVTFilePath:0x60000de98690:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ed9e0; bundleID='org.cocoapods.Kingfisher', path='<DVTFilePath:0x60000de2d3b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114606e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Kingfisher', executablePath='<DVTFilePath:0x60000dee8d90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework/Kingfisher'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f1c80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x60000de2d810:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011471130; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x60000de8c9a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f1920; bundleID='org.cocoapods.Moya', path='<DVTFilePath:0x60000de2db90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Moya', executablePath='<DVTFilePath:0x6000110f1c20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework/Moya'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f11a0; bundleID='org.cocoapods.Parchment', path='<DVTFilePath:0x60000de290a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461ea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Parchment', executablePath='<DVTFilePath:0x60000dec6bc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework/Parchment'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f1440; bundleID='org.cocoapods.RxCocoa', path='<DVTFilePath:0x60000de293b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114616d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxCocoa', executablePath='<DVTFilePath:0x6000110e1560:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework/RxCocoa'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ec000; bundleID='org.cocoapods.RxRelay', path='<DVTFilePath:0x60000de29650:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011465d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxRelay', executablePath='<DVTFilePath:0x6000110dfa20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework/RxRelay'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f04e0; bundleID='org.cocoapods.RxSwift', path='<DVTFilePath:0x60000de29880:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114669e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxSwift', executablePath='<DVTFilePath:0x6000110e0240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework/RxSwift'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ef8a0; bundleID='org.cocoapods.SnapKit', path='<DVTFilePath:0x60000de29b20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SnapKit', executablePath='<DVTFilePath:0x6000110dc240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework/SnapKit'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ee5e0; bundleID='org.cocoapods.SwiftyJSON', path='<DVTFilePath:0x60000de29dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SwiftyJSON', executablePath='<DVTFilePath:0x60000dec5500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110f0720; bundleID='org.cocoapods.YYKit', path='<DVTFilePath:0x60000de2a0d0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114623f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000023d130; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.YYKit', executablePath='<DVTFilePath:0x6000110ddf80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework/YYKit'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Skipping profile for item: <IDEDistributionItem: 0x6000110ef240; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114626c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000023d130; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionInfoPlistStep
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionSymbolsStep
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionAppThinningStep
+2023-01-12 02:05:43 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2023-01-12 02:05:43 +0000  Processing step: IDEDistributionArchThinningStep
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/AEAlertView.framework/AEAlertView' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "AEAlertView" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Alamofire.framework/Alamofire' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "Alamofire" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "ESPullToRefresh" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "ETNavBarTransparent" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "EmptyDataSet_Swift" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/HandyJSON.framework/HandyJSON' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "HandyJSON" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "JXPhotoBrowser" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Kingfisher.framework/Kingfisher' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "Kingfisher" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "MBProgressHUD" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Moya.framework/Moya' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "Moya" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Parchment.framework/Parchment' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "Parchment" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxCocoa.framework/RxCocoa' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "RxCocoa" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxRelay.framework/RxRelay' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "RxRelay" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxSwift.framework/RxSwift' '-verify_arch' 'arm64e'
+2023-01-12 02:05:43 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:43 +0000  Skipping architecture thinning for item "RxSwift" because arch "arm64e" wasn't found
+2023-01-12 02:05:43 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SnapKit.framework/SnapKit' '-verify_arch' 'arm64e'
+2023-01-12 02:05:44 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:44 +0000  Skipping architecture thinning for item "SnapKit" because arch "arm64e" wasn't found
+2023-01-12 02:05:44 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON' '-verify_arch' 'arm64e'
+2023-01-12 02:05:44 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:44 +0000  Skipping architecture thinning for item "SwiftyJSON" because arch "arm64e" wasn't found
+2023-01-12 02:05:44 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/YYKit.framework/YYKit' '-verify_arch' 'arm64e'
+2023-01-12 02:05:44 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:44 +0000  Skipping architecture thinning for item "YYKit" because arch "arm64e" wasn't found
+2023-01-12 02:05:44 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/libswift_Concurrency.dylib' '-verify_arch' 'arm64e'
+2023-01-12 02:05:44 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:44 +0000  Skipping architecture thinning for item "libswift_Concurrency.dylib" because arch "arm64e" wasn't found
+2023-01-12 02:05:44 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/游易租' '-verify_arch' 'arm64e'
+2023-01-12 02:05:44 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-12 02:05:44 +0000  Skipping architecture thinning for item "游易租" because arch "arm64e" wasn't found
+2023-01-12 02:05:44 +0000  Processing step: IDEDistributionODRStep
+2023-01-12 02:05:44 +0000  Processing step: IDEDistributionStripXattrsStep
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f1980; bundleID='org.cocoapods.AEAlertView', path='<DVTFilePath:0x600009ce3790:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002f37b0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.AEAlertView', executablePath='<DVTFilePath:0x60000dec5ce0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework/AEAlertView'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ee0a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x600009ce3330:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d9340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x60000dec7480:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f02a0; bundleID='org.cocoapods.ESPullToRefresh', path='<DVTFilePath:0x600009aceb80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460370; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002f37b0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ESPullToRefresh', executablePath='<DVTFilePath:0x60000de2a3e0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110edc20; bundleID='org.cocoapods.ETNavBarTransparent', path='<DVTFilePath:0x600005a9ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461e00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d9340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ETNavBarTransparent', executablePath='<DVTFilePath:0x60000dec5ab0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ef1e0; bundleID='org.cocoapods.EmptyDataSet-Swift', path='<DVTFilePath:0x600009acc500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002f37b0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.EmptyDataSet-Swift', executablePath='<DVTFilePath:0x60000dec7720:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ef420; bundleID='org.cocoapods.HandyJSON', path='<DVTFilePath:0x60000de2ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011462ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.HandyJSON', executablePath='<DVTFilePath:0x60000dec57a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework/HandyJSON'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000111b1ec0; bundleID='org.cocoapods.JXPhotoBrowser', path='<DVTFilePath:0x600005a9f600:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466850; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.JXPhotoBrowser', executablePath='<DVTFilePath:0x60000de98690:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ed9e0; bundleID='org.cocoapods.Kingfisher', path='<DVTFilePath:0x60000de2d3b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114606e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Kingfisher', executablePath='<DVTFilePath:0x60000dee8d90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework/Kingfisher'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f1c80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x60000de2d810:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011471130; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x60000de8c9a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f1920; bundleID='org.cocoapods.Moya', path='<DVTFilePath:0x60000de2db90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Moya', executablePath='<DVTFilePath:0x6000110f1c20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework/Moya'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f11a0; bundleID='org.cocoapods.Parchment', path='<DVTFilePath:0x60000de290a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461ea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Parchment', executablePath='<DVTFilePath:0x60000dec6bc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework/Parchment'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f1440; bundleID='org.cocoapods.RxCocoa', path='<DVTFilePath:0x60000de293b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114616d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxCocoa', executablePath='<DVTFilePath:0x6000110e1560:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework/RxCocoa'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ec000; bundleID='org.cocoapods.RxRelay', path='<DVTFilePath:0x60000de29650:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011465d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxRelay', executablePath='<DVTFilePath:0x6000110dfa20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework/RxRelay'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f04e0; bundleID='org.cocoapods.RxSwift', path='<DVTFilePath:0x60000de29880:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114669e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxSwift', executablePath='<DVTFilePath:0x6000110e0240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework/RxSwift'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ef8a0; bundleID='org.cocoapods.SnapKit', path='<DVTFilePath:0x60000de29b20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SnapKit', executablePath='<DVTFilePath:0x6000110dc240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework/SnapKit'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ee5e0; bundleID='org.cocoapods.SwiftyJSON', path='<DVTFilePath:0x60000de29dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SwiftyJSON', executablePath='<DVTFilePath:0x60000dec5500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110f0720; bundleID='org.cocoapods.YYKit', path='<DVTFilePath:0x60000de2a0d0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114623f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.YYKit', executablePath='<DVTFilePath:0x6000110ddf80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework/YYKit'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x6000110ef240; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114626c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'>
+2023-01-12 02:05:44 +0000  Running /usr/bin/xattr '-crs' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app'
+2023-01-12 02:05:44 +0000  /usr/bin/xattr exited with 0
+2023-01-12 02:05:44 +0000  Processing step: IDEDistributionCodesignStep
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1980; bundleID='org.cocoapods.AEAlertView', path='<DVTFilePath:0x600009ce3790:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.AEAlertView', executablePath='<DVTFilePath:0x60000dec5ce0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework/AEAlertView'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1980; bundleID='org.cocoapods.AEAlertView', path='<DVTFilePath:0x600009ce3790:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c9a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.AEAlertView', executablePath='<DVTFilePath:0x60000dec5ce0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework/AEAlertView'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:44 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f1980; bundleID='org.cocoapods.AEAlertView', path='<DVTFilePath:0x600009ce3790:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d4a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.AEAlertView', executablePath='<DVTFilePath:0x60000dec5ce0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/AEAlertView.framework/AEAlertView'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~t7NWUG
+2023-01-12 02:05:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~t7NWUG' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/AEAlertView.framework'
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/AEAlertView.framework: replacing existing signature
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/AEAlertView.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.AEAlertView]
+2023-01-12 02:05:44 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110ee0a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x600009ce3330:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600000189d90; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x60000dec7480:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110ee0a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x600009ce3330:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c790; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x60000dec7480:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:44 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ee0a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x600009ce3330:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c9a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x60000dec7480:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~bw5co5
+2023-01-12 02:05:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~bw5co5' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Alamofire.framework'
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Alamofire.framework: replacing existing signature
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Alamofire.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.Alamofire]
+2023-01-12 02:05:44 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110f02a0; bundleID='org.cocoapods.ESPullToRefresh', path='<DVTFilePath:0x600009aceb80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460370; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000001ae7e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ESPullToRefresh', executablePath='<DVTFilePath:0x60000de2a3e0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110f02a0; bundleID='org.cocoapods.ESPullToRefresh', path='<DVTFilePath:0x600009aceb80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460370; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002f37b0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ESPullToRefresh', executablePath='<DVTFilePath:0x60000de2a3e0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:44 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f02a0; bundleID='org.cocoapods.ESPullToRefresh', path='<DVTFilePath:0x600009aceb80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011460370; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002cd290; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ESPullToRefresh', executablePath='<DVTFilePath:0x60000de2a3e0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~kO65dp
+2023-01-12 02:05:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~kO65dp' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ESPullToRefresh.framework'
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ESPullToRefresh.framework: replacing existing signature
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ESPullToRefresh.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.ESPullToRefresh]
+2023-01-12 02:05:44 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110edc20; bundleID='org.cocoapods.ETNavBarTransparent', path='<DVTFilePath:0x600005a9ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461e00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c790; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ETNavBarTransparent', executablePath='<DVTFilePath:0x60000dec5ab0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110edc20; bundleID='org.cocoapods.ETNavBarTransparent', path='<DVTFilePath:0x600005a9ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461e00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c9a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ETNavBarTransparent', executablePath='<DVTFilePath:0x60000dec5ab0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:44 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110edc20; bundleID='org.cocoapods.ETNavBarTransparent', path='<DVTFilePath:0x600005a9ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461e00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d4a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.ETNavBarTransparent', executablePath='<DVTFilePath:0x60000dec5ab0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~eavxYF
+2023-01-12 02:05:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~eavxYF' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ETNavBarTransparent.framework'
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ETNavBarTransparent.framework: replacing existing signature
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ETNavBarTransparent.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.ETNavBarTransparent]
+2023-01-12 02:05:44 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef1e0; bundleID='org.cocoapods.EmptyDataSet-Swift', path='<DVTFilePath:0x600009acc500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c790; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.EmptyDataSet-Swift', executablePath='<DVTFilePath:0x60000dec7720:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef1e0; bundleID='org.cocoapods.EmptyDataSet-Swift', path='<DVTFilePath:0x600009acc500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c9a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.EmptyDataSet-Swift', executablePath='<DVTFilePath:0x60000dec7720:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:44 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ef1e0; bundleID='org.cocoapods.EmptyDataSet-Swift', path='<DVTFilePath:0x600009acc500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d4a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.EmptyDataSet-Swift', executablePath='<DVTFilePath:0x60000dec7720:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~KSxGgG
+2023-01-12 02:05:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~KSxGgG' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework'
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework: replacing existing signature
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.EmptyDataSet-Swift]
+2023-01-12 02:05:44 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef420; bundleID='org.cocoapods.HandyJSON', path='<DVTFilePath:0x60000de2ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011462ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600000189d90; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.HandyJSON', executablePath='<DVTFilePath:0x60000dec57a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework/HandyJSON'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef420; bundleID='org.cocoapods.HandyJSON', path='<DVTFilePath:0x60000de2ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011462ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002c86e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.HandyJSON', executablePath='<DVTFilePath:0x60000dec57a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework/HandyJSON'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:44 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ef420; bundleID='org.cocoapods.HandyJSON', path='<DVTFilePath:0x60000de2ca80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011462ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002c8580; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.HandyJSON', executablePath='<DVTFilePath:0x60000dec57a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/HandyJSON.framework/HandyJSON'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~Tef4zK
+2023-01-12 02:05:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~Tef4zK' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/HandyJSON.framework'
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/HandyJSON.framework: replacing existing signature
+2023-01-12 02:05:44 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/HandyJSON.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.HandyJSON]
+2023-01-12 02:05:44 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000111b1ec0; bundleID='org.cocoapods.JXPhotoBrowser', path='<DVTFilePath:0x600005a9f600:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466850; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002c8a50; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.JXPhotoBrowser', executablePath='<DVTFilePath:0x60000de98690:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:44 +0000  Entitlements for <IDEDistributionItem: 0x6000111b1ec0; bundleID='org.cocoapods.JXPhotoBrowser', path='<DVTFilePath:0x600005a9f600:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466850; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002c8580; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.JXPhotoBrowser', executablePath='<DVTFilePath:0x60000de98690:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:44 +0000  Writing entitlements for <IDEDistributionItem: 0x6000111b1ec0; bundleID='org.cocoapods.JXPhotoBrowser', path='<DVTFilePath:0x600005a9f600:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466850; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002c8840; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.JXPhotoBrowser', executablePath='<DVTFilePath:0x60000de98690:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~qChZqd
+2023-01-12 02:05:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~qChZqd' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/JXPhotoBrowser.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/JXPhotoBrowser.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/JXPhotoBrowser.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.JXPhotoBrowser]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110ed9e0; bundleID='org.cocoapods.Kingfisher', path='<DVTFilePath:0x60000de2d3b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114606e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Kingfisher', executablePath='<DVTFilePath:0x60000dee8d90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework/Kingfisher'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110ed9e0; bundleID='org.cocoapods.Kingfisher', path='<DVTFilePath:0x60000de2d3b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114606e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027cd10; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Kingfisher', executablePath='<DVTFilePath:0x60000dee8d90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework/Kingfisher'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ed9e0; bundleID='org.cocoapods.Kingfisher', path='<DVTFilePath:0x60000de2d3b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114606e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d4a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Kingfisher', executablePath='<DVTFilePath:0x60000dee8d90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Kingfisher.framework/Kingfisher'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~uGVwS8
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~uGVwS8' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Kingfisher.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Kingfisher.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Kingfisher.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.Kingfisher]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1c80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x60000de2d810:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011471130; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000001ae7e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x60000de8c9a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1c80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x60000de2d810:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011471130; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3b20; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x60000de8c9a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f1c80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x60000de2d810:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011471130; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3020; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x60000de8c9a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~xc4NrA
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~xc4NrA' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/MBProgressHUD.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/MBProgressHUD.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/MBProgressHUD.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.MBProgressHUD]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1920; bundleID='org.cocoapods.Moya', path='<DVTFilePath:0x60000de2db90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000001ae7e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Moya', executablePath='<DVTFilePath:0x6000110f1c20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework/Moya'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1920; bundleID='org.cocoapods.Moya', path='<DVTFilePath:0x60000de2db90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002e0dc0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Moya', executablePath='<DVTFilePath:0x6000110f1c20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework/Moya'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f1920; bundleID='org.cocoapods.Moya', path='<DVTFilePath:0x60000de2db90:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002fab50; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Moya', executablePath='<DVTFilePath:0x6000110f1c20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Moya.framework/Moya'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~ze71pj
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~ze71pj' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Moya.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Moya.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Moya.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.Moya]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f11a0; bundleID='org.cocoapods.Parchment', path='<DVTFilePath:0x60000de290a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461ea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000001ae7e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Parchment', executablePath='<DVTFilePath:0x60000dec6bc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework/Parchment'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f11a0; bundleID='org.cocoapods.Parchment', path='<DVTFilePath:0x60000de290a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461ea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3b20; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Parchment', executablePath='<DVTFilePath:0x60000dec6bc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework/Parchment'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f11a0; bundleID='org.cocoapods.Parchment', path='<DVTFilePath:0x60000de290a0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011461ea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3020; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.Parchment', executablePath='<DVTFilePath:0x60000dec6bc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/Parchment.framework/Parchment'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~j8edFz
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~j8edFz' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Parchment.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Parchment.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Parchment.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.Parchment]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1440; bundleID='org.cocoapods.RxCocoa', path='<DVTFilePath:0x60000de293b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114616d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxCocoa', executablePath='<DVTFilePath:0x6000110e1560:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework/RxCocoa'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f1440; bundleID='org.cocoapods.RxCocoa', path='<DVTFilePath:0x60000de293b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114616d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c9a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxCocoa', executablePath='<DVTFilePath:0x6000110e1560:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework/RxCocoa'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f1440; bundleID='org.cocoapods.RxCocoa', path='<DVTFilePath:0x60000de293b0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114616d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d4a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxCocoa', executablePath='<DVTFilePath:0x6000110e1560:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxCocoa.framework/RxCocoa'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~RR5I9h
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~RR5I9h' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxCocoa.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxCocoa.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxCocoa.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.RxCocoa]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110ec000; bundleID='org.cocoapods.RxRelay', path='<DVTFilePath:0x60000de29650:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011465d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000001ae7e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxRelay', executablePath='<DVTFilePath:0x6000110dfa20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework/RxRelay'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110ec000; bundleID='org.cocoapods.RxRelay', path='<DVTFilePath:0x60000de29650:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011465d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002fab50; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxRelay', executablePath='<DVTFilePath:0x6000110dfa20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework/RxRelay'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ec000; bundleID='org.cocoapods.RxRelay', path='<DVTFilePath:0x60000de29650:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011465d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002e0dc0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxRelay', executablePath='<DVTFilePath:0x6000110dfa20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxRelay.framework/RxRelay'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~U6sisf
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~U6sisf' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxRelay.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxRelay.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxRelay.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.RxRelay]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f04e0; bundleID='org.cocoapods.RxSwift', path='<DVTFilePath:0x60000de29880:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114669e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600000189d90; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxSwift', executablePath='<DVTFilePath:0x6000110e0240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework/RxSwift'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110f04e0; bundleID='org.cocoapods.RxSwift', path='<DVTFilePath:0x60000de29880:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114669e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3b20; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxSwift', executablePath='<DVTFilePath:0x6000110e0240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework/RxSwift'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f04e0; bundleID='org.cocoapods.RxSwift', path='<DVTFilePath:0x60000de29880:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114669e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c790; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.RxSwift', executablePath='<DVTFilePath:0x6000110e0240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/RxSwift.framework/RxSwift'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~OgYItx
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~OgYItx' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxSwift.framework'
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxSwift.framework: replacing existing signature
+2023-01-12 02:05:45 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxSwift.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.RxSwift]
+2023-01-12 02:05:45 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef8a0; bundleID='org.cocoapods.SnapKit', path='<DVTFilePath:0x60000de29b20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000001ae7e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SnapKit', executablePath='<DVTFilePath:0x6000110dc240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework/SnapKit'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:45 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef8a0; bundleID='org.cocoapods.SnapKit', path='<DVTFilePath:0x60000de29b20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3b20; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SnapKit', executablePath='<DVTFilePath:0x6000110dc240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework/SnapKit'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:45 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ef8a0; bundleID='org.cocoapods.SnapKit', path='<DVTFilePath:0x60000de29b20:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011466530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3020; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SnapKit', executablePath='<DVTFilePath:0x6000110dc240:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SnapKit.framework/SnapKit'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~WvMrFJ
+2023-01-12 02:05:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~WvMrFJ' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SnapKit.framework'
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SnapKit.framework: replacing existing signature
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SnapKit.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.SnapKit]
+2023-01-12 02:05:46 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110ee5e0; bundleID='org.cocoapods.SwiftyJSON', path='<DVTFilePath:0x60000de29dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002f37b0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SwiftyJSON', executablePath='<DVTFilePath:0x60000dec5500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110ee5e0; bundleID='org.cocoapods.SwiftyJSON', path='<DVTFilePath:0x60000de29dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002e0dc0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SwiftyJSON', executablePath='<DVTFilePath:0x60000dec5500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:46 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ee5e0; bundleID='org.cocoapods.SwiftyJSON', path='<DVTFilePath:0x60000de29dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011463200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d11e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.SwiftyJSON', executablePath='<DVTFilePath:0x60000dec5500:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~MEityC
+2023-01-12 02:05:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~MEityC' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SwiftyJSON.framework'
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SwiftyJSON.framework: replacing existing signature
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SwiftyJSON.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.SwiftyJSON]
+2023-01-12 02:05:46 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110f0720; bundleID='org.cocoapods.YYKit', path='<DVTFilePath:0x60000de2a0d0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114623f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c790; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.YYKit', executablePath='<DVTFilePath:0x6000110ddf80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework/YYKit'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110f0720; bundleID='org.cocoapods.YYKit', path='<DVTFilePath:0x60000de2a0d0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114623f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c9a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.YYKit', executablePath='<DVTFilePath:0x6000110ddf80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework/YYKit'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:46 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110f0720; bundleID='org.cocoapods.YYKit', path='<DVTFilePath:0x60000de2a0d0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114623f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d970; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='org.cocoapods.YYKit', executablePath='<DVTFilePath:0x6000110ddf80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/YYKit.framework/YYKit'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~wsJKUN
+2023-01-12 02:05:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~wsJKUN' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/YYKit.framework'
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/YYKit.framework: replacing existing signature
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/YYKit.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.YYKit]
+2023-01-12 02:05:46 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef240; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114626c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600000189d90; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'>: {
+}
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110ef240; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114626c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d3b20; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-12 02:05:46 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110ef240; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000114626c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c790; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='(null)', teamID='6475J8L3PC', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0x600009ad8f80:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~kc2ii0
+2023-01-12 02:05:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~kc2ii0' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/libswift_Concurrency.dylib'
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/libswift_Concurrency.dylib: replacing existing signature
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/libswift_Concurrency.dylib: signed Mach-O thin (arm64) [com.apple.dt.runtime.swiftConcurrency]
+2023-01-12 02:05:46 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110865e0; bundleID='com.dofun.ferental', path='<DVTFilePath:0x600009ce9dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467660; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000002d11e0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='{
+    "application-identifier" = "6475J8L3PC.com.dofun.ferental";
+    "com.apple.developer.team-identifier" = 6475J8L3PC;
+    "get-task-allow" = 1;
+}', teamID='6475J8L3PC', identifier='com.dofun.ferental', executablePath='<DVTFilePath:0x60000def3250:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/游易租'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "6475J8L3PC.com.dofun.ferental";
+    "com.apple.developer.team-identifier" = 6475J8L3PC;
+    "get-task-allow" = 0;
+}
+2023-01-12 02:05:46 +0000  Entitlements for <IDEDistributionItem: 0x6000110865e0; bundleID='com.dofun.ferental', path='<DVTFilePath:0x600009ce9dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467660; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027d340; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='{
+    "application-identifier" = "6475J8L3PC.com.dofun.ferental";
+    "com.apple.developer.team-identifier" = 6475J8L3PC;
+    "get-task-allow" = 1;
+}', teamID='6475J8L3PC', identifier='com.dofun.ferental', executablePath='<DVTFilePath:0x60000def3250:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/游易租'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "6475J8L3PC.com.dofun.ferental";
+    "com.apple.developer.team-identifier" = 6475J8L3PC;
+    "get-task-allow" = 0;
+}
+2023-01-12 02:05:46 +0000  Writing entitlements for <IDEDistributionItem: 0x6000110865e0; bundleID='com.dofun.ferental', path='<DVTFilePath:0x600009ce9dc0:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600011467660; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000027c9a0; name='Apple Development: shaolei Wang (BRK79ZX9UA)', hash='7C917781DC4D92A67076CA45CF88701D9EC30E63', serialNumber='44CC7ECF0A208749ACA77FE197A02933', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-01-05 02:25:39 +0000''>', entitlements='{
+    "application-identifier" = "6475J8L3PC.com.dofun.ferental";
+    "com.apple.developer.team-identifier" = 6475J8L3PC;
+    "get-task-allow" = 1;
+}', teamID='6475J8L3PC', identifier='com.dofun.ferental', executablePath='<DVTFilePath:0x60000def3250:'/Users/liusiyuan/Library/Developer/Xcode/Archives/2023-01-12/ferental 2023-1-12, 10.05.xcarchive/Products/Applications/游易租.app/游易租'>', hardenedRuntime='0'>'> to: /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~D3TVjQ
+2023-01-12 02:05:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B57A53C9865A9893A6EAB94DBF8F29A5E14FC9C7' '--entitlements' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/entitlements~~~D3TVjQ' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app'
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app: replacing existing signature
+2023-01-12 02:05:46 +0000  /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app: signed app bundle with Mach-O thin (arm64) [com.dofun.ferental]
+2023-01-12 02:05:46 +0000  /usr/bin/codesign exited with 0
+2023-01-12 02:05:46 +0000  Processing step: IDEDistributionZipODRItemStep
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-12 02:05:46 +0000  Processing step: IDEDistributionCreateIPAStep
+2023-01-12 02:05:46 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root' '/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Packages/游易租.ipa'
+2023-01-12 02:05:46 +0000  >>> Copying /var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root 
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:46 +0000  23217 bytes for ./Payload/游易租.app/_CodeSignature/CodeResources
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/AppIcon60x60@2x.png ... 
+2023-01-12 02:05:46 +0000  5995 bytes for ./Payload/游易租.app/AppIcon60x60@2x.png
+copying file ./Payload/游易租.app/holder.png ... 
+2023-01-12 02:05:46 +0000  3746 bytes for ./Payload/游易租.app/holder.png
+copying file ./Payload/游易租.app/lazyload.html ... 
+2023-01-12 02:05:46 +0000  1336 bytes for ./Payload/游易租.app/lazyload.html
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/app.css ... 
+2023-01-12 02:05:46 +0000  2316 bytes for ./Payload/游易租.app/app.css
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2023-01-12 02:05:46 +0000  925 bytes for ./Payload/游易租.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2023-01-12 02:05:46 +0000  1197 bytes for ./Payload/游易租.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Payload/游易租.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2023-01-12 02:05:46 +0000  258 bytes for ./Payload/游易租.app/Base.lproj/Main.storyboardc/Info.plist
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2023-01-12 02:05:46 +0000  2062 bytes for ./Payload/游易租.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2023-01-12 02:05:46 +0000  896 bytes for ./Payload/游易租.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/游易租.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2023-01-12 02:05:46 +0000  258 bytes for ./Payload/游易租.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/test.html ... 
+2023-01-12 02:05:46 +0000  4330 bytes for ./Payload/游易租.app/test.html
+copying file ./Payload/游易租.app/Assets.car ... 
+2023-01-12 02:05:46 +0000  1864408 bytes for ./Payload/游易租.app/Assets.car
+copying file ./Payload/游易租.app/AppIcon76x76@2x~ipad.png ... 
+2023-01-12 02:05:46 +0000  7563 bytes for ./Payload/游易租.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/游易租.app/jquery-2.2.0.js ... 
+2023-01-12 02:05:46 +0000  258388 bytes for ./Payload/游易租.app/jquery-2.2.0.js
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/游易租 ... 
+2023-01-12 02:05:46 +0000  950544 bytes for ./Payload/游易租.app/游易租
+copying file ./Payload/游易租.app/Podfile ... 
+2023-01-12 02:05:46 +0000  858 bytes for ./Payload/游易租.app/Podfile
+copying file ./Payload/游易租.app/jquery.lazyload.js ... 
+2023-01-12 02:05:46 +0000  9056 bytes for ./Payload/游易租.app/jquery.lazyload.js
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:46 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON ... 
+2023-01-12 02:05:46 +0000  342464 bytes for ./Payload/游易租.app/Frameworks/SwiftyJSON.framework/SwiftyJSON
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/SwiftyJSON.framework/Info.plist ... 
+2023-01-12 02:05:46 +0000  789 bytes for ./Payload/游易租.app/Frameworks/SwiftyJSON.framework/Info.plist
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/YYKit.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:46 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/YYKit.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/YYKit.framework/YYKit ... 
+2023-01-12 02:05:46 +0000  2283664 bytes for ./Payload/游易租.app/Frameworks/YYKit.framework/YYKit
+copying file ./Payload/游易租.app/Frameworks/YYKit.framework/Info.plist ... 
+2023-01-12 02:05:46 +0000  779 bytes for ./Payload/游易租.app/Frameworks/YYKit.framework/Info.plist
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/Moya.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:46 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/Moya.framework/_CodeSignature/CodeResources
+copying file ./Payload/游易租.app/Frameworks/Moya.framework/Moya ... 
+2023-01-12 02:05:46 +0000  566624 bytes for ./Payload/游易租.app/Frameworks/Moya.framework/Moya
+copying file ./Payload/游易租.app/Frameworks/Moya.framework/Info.plist ... 
+2023-01-12 02:05:46 +0000  779 bytes for ./Payload/游易租.app/Frameworks/Moya.framework/Info.plist
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/Kingfisher.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/游易租.app/Frameworks/Kingfisher.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:46 +0000  copying file ./Payload/游易租.app/Frameworks/Kingfisher.framework/Kingfisher ... 
+2023-01-12 02:05:47 +0000  2380896 bytes for ./Payload/游易租.app/Frameworks/Kingfisher.framework/Kingfisher
+copying file ./Payload/游易租.app/Frameworks/Kingfisher.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  790 bytes for ./Payload/游易租.app/Frameworks/Kingfisher.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/RxRelay.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/RxRelay.framework/_CodeSignature/CodeResources
+copying file ./Payload/游易租.app/Frameworks/RxRelay.framework/RxRelay ... 
+2023-01-12 02:05:47 +0000  109728 bytes for ./Payload/游易租.app/Frameworks/RxRelay.framework/RxRelay
+copying file ./Payload/游易租.app/Frameworks/RxRelay.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  783 bytes for ./Payload/游易租.app/Frameworks/RxRelay.framework/Info.plist
+copying file ./Payload/游易租.app/Frameworks/libswift_Concurrency.dylib ... 
+2023-01-12 02:05:47 +0000  559088 bytes for ./Payload/游易租.app/Frameworks/libswift_Concurrency.dylib
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/HandyJSON.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/HandyJSON.framework/_CodeSignature/CodeResources
+copying file ./Payload/游易租.app/Frameworks/HandyJSON.framework/HandyJSON ... 
+2023-01-12 02:05:47 +0000  548096 bytes for ./Payload/游易租.app/Frameworks/HandyJSON.framework/HandyJSON
+copying file ./Payload/游易租.app/Frameworks/HandyJSON.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  787 bytes for ./Payload/游易租.app/Frameworks/HandyJSON.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  4316 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/_CodeSignature/CodeResources
+copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh ... 
+2023-01-12 02:05:47 +0000  407056 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  2056 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeDirectory ... 
+2023-01-12 02:05:47 +0000  173 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeDirectory
+copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements-1 ... 
+2023-01-12 02:05:47 +0000  221 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements-1
+copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeSignature ... 
+2023-01-12 02:05:47 +0000  4862 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeSignature
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements ... 
+2023-01-12 02:05:47 +0000  192 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/_CodeSignature/CodeRequirements
+copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/icon_pull_to_refresh_arrow@2x.png ... 
+2023-01-12 02:05:47 +0000  918 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/icon_pull_to_refresh_arrow@2x.png
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/Info.plist ... 
+2023-01-12 02:05:47 +0000  776 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/ESPullToRefresh.bundle/Info.plist
+copying file ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  801 bytes for ./Payload/游易租.app/Frameworks/ESPullToRefresh.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/Parchment.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/Parchment.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/Parchment.framework/Parchment ... 
+2023-01-12 02:05:47 +0000  998624 bytes for ./Payload/游易租.app/Frameworks/Parchment.framework/Parchment
+copying file ./Payload/游易租.app/Frameworks/Parchment.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  787 bytes for ./Payload/游易租.app/Frameworks/Parchment.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/ETNavBarTransparent.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/ETNavBarTransparent.framework/_CodeSignature/CodeResources
+copying file ./Payload/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent ... 
+2023-01-12 02:05:47 +0000  174544 bytes for ./Payload/游易租.app/Frameworks/ETNavBarTransparent.framework/ETNavBarTransparent
+copying file ./Payload/游易租.app/Frameworks/ETNavBarTransparent.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  809 bytes for ./Payload/游易租.app/Frameworks/ETNavBarTransparent.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD ... 
+2023-01-12 02:05:47 +0000  170688 bytes for ./Payload/游易租.app/Frameworks/MBProgressHUD.framework/MBProgressHUD
+copying file ./Payload/游易租.app/Frameworks/MBProgressHUD.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  795 bytes for ./Payload/游易租.app/Frameworks/MBProgressHUD.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/AEAlertView.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/AEAlertView.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/AEAlertView.framework/AEAlertView ... 
+2023-01-12 02:05:47 +0000  760000 bytes for ./Payload/游易租.app/Frameworks/AEAlertView.framework/AEAlertView
+copying file ./Payload/游易租.app/Frameworks/AEAlertView.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  791 bytes for ./Payload/游易租.app/Frameworks/AEAlertView.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/SnapKit.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/SnapKit.framework/_CodeSignature/CodeResources
+copying file ./Payload/游易租.app/Frameworks/SnapKit.framework/SnapKit ... 
+2023-01-12 02:05:47 +0000  399648 bytes for ./Payload/游易租.app/Frameworks/SnapKit.framework/SnapKit
+copying file ./Payload/游易租.app/Frameworks/SnapKit.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  784 bytes for ./Payload/游易租.app/Frameworks/SnapKit.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/Alamofire.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/Alamofire.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/Alamofire.framework/Alamofire ... 
+2023-01-12 02:05:47 +0000  3208896 bytes for ./Payload/游易租.app/Frameworks/Alamofire.framework/Alamofire
+copying file ./Payload/游易租.app/Frameworks/Alamofire.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  788 bytes for ./Payload/游易租.app/Frameworks/Alamofire.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/RxCocoa.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/RxCocoa.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/RxCocoa.framework/RxCocoa ... 
+2023-01-12 02:05:47 +0000  1843376 bytes for ./Payload/游易租.app/Frameworks/RxCocoa.framework/RxCocoa
+copying file ./Payload/游易租.app/Frameworks/RxCocoa.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  783 bytes for ./Payload/游易租.app/Frameworks/RxCocoa.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift ... 
+2023-01-12 02:05:47 +0000  220000 bytes for ./Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework/EmptyDataSet_Swift
+copying file ./Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  807 bytes for ./Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/RxSwift.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/RxSwift.framework/_CodeSignature/CodeResources
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/RxSwift.framework/RxSwift ... 
+2023-01-12 02:05:47 +0000  2699920 bytes for ./Payload/游易租.app/Frameworks/RxSwift.framework/RxSwift
+copying file ./Payload/游易租.app/Frameworks/RxSwift.framework/Info.plist ... 
+2023-01-12 02:05:47 +0000  783 bytes for ./Payload/游易租.app/Frameworks/RxSwift.framework/Info.plist
+copying file ./Payload/游易租.app/Frameworks/JXPhotoBrowser.framework/_CodeSignature/CodeResources ... 
+2023-01-12 02:05:47 +0000  1798 bytes for ./Payload/游易租.app/Frameworks/JXPhotoBrowser.framework/_CodeSignature/CodeResources
+copying file ./Payload/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser ... 
+2023-01-12 02:05:47 +0000  499344 bytes for ./Payload/游易租.app/Frameworks/JXPhotoBrowser.framework/JXPhotoBrowser
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Frameworks/JXPhotoBrowser.framework/Info.plist ... 
+797 bytes for ./Payload/游易租.app/Frameworks/JXPhotoBrowser.framework/Info.plist
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/embedded.mobileprovision ... 
+2023-01-12 02:05:47 +0000  22309 bytes for ./Payload/游易租.app/embedded.mobileprovision
+2023-01-12 02:05:47 +0000  copying file ./Payload/游易租.app/Info.plist ... 
+2023-01-12 02:05:47 +0000  1414 bytes for ./Payload/游易租.app/Info.plist
+copying file ./Payload/游易租.app/PkgInfo ... 
+2023-01-12 02:05:47 +0000  8 bytes for ./Payload/游易租.app/PkgInfo
+2023-01-12 02:05:47 +0000  /usr/bin/ditto exited with 0
+2023-01-12 02:05:47 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2023-01-12 02:05:47 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2023-01-12 02:05:47 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x600009a0eb00:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/libswift_Concurrency.dylib'>
+2023-01-12 02:05:47 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x600009a0eb00:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/libswift_Concurrency.dylib'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de2c310:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Kingfisher.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de272c0:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxCocoa.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de1abc0:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Parchment.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de37720:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SwiftyJSON.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de190a0:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/HandyJSON.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de1bc60:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/MBProgressHUD.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de1bbf0:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/AEAlertView.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de33d40:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/YYKit.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de1bf00:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/SnapKit.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de279c0:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxSwift.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x600009a0fa80:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ETNavBarTransparent.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de2fa30:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Moya.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de056c0:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/RxRelay.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x600009a0cd80:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/ESPullToRefresh.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x600009acdf80:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/EmptyDataSet_Swift.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de22530:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/Alamofire.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x600009acd780:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app/Frameworks/JXPhotoBrowser.framework'>
+2023-01-12 02:05:47 +0000  IDEDistributionItem init <DVTFilePath:0x60000de26e60:'/var/folders/pb/95j8_5p945g2f3273nmvj6zw0000gn/T/XcodeDistPipeline.~~~sswlqN/Root/Payload/游易租.app'>
+2023-01-12 02:05:47 +0000  Processing step: IDEDistributionCreateManifestStep

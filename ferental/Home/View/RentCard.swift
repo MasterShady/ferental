@@ -9,6 +9,17 @@ import Foundation
 
 class RentCard: BaseView{
     
+    var computerGames = [Game](){
+        didSet{
+            self.gamePicker.data = rentType == .computer ? computerGames : phoneGames
+        }
+    }
+    var phoneGames = [Game](){
+        didSet{
+            self.gamePicker.data = rentType == .computer ? computerGames : phoneGames
+        }
+    }
+    
     enum RentType {
         case computer
         case phone
@@ -35,6 +46,7 @@ class RentCard: BaseView{
     
     var rentType : RentType = .computer{
         didSet{
+            self.gamePicker.data = rentType == .computer ? computerGames : phoneGames
             self.gamePicker.setSelectedData(self.rental.games)
             self.durationPicker.setSelectedData(self.rental.duration)
             self.datePicker.setSelectedData(self.rental.fromDate)
@@ -98,16 +110,26 @@ class RentCard: BaseView{
     }
     
     
+    override func configData() {
+        CommonService.getGames(type: .computer, cacheConfig: .awaysAllow) { games, error in
+            self.computerGames = games
+        }
+        
+        CommonService.getGames(type: .phone, cacheConfig: .awaysAllow) { games, error in
+            self.phoneGames = games
+        }
+    }
+    
     func updateUI(){
         let rental = self.rental
         
         let value = rental.games.enumerated().reduce("") { partialResult, element in
             let (index, game) = element
             if(index == 0){
-                return game.title
+                return game.name
             }
             if partialResult.count < 10 {
-                return partialResult + "," + game.title
+                return partialResult + "," + game.name
             }else if index == rental.games.count - 1{
                 return partialResult + "等"
             }
@@ -130,20 +152,28 @@ class RentCard: BaseView{
     }
     
     @objc func search(){
-        
-        if(!AppData.policyAgreed){
-            let view = PolicyView()
-            view.popFromBottom()
-            view.agreedHandler = { [weak self] in
-                self?.search()
-            }
-            return
-        }
-        
         if self.rental.games.count == 0{
             AutoProgressHUD.showAutoHud("请至少选择一款游戏")
             return
         }
+        
+        CommonService.getAllDevices {[weak self] devices, error in
+            guard let self = self else {return}
+            if let error = error{
+                AutoProgressHUD.showError(error)
+                
+            }else{
+                let intersection = devices.filter { device in
+                    self.rental.games.any { device.games.contains($0)}
+                }
+                self.popDismiss {
+                    let vc = DeviceListVC(deviceList: intersection)
+                    vc.rental = self.rental
+                    UIViewController.getCurrent().navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        }
+        
         
     }
     
@@ -176,7 +206,7 @@ class RentCard: BaseView{
         
         let normalAttr: [NSAttributedString.Key: Any] = [
              .font: UIFont.systemFont(ofSize: 14),
-            .foregroundColor: UIColorFromHex("878787")
+            .foregroundColor: UIColor(hexColor: "878787")
         ]
         
         let selectedAttr: [NSAttributedString.Key: Any] = [
@@ -278,12 +308,12 @@ class RentCard: BaseView{
             .foregroundColor: UIColor.kTextBlack,
         ], range: range)
         
-        let gamePicker = MultiplePicker(title: title, data: AppData.games) {[weak self] games in
+        let gamePicker = MultiplePicker(title: title, data: computerGames) {[weak self] games in
             self?.gamePicker.popDismiss()
             self?.rental.games = games
             self?.updateUI()
         } titleForDatum: { game in
-            return game.title
+            return game.name
         }
         
         gamePicker.snp.makeConstraints { make in

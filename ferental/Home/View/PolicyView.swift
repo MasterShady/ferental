@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import YYKit
 
 class PolicyView: BaseView {
     
-    var agreedHandler: Block?
+    var resultHandler: BoolBlock?
+    
+    //var contentLabel: UILabel!
+    
     
     override func configSubviews() {
         self.backgroundColor = .white
@@ -28,8 +32,9 @@ class PolicyView: BaseView {
         }
         titleLabel.chain.font(.boldSystemFont(ofSize: 18)).text("服务协议与隐私政策提示").text(color: .kDeepBlack)
         
-        let contentLabel = UILabel()
+        let contentLabel = YYLabel()
         self.addSubview(contentLabel)
+        contentLabel.preferredMaxLayoutWidth = kScreenWidth - 16 * 2
         contentLabel.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(12)
             make.left.equalTo(16)
@@ -46,18 +51,17 @@ class PolicyView: BaseView {
         paragraphStyle.maximumLineHeight = 21
         paragraphStyle.minimumLineHeight = 21
         
-        var attrString = NSMutableAttributedString(string: p1, attributes: [
+        let attrString = NSMutableAttributedString(string: p1, attributes: [
             .font : UIFont.systemFont(ofSize: 14),
             .foregroundColor : UIColor(hexColor: "#585960"),
             .paragraphStyle : paragraphStyle
         ])
         
         
-        attrString.setAttributes([
-            .font : UIFont.systemFont(ofSize: 14),
-            .foregroundColor : UIColor(hexColor: "#3A5692"),
-            .paragraphStyle : paragraphStyle
-        ], range: (p1 as NSString).range(of: p2))
+        attrString.setTextHighlight((p1 as NSString).range(of: p2), color: UIColor(hexColor: "#3A5692"), backgroundColor: .yellow) { view, attrText, range, rect in
+            UIApplication.shared.open(URL(string:"http://app.cywj.info/static/privacies.html")!)
+        }
+        
         
         attrString.setAttributes([
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14),
@@ -66,6 +70,11 @@ class PolicyView: BaseView {
         ], range: (p1 as NSString).range(of: p3))
         
         contentLabel.attributedText = attrString
+        contentLabel.isUserInteractionEnabled = true
+//        contentLabel.addGestureRecognizer(tapGesture)
+        
+        
+        
         
         let agreeBtn = UIButton()
         addSubview(agreeBtn)
@@ -76,9 +85,9 @@ class PolicyView: BaseView {
         }
         agreeBtn.chain.normalTitle(text: "同意").normalTitleColor(color: .kDeepBlack).font(.boldSystemFont(ofSize: 14)).backgroundColor(.kthemeColor).corner(radius: 4).clipsToBounds(true)
         agreeBtn.addBlock(for: .touchUpInside) {[weak self] _ in
-            AppData.policyAgreed = true
+            
             self?.popDismiss()
-            self?.agreedHandler?()
+            self?.resultHandler?(true)
         }
         
         let disagreeBtn = UIButton()
@@ -91,7 +100,7 @@ class PolicyView: BaseView {
         disagreeBtn.chain.normalTitle(text: "不同意").normalTitleColor(color: .kDeepBlack).font(.boldSystemFont(ofSize: 14)).border(color:.kDeepBlack).border(width: 1).corner(radius: 4).clipsToBounds(true)
         
         disagreeBtn.addBlock(for: .touchUpInside) {[weak self] _ in
-            self?.popDismiss()
+            self?.resultHandler?(false)
         }
     }
 }

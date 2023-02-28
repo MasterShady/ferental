@@ -36,10 +36,10 @@ class OrderCell : UITableViewCell{
                         make.right.equalTo(-19)
                     }
                 }
-                coverView.kf.setImage(with: URL(string: order.cover), placeholder: nil)
+                coverView.kf.setImage(with: URL(subPath: order.cover), placeholder: nil)
                 orderTitleLabel.text = order.title
-                orderTimeLabel.text =  String(format: "下单时间: %@", order.orderDate.ymdhms)
-                orderIdLabel.text = String(format: "订单编号: %@", order.orderId)
+                orderTimeLabel.text =  String(format: "下单时间: %@", order.createdDate.ymdhms)
+                orderIdLabel.text = String(format: "订单编号 %@", order.orderId)
                 
                 let raw = String(format:"¥%.2f/天",order.rentalFee)
                 let attrText = NSMutableAttributedString(string: raw, attributes: [
@@ -69,6 +69,8 @@ class OrderCell : UITableViewCell{
     private var orderStatusLabel = UILabel()
     private var orderPriceLabel = UILabel()
     private var pickUpIconView = UIImageView()
+    
+    
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -167,9 +169,14 @@ class OrderCell : UITableViewCell{
 class OrderListVC: BaseVC, UITableViewDelegate, UITableViewDataSource{
     
     let tableView = UITableView()
-    
-    let data = AppData.orders
-    
+    var scrollViewDidScrollHandler: ((UIScrollView)->())?
+    var pullHandler : Block?
+    var data: [Order] = [] {
+        didSet{
+            self.tableView.reloadData()
+            self.tableView.es.stopPullToRefresh()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -185,17 +192,28 @@ class OrderListVC: BaseVC, UITableViewDelegate, UITableViewDataSource{
         tableView.register(OrderCell.self, forCellReuseIdentifier: "cellId")
         tableView.separatorStyle = .none
         tableView.emptyDataSetView { view in
+            
             view.image(.init(named: "no_order")).titleLabelString(NSAttributedString(string: "一个订单都没有", attributes: [
                 .foregroundColor : UIColor(hexColor: "#999999"),
                 .font : UIFont.systemFont(ofSize: 16)
             ]))
+            view.verticalOffset(-100)
+            if !UserStore.isLogin{
+                view.buttonTitle(.init("去登录", color: .kDeepBlack, font: .boldSystemFont(ofSize: 16)), for: .normal)
+                view.didTapDataButton { [weak self] in
+                    self?.navigationController?.pushViewController(LoginVC(), animated: true)
+                }
+            }
         }
-//        tableView.es.addPullToRefresh { [weak self] in
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                self?.tableView.es.stopPullToRefresh()
-//            }
-//
-//        }
+        tableView.es.addPullToRefresh { [weak self] in
+            self?.pullHandler?()
+        }
+    }
+    
+    override func configData() {
+        NotificationCenter.default.addObserver(forName: kUserChanged.name, object: nil, queue: OperationQueue.main) { _ in
+            self.tableView.reloadEmptyDataSet()
+        }
     }
     
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
@@ -212,5 +230,9 @@ class OrderListVC: BaseVC, UITableViewDelegate, UITableViewDataSource{
         let order = data[indexPath.row];
         let vc = OrderStatusVC(order: order)
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.scrollViewDidScrollHandler?(scrollView)
     }
 }

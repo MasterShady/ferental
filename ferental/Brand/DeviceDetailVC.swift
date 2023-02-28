@@ -9,6 +9,7 @@ import UIKit
 import MapKit
 import YYKit
 import JXPhotoBrowser
+import Kingfisher
 
 
 class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
@@ -30,16 +31,6 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        //navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        //navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-    
 
     override func configSubViews() {
         self.navBarBgAlpha = 0
@@ -47,11 +38,12 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
         self.extendedLayoutIncludesOpaqueBars = true
         self.edgesForExtendedLayout = .top
         
-        self.setBackTitle("")
+        self.setBackTitle("",withBg: true)
+        
         
         let scrollView = UIScrollView()
         view.addSubview(scrollView)
-        view.backgroundColor = UIColorFromHex("#F8F8F8")
+        view.backgroundColor = .init(hexColor: "F8F8F8")
         scrollView.contentInsetAdjustmentBehavior = .never
         scrollView.delegate = self
         scrollView.snp.makeConstraints { make in
@@ -148,10 +140,7 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
     }
     
     @objc func rent(){
-        
-        
         confirmView.popFromBottom()
-        //GEPopTool.popViewFormBottom(view: confirmView, withMask: true)
     }
     
 
@@ -192,13 +181,27 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
         }
         
         confirmView.confirmHandler = { [weak self] in
+            guard let self = self else {return}
             GEPopTool.dimssPopView {
                 if UserStore.isLogin{
-                    let vc = OrderCompletedVC()
-                    self?.navigationController?.pushViewController(vc, animated: true)
+                    orderService.request(.makeOrder(deviceId: self.device.id, dayCount: self.rental.duration, totalPrice: self.device.price * self.rental.duration)) { result in
+                        result.hj_map(Order.self, atKeyPath: "data") { result in
+                            switch result {
+                            case .success((let order, _)):
+                                NotificationCenter.default.post(kUserMakeOrder)
+                                let vc = OrderCompletedVC(order:order)
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            case .failure(let error):
+                                AutoProgressHUD.showAutoHud(error.localizedDescription)
+                                
+                            }
+                        }
+                        
+                        
+                    }
                 }else{
                     let vc = LoginVC()
-                    self?.navigationController?.pushViewController(vc, animated: true)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
         }
@@ -254,7 +257,15 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
             make.top.left.right.equalToSuperview()
         }
         imageView.contentMode = .scaleAspectFill
-        imageView.kf.setImage(with: URL(string: device.cover))
+        imageView.clipsToBounds = true
+        
+        
+        KF.url(.init(subPath: device.cover))
+            .fade(duration: 1)
+            .loadDiskFileSynchronously()
+            .set(to: imageView)
+        imageView.kf.indicatorType = .activity
+        
         
         let infoView = UIView()
         header.addSubview(infoView)
@@ -263,6 +274,8 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
             make.bottom.left.right.equalToSuperview()
             make.height.equalTo(36)
         }
+        
+        
         
         let gradientColor = UIColor.gradient(colors: [.init(hexColor: "#EFF7FF"), .init(hexColor: "#F1FFF3")], from: CGPoint(x: 0, y: 18), to: CGPoint(x:kScreenWidth,y:18), size: CGSize(width: kScreenWidth, height: 36))
         infoView.backgroundColor = gradientColor
@@ -288,24 +301,24 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
             make.left.equalTo(14)
         }
         
-        let rental = String(format: "%.2f", device.rentalFee)
+        let rental = String(format: "%.2f", device.price)
         let raw = String(format: "¥%@元/天", rental)
         let attributedTitle = NSMutableAttributedString(string: raw, attributes: [
-            NSAttributedString.Key.foregroundColor: UIColorFromHex("#F65E19"),
-            NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)
+            .foregroundColor: UIColor(hexColor: "#F65E19"),
+            .font : UIFont.boldSystemFont(ofSize: 18)
         ])
         
         let range = (raw as NSString).range(of: rental)
         attributedTitle.setAttributes([
-            NSAttributedString.Key.foregroundColor: UIColorFromHex("#F65E19"),
-            NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 32)
+            .foregroundColor: UIColor(hexColor: "#F65E19"),
+            .font : UIFont.boldSystemFont(ofSize: 32)
         ], range: range)
         
         
         let range2 = (raw as NSString).range(of: "/天")
         attributedTitle.setAttributes([
-            NSAttributedString.Key.foregroundColor: UIColorFromHex("#585960"),
-            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)
+            .foregroundColor: UIColor(hexColor: "#585960"),
+            .font : UIFont.systemFont(ofSize: 14)
         ], range: range2)
         
         priceLabel.attributedText = attributedTitle
@@ -366,7 +379,7 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
             make.right.equalTo(-14)
             make.bottom.equalTo(-14)
         }
-        titleLabel.chain.text(device.title).text(color: .init(hexColor: "333333")).font(.systemFont(ofSize: 17)).numberOfLines(0)
+        titleLabel.chain.text(device.name).text(color: .init(hexColor: "333333")).font(.systemFont(ofSize: 17)).numberOfLines(0)
         
         
         DispatchQueue.main.async {
@@ -465,26 +478,36 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
     lazy var picsView: UIView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        
-        
-        
-        device.pics.enumerated().forEach { i, pic in
+
+        device.pics[1...].enumerated().forEach { i, pic in
             let imageView = UIImageView()
             imageView.contentMode = .scaleAspectFit
             stack.addArrangedSubview(imageView)
-            imageView.kf.setImage(with: URL(string: pic)) { result in
-                switch result {
-                case .success(let result):
-                    let size = YYCGRectFitWithContentMode(CGRect(x:0, y:0, width:kScreenWidth, height:kScreenHeight), result.image.size, .scaleAspectFit).size
-                    imageView.snp.updateConstraints { make in
-                        make.size.equalTo(size)
+            imageView.snp.makeConstraints { make in
+                make.width.equalTo(kScreenWidth)
+                make.height.greaterThanOrEqualTo(200)
+            }
+            imageView.backgroundColor = .kExLightGray
+            imageView.contentScaleFactor = 2
+            
+//            let progressive = ImageProgressive(
+//                        isBlur: true,
+//                        isFastestScan: true,
+//                        scanInterval: 0
+//                    )
+//            progressiveJPEG(progressive),
+            
+            imageView.kf.indicatorType = .activity
+            //.cacheOriginalImage 表示缓存处理之前的图片,否则缓存processor处理后的图片
+            imageView.kf.setImage(with: URL(subPath: pic), options: [.cacheOriginalImage,.transition(.fade(1)), .processor(ResizingImageProcessor(referenceSize: .init(width: kScreenWidth , height: CGFloat.infinity), mode: .aspectFit))]){
+                if case .success (let result) = $0{
+                    imageView.snp.remakeConstraints { make in
+                        make.height.equalTo(imageView.snp.width).multipliedBy(result.image.size.height / result.image.size.width)
                     }
-                default:
-                    break
-                }       
+                    imageView.kf.setImage(with: URL(subPath: pic))
+                }
             }
             imageView.chain.userInteractionEnabled(true).tap {
-                // 实例化
                 let browser = JXPhotoBrowser()
                 // 浏览过程中实时获取数据总量
                 browser.numberOfItems = { [weak self] in
@@ -494,11 +517,11 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
                 browser.reloadCellAtIndex = { [weak self] context in
                     let browserCell = context.cell as? JXPhotoBrowserImageCell
                     if let urlStr = self?.device.pics[context.index]{
-                        browserCell?.imageView.kf.setImage(with: URL(string: urlStr))
+                        browserCell?.imageView.kf.setImage(with: URL(subPath: urlStr))
                     }
                 }
                 // 可指定打开时定位到哪一页
-                browser.pageIndex = i
+                browser.pageIndex = i + 1
                 // 展示
                 browser.show()
             }

@@ -115,7 +115,7 @@ class ConfirmView: BaseView{
             self.durationItem.value = nil
         }
         self.endTimeItem.value = rental.toDate.ymd
-        self.amountItem.value = String(format: "¥%.2f", device.rentalFee * rental.duration)
+        self.amountItem.value = String(format: "¥%.2f", device.price * rental.duration)
         //self.durationPicker.setSelectedData(rental.duration)
     }
     

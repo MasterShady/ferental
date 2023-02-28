@@ -30,7 +30,7 @@ extension Chain where Base: UILabel {
     
     @discardableResult
     public func text(color: String) -> Self {
-        base.textColor = UIColorFromHex(color)
+        base.textColor = .init(hexColor: color)
         return self
     }
     

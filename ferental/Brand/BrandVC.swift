@@ -9,6 +9,23 @@ import Foundation
 import UIKit
 
 class BrandVC : BaseVC{
+    
+    private var phoneBrands = [Brand?](){
+        didSet{
+            updatePhoneBrands()
+        }
+    }
+    
+    private var computerBrands = [Brand?](){
+        didSet{
+            updateComputerBrands()
+        }
+    }
+    
+    private let computerBrandContainer = UIView()
+    private let phoneBrandContainer = UIView()
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -59,6 +76,141 @@ class BrandVC : BaseVC{
         
     }
     
+    override func configData() {
+        loadAllBrands()
+        
+    }
+    
+    override func onReconnet() {
+        loadAllBrands()
+    }
+    
+    func loadAllBrands(){
+        brandService.request(.getBrands(.computer)) { result in
+            result.hj_map2(Brand.self) { body, error in
+                guard let body = body else {return}
+                self.computerBrands = body.decodedObjList!.filterDuplicates(\.id)
+            }
+        }
+        
+        brandService.request(.getBrands(.phone)) { result in
+            result.hj_map2(Brand.self) { body, error in
+                guard let body = body else {return}
+                self.phoneBrands = body.decodedObjList!.filterDuplicates(\.id)
+            }
+        }
+    }
+    
+    
+    func updateComputerBrands(){
+        computerBrandContainer.removeAllSubviews()
+        let HInset = 26.0
+        let VInset = 16.0
+        let HSpacing = 34.0
+        let VSpacing = 25.0
+        let containerW = kScreenWidth - 14 * 2
+        let containerH = 190.0
+        
+        let layoutW = containerW - HInset * 2
+        let layoutH = containerH - VInset * 2
+
+        let itemW = (layoutW - HSpacing * 3) / 4
+        let itemH = (layoutH - VSpacing) / 2
+        
+        for (i, brand) in self.computerBrands.enumerated(){
+            guard let brand = brand else { return }
+            let row = i / 4
+            let line = i % 4
+            let offsetX = (itemW + HSpacing) * line
+            let offsetY = (itemH + VSpacing) * row
+            let itemView = UIView(frame:CGRect(x: HInset + offsetX, y: VInset + offsetY, width: itemW, height: itemH))
+            itemView.chain.tap { [weak self] in
+                CommonService.getAllDevices(ignoreCache: false) { devices, error in
+                    if let error = error{
+                        AutoProgressHUD.showError(error)
+                        return
+                    }else{
+                        let vc =  DeviceListVC(deviceList:devices.filter { $0.brand == brand}, backTitle: brand.name)
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                    }
+                }
+            }
+            computerBrandContainer.addSubview(itemView)
+            let brandIcon = UIImageView()
+            itemView.addSubview(brandIcon)
+            brandIcon.snp.makeConstraints { make in
+                make.top.centerX.equalToSuperview()
+                make.size.equalTo(CGSize(width: 50, height: 50))
+            }
+            brandIcon.contentMode = .scaleAspectFit
+            brandIcon.kf.setImage(with: URL(subPath:brand.logo))
+            
+            let branNameLabel = UILabel()
+            itemView.addSubview(branNameLabel)
+            branNameLabel.snp.makeConstraints { make in
+                make.centerX.equalToSuperview()
+                make.bottom.equalToSuperview()
+            }
+            branNameLabel.chain.font(.systemFont(ofSize: 12)).text(color: .init(hexColor: "585960")).text(brand.name)
+        }
+    }
+    
+    
+    func updatePhoneBrands(){
+        phoneBrandContainer.removeAllSubviews()
+        let HInset = 26.0
+        let VInset = 16.0
+        let HSpacing = 34.0
+        let VSpacing = 25.0
+        let containerW = kScreenWidth - 14 * 2
+        let containerH = 190.0
+        
+        let layoutW = containerW - HInset * 2
+        let layoutH = containerH - VInset * 2
+
+        let itemW = (layoutW - HSpacing * 3) / 4
+        let itemH = (layoutH - VSpacing) / 2
+        
+        for (i, brand) in self.phoneBrands.enumerated(){
+            guard let brand = brand else { return }
+            let row = i / 4
+            let line = i % 4
+            let offsetX = (itemW + HSpacing) * line
+            let offsetY = (itemH + VSpacing) * row
+            let itemView = UIView(frame:CGRect(x: HInset + offsetX, y: VInset + offsetY, width: itemW, height: itemH))
+            itemView.chain.tap { [weak self] in
+                CommonService.getAllDevices(ignoreCache: false) { devices, error in
+                    if let error = error{
+                        AutoProgressHUD.showError(error)
+                        return
+                    }else{
+                        let vc =  DeviceListVC(deviceList:devices.filter { $0.brand == brand}, backTitle: brand.name)
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                    }
+                }
+                
+               
+            }
+            phoneBrandContainer.addSubview(itemView)
+            let brandIcon = UIImageView()
+            itemView.addSubview(brandIcon)
+            brandIcon.snp.makeConstraints { make in
+                make.top.centerX.equalToSuperview()
+                make.size.equalTo(CGSize(width: 50, height: 50))
+            }
+            brandIcon.contentMode = .scaleAspectFit
+            brandIcon.kf.setImage(with: URL(subPath:brand.logo))
+            
+            let branNameLabel = UILabel()
+            itemView.addSubview(branNameLabel)
+            branNameLabel.snp.makeConstraints { make in
+                make.centerX.equalToSuperview()
+                make.bottom.equalToSuperview()
+            }
+            branNameLabel.chain.font(.systemFont(ofSize: 12)).text(color: .init(hexColor: "585960")).text(brand.name)
+        }
+    }
+    
     
     
     lazy var computerBrandView: UIView = {
@@ -81,57 +233,15 @@ class BrandVC : BaseVC{
         titleBtn.chain.normalImage(.init(named: "brand_computer")).normalTitle(text: "租游戏本").font(.boldSystemFont(ofSize: 16)).normalTitleColor(color: .init(hexColor: "#1D1E21"))
         titleBtn.setImagePosition(.left, spacing: 7)
         
-        let container = UIView()
-        view.addSubview(container)
-        
-        let HInset = 26.0
-        let VInset = 16.0
-        let HSpacing = 34.0
-        let VSpacing = 25.0
-        let containerW = kScreenWidth - 14 * 2
+        view.addSubview(computerBrandContainer)
         let containerH = 190.0
-        
-        container.snp.makeConstraints { make in
+        computerBrandContainer.snp.makeConstraints { make in
             make.height.equalTo(containerH)
             make.bottom.left.right.equalToSuperview()
             make.top.equalTo(header.snp_bottomMargin)
         }
         
-        let layoutW = containerW - HInset * 2
-        let layoutH = containerH - VInset * 2
-
-        let itemW = (layoutW - HSpacing * 3) / 4
-        let itemH = (layoutH - VSpacing) / 2
         
-        for (i, brand) in AppData.computeBrands.enumerated(){
-            let row = i / 4
-            let line = i % 4
-            let offsetX = (itemW + HSpacing) * line
-            let offsetY = (itemH + VSpacing) * row
-            let itemView = UIView(frame:CGRect(x: HInset + offsetX, y: VInset + offsetY, width: itemW, height: itemH))
-            itemView.chain.tap { [weak self] in
-                let vc =  DeviceListVC(brand: brand)
-                self?.navigationController?.pushViewController(vc, animated: true)
-            }
-            container.addSubview(itemView)
-            let brandIcon = UIImageView()
-            itemView.addSubview(brandIcon)
-            brandIcon.snp.makeConstraints { make in
-                make.top.centerX.equalToSuperview()
-                make.size.equalTo(CGSize(width: 50, height: 50))
-            }
-            brandIcon.contentMode = .scaleAspectFit
-            brandIcon.kf.setImage(with: URL(string: brand.icon))
-            
-            let branNameLabel = UILabel()
-            itemView.addSubview(branNameLabel)
-            branNameLabel.snp.makeConstraints { make in
-                make.centerX.equalToSuperview()
-                make.bottom.equalToSuperview()
-            }
-            branNameLabel.chain.font(.systemFont(ofSize: 12)).text(color: .init(hexColor: "585960")).text(brand.name)
-            
-        }
         
         return view
     }()
@@ -156,52 +266,13 @@ class BrandVC : BaseVC{
         titleBtn.chain.normalImage(.init(named: "brand_phone")).normalTitle(text: "租游戏手机").font(.boldSystemFont(ofSize: 16)).normalTitleColor(color: .white)
         titleBtn.setImagePosition(.left, spacing: 7)
         
-        let container = UIView()
-        view.addSubview(container)
         
-        let HInset = 26.0
-        let VInset = 16.0
-        let HSpacing = 34.0
-        let VSpacing = 25.0
-        let containerW = kScreenWidth - 14 * 2
+        view.addSubview(phoneBrandContainer)
         let containerH = 190.0
-        
-        container.snp.makeConstraints { make in
+        phoneBrandContainer.snp.makeConstraints { make in
             make.height.equalTo(containerH)
             make.bottom.left.right.equalToSuperview()
             make.top.equalTo(header.snp_bottomMargin)
-        }
-        
-        let layoutW = containerW - HInset * 2
-        let layoutH = containerH - VInset * 2
-
-        let itemW = (layoutW - HSpacing * 3) / 4
-        let itemH = (layoutH - VSpacing) / 2
-        
-        for (i, brand) in AppData.phoneBrands.enumerated(){
-            let row = i / 4
-            let line = i % 4
-            let offsetX = (itemW + HSpacing) * line
-            let offsetY = (itemH + VSpacing) * row
-            let itemView = UIView(frame:CGRect(x: HInset + offsetX, y: VInset + offsetY, width: itemW, height: itemH))
-            container.addSubview(itemView)
-            let brandIcon = UIImageView()
-            itemView.addSubview(brandIcon)
-            brandIcon.snp.makeConstraints { make in
-                make.top.centerX.equalToSuperview()
-                make.size.equalTo(CGSize(width: 50, height: 50))
-            }
-            brandIcon.contentMode = .scaleAspectFit
-            brandIcon.kf.setImage(with: URL(string: brand.icon))
-            
-            let branNameLabel = UILabel()
-            itemView.addSubview(branNameLabel)
-            branNameLabel.snp.makeConstraints { make in
-                make.centerX.equalToSuperview()
-                make.bottom.equalToSuperview()
-            }
-            branNameLabel.chain.font(.systemFont(ofSize: 12)).text(color: .init(hexColor: "585960")).text(brand.name)
-            
         }
         
         return view

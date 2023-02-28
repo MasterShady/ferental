@@ -27,7 +27,11 @@ class OrderStatusVC: BaseVC {
         self.navBarBgAlpha = 0
         self.edgesForExtendedLayout = .top
         self.extendedLayoutIncludesOpaqueBars = true
-        setBackTitle("订单详情")
+        setBackTitle("订单详情") { [weak self] in
+            self?.popToController(withBlackList: [
+                "\(kNameSpage).OrderCompletedVC"
+            ])
+        }
         
         view.backgroundColor = .init(hexColor: "#F4F6F9")
         
@@ -111,7 +115,7 @@ class OrderStatusVC: BaseVC {
             make.top.left.equalTo(14)
             make.size.equalTo(CGSize(width: 74, height: 74))
         }
-        cover.kf.setImage(with: URL(string: order.cover))
+        cover.kf.setImage(with: URL(subPath: order.cover))
         cover.backgroundColor = .kExLightGray
         
         let titleLabel = UILabel()
@@ -166,7 +170,7 @@ class OrderStatusVC: BaseVC {
         stackView.spacing = 12
 
         
-        let orderIdItem = ConfirmItemView(title: "订单编号：", value: order.orderId)
+        let orderIdItem = ConfirmItemView(title: "订单编号：", value: String(order.id))
         stackView.addArrangedSubview(orderIdItem)
         
         let startTimeItem = ConfirmItemView(title: "起租时间：", value: order.startDate.ymd)
@@ -179,10 +183,10 @@ class OrderStatusVC: BaseVC {
         stackView.addArrangedSubview(endTimeItem)
         
         let orderAmountItem = ConfirmItemView(title: "订单金额：", value: String(format: "¥%.2f", order.amount))
-        //orderAmountItem.valueColor = .init(hexColor: "#FF7871")
+        
         stackView.addArrangedSubview(orderAmountItem)
         
-        let orderTimeItem = ConfirmItemView(title: "下单时间：", value: order.orderDate.ymdhms)
+        let orderTimeItem = ConfirmItemView(title: "下单时间：", value: order.createdDate.ymdhms)
         stackView.addArrangedSubview(orderTimeItem)
         
         let slogan = UIImageView()

@@ -11,41 +11,57 @@ class DeviceCard : BaseView{
     private lazy var cover = UIImageView()
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.chain.font(.boldSystemFont(ofSize: 14)).text(color: UIColorFromHex("333333")).numberOfLines(0)
+        label.chain.font(.boldSystemFont(ofSize: 14)).text(color: .init(hexColor: "333333")).numberOfLines(0)
         return label
     }()
-    private lazy var cpuLabel = UILabel()
-    private lazy var gpuLabel = UILabel()
-    private lazy var screenSizeLabel = UILabel()
+    private var cpuLabel: UILabel!
+    
+    //手机显示内存,电脑显示gpu
+    private var secondValueLabel: UILabel!
+    private var secondKeyLabel: UILabel!
+    
+    private var screenSizeLabel: UILabel!
+    
     private lazy var depositeLabel = UILabel()
     private lazy var rentalLabel = UILabel()
     
     var device : Device?{
         didSet{
-            cover.kf.setImage(with: URL(string: device?.cover ?? ""))
-            titleLabel.text = device?.title
-            cpuLabel.text = device?.cpu
-            gpuLabel.text = device?.gpu
-            screenSizeLabel.text = String(format: "%.1f 英寸", device?.screenSize ?? 0)
-            depositeLabel.text = String(format: "押金 ¥ %.0f", device?.deposit ?? 0)
+            guard let device = device else {return}
+            cover.kf.setImage(with: URL(subPath: device.cover))
+            titleLabel.text = device.name
+            cpuLabel.text = device.cpu
+            if let memory = device.memory{
+                
+                secondKeyLabel.text = "内存"
+                secondValueLabel.text = memory + "G"
+                
+            }else if let gpu = device.gpu{
+                secondKeyLabel.text = "显卡型号"
+                secondValueLabel.text = gpu
+            }
             
-            let rental = String(format: "%.2f", device?.rentalFee ?? 0)
+            
+            screenSizeLabel.text = String(format: "%@ 英寸", device.screenSize)
+            depositeLabel.text = String(format: "押金 ¥ %.0f", device.deposit)
+            
+            let rental = String(format: "%.2f", device.price)
             let raw = String(format: "¥%@元/天", rental)
             let attributedTitle = NSMutableAttributedString(string: raw, attributes: [
-                NSAttributedString.Key.foregroundColor: UIColorFromHex("#F65E19"),
-                NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 10)
+                .foregroundColor: UIColor(hexColor: "#F65E19"),
+                .font : UIFont.boldSystemFont(ofSize: 10)
             ])
             
             let range = (raw as NSString).range(of: rental)
             attributedTitle.setAttributes([
-                NSAttributedString.Key.foregroundColor: UIColorFromHex("#F65E19"),
-                NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)
+                .foregroundColor: UIColor(hexColor: "#F65E19"),
+                .font : UIFont.boldSystemFont(ofSize: 18)
             ], range: range)
             
             let range2 = (raw as NSString).range(of: "/天")
             attributedTitle.setAttributes([
-                NSAttributedString.Key.foregroundColor: UIColorFromHex("#585960"),
-                NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10)
+                .foregroundColor: UIColor(hexColor: "#585960"),
+                .font : UIFont.systemFont(ofSize: 10)
             ], range: range2)
             
             rentalLabel.attributedText = attributedTitle
@@ -63,7 +79,7 @@ class DeviceCard : BaseView{
             make.height.equalTo(105)
             make.bottom.equalTo(-12)
         }
-        cover.chain.corner(radius: 2).clipsToBounds(true)
+        cover.chain.corner(radius: 2).clipsToBounds(true).backgroundColor(.kExLightGray).contentMode(.scaleAspectFill)
         
         self.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in
@@ -84,7 +100,7 @@ class DeviceCard : BaseView{
         paramsView.backgroundColor = .gradient(fromColors: [.init(hexColor: "#EFF7FF"),.init(hexColor: "#F1FFF3")], size: CGSize(width: 1, height: 1))
         
         
-        let makeItem: (String,UIView) -> UILabel = { title, superView in
+        let makeItem: (String,UIView) -> (UILabel,UILabel) = { title, superView in
             let keyLabel = UILabel()
             superView.addSubview(keyLabel)
             keyLabel.chain.font(.boldSystemFont(ofSize: 11)).text(color: .kTextDarkGray).text(title)
@@ -99,7 +115,7 @@ class DeviceCard : BaseView{
                 make.bottom.equalTo(keyLabel.snp.top).offset(-1)
                 make.left.right.equalToSuperview()
             }
-            return valueLabel
+            return (keyLabel, valueLabel)
         }
 
         
@@ -132,11 +148,11 @@ class DeviceCard : BaseView{
             }
             
             if i == 0{
-                 cpuLabel = makeItem("处理器", part)
+                cpuLabel = makeItem("处理器", part).1
             } else if i == 1{
-                gpuLabel = makeItem("显卡型号", part)
+                  (secondKeyLabel,secondValueLabel) = makeItem("显卡型号", part)
             } else{
-                screenSizeLabel  = makeItem("屏幕尺寸", part)
+                screenSizeLabel  = makeItem("屏幕尺寸", part).1
             }
             
             lastpart = part
@@ -192,18 +208,7 @@ class DeviceCell: UITableViewCell{
         deviceCard.chain.corner(radius: 3).clipsToBounds(true)
     }
     
-    
-    private lazy var cover = UIImageView()
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.chain.font(.boldSystemFont(ofSize: 14)).text(color: UIColorFromHex("333333")).numberOfLines(0)
-        return label
-    }()
-    private lazy var cpuLabel = UILabel()
-    private lazy var gpuLabel = UILabel()
-    private lazy var screenSizeLabel = UILabel()
-    private lazy var depositeLabel = UILabel()
-    private lazy var rentalLabel = UILabel()
+ 
     
     
     

@@ -98,7 +98,7 @@ class MyOrderView : BaseView{
     
     func updateUI(){
         if let order = order{
-            coverView.kf.setImage(with: URL(string: order.cover))
+            coverView.kf.setImage(with: URL(subPath: order.cover))
             orderStatusLabel.text = order.statusTitle
             descLabel.text = order.descTitle
             

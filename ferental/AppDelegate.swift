@@ -7,14 +7,33 @@
 
 import UIKit
 import SwiftyJSON
+import Alamofire
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    
     var window: UIWindow?
+    var networkAvaliable = true
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+        NetworkReachabilityManager.default!.startListening(onUpdatePerforming: { status in
+            switch status {
+            case .notReachable:
+                self.networkAvaliable = false
+            case .unknown:
+                self.networkAvaliable = false
+            case .reachable:
+                if self.networkAvaliable == false{
+                    NotificationCenter.default.post(kUserReConnectedNetwork)
+                }
+                self.networkAvaliable = true
+            }
+            
+        })
+        
+        
         
         
     

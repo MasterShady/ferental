@@ -14,7 +14,9 @@ class BaseView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configData()
         configSubviews()
+        
         
     }
     
@@ -41,6 +43,8 @@ class BaseView: UIView {
     func configSubviews() {
         
     }
+    
+    func configData(){}
     
 
 }

@@ -79,12 +79,15 @@ class HeaderPagingViewController: PagingViewController {
 
 class OrderPageVC : BaseVC{
     
-    private let viewControllers = [
-        OrderListVC(),
-        OrderListVC(),
-        OrderListVC(),
-        OrderListVC()
-    ]
+    var allOrders = [Order]()
+    
+    private lazy var viewControllers: [OrderListVC] = {
+        (0...3).map { [weak self] _ in
+            let vc = OrderListVC()
+            vc.pullHandler = self?.getOrders
+            return vc
+        }
+    }()
 
     private lazy var pagingViewController :HeaderPagingViewController = {
         var options = PagingOptions()
@@ -146,13 +149,54 @@ class OrderPageVC : BaseVC{
         pagingViewController.dataSource = self
         pagingViewController.delegate = self
 
-        viewControllers.first?.tableView.delegate = self
+        NotificationCenter.default.addObserver(forName: kUserChanged.name, object: nil, queue: .main) { _ in
+            self.getOrders()
+        }
+        
+        NotificationCenter.default.addObserver(forName: kUserMakeOrder.name, object: nil, queue: .main) { _ in
+            self.getOrders()
+        }
+        
     }
     
     
+    override func configData() {
+        if UserStore.isLogin{
+            getOrders()
+        }else{
+            //未登录
+        }
+        
+    }
     
-
     
+    func getOrders(){
+        if !UserStore.isLogin {
+            self.allOrders = []
+            self.handleData()
+            return
+        }
+        orderService.request(.getAllOrders) { result in
+            result.hj_mapArray(Order.self, atKeyPath: "data") {[weak self] result in
+                guard let self = self else {return}
+                switch result {
+                case .success((let orders,_)):
+                    self.allOrders = orders
+                    self.handleData()
+                case .failure(let error):
+                    self.handleData()
+                    AutoProgressHUD.showAutoHud(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func handleData(){
+        viewControllers[0].data = self.allOrders
+        viewControllers[1].data = self.allOrders.filter({$0.status == .pendingReview})
+        viewControllers[2].data = self.allOrders.filter({$0.status == .pendingPickup})
+        viewControllers[3].data = self.allOrders.filter({$0.status == .completed})
+    }
     
 }
 
@@ -178,24 +222,8 @@ extension OrderPageVC: PagingViewControllerDataSource {
 }
 
 extension OrderPageVC: PagingViewControllerDelegate {
-    func pagingViewController(_: PagingViewController, didScrollToItem _: PagingItem, startingViewController: UIViewController?, destinationViewController: UIViewController, transitionSuccessful: Bool) {
-        guard let startingViewController = startingViewController as? OrderListVC else { return }
-        guard let destinationViewController = destinationViewController as? OrderListVC else { return }
-
-        // Set the delegate on the currently selected view so that we can
-        // listen to the scroll view delegate.
-        if transitionSuccessful {
-            startingViewController.tableView.delegate = nil
-            destinationViewController.tableView.delegate = self
-        }
-    }
-
     func pagingViewController(_: PagingViewController, willScrollToItem _: PagingItem, startingViewController _: UIViewController, destinationViewController: UIViewController) {
         guard let destinationViewController = destinationViewController as? OrderListVC else { return }
-
-        // Update the content offset based on the height of the header
-        // view. This ensures that the content offset is correct if you
-        // swipe to a new page while the header view is hidden.
         let scrollView = destinationViewController.tableView
         let offset = headerConstraint.constant + pagingViewController.options.menuHeight
         scrollView.contentOffset = CGPoint(x: 0, y: -offset)
@@ -210,29 +238,11 @@ extension OrderPageVC: UITableViewDelegate {
         let insets = UIEdgeInsets(top: insetTop, left: 0, bottom: 0, right: 0)
         scrollView.scrollIndicatorInsets = insets
     }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard scrollView.contentOffset.y < 0 else {
-            // Reset the header constraint in case we scrolled so fast that
-            // the height was not set to zero before the content offset
-            // became negative.
-//            if headerConstraint.constant > 0 {
-//                headerConstraint.constant = 0
-//            }
-            return
-        }
-
-        // Update the scroll indicator insets so they move alongside the
-        // header view when scrolling.
-        updateScrollIndicatorInsets(in: scrollView)
-
-//         Update the height of the header view based on the content
-//         offset of the currently selected view controller.
-//        let height = max(0, abs(scrollView.contentOffset.y) - pagingViewController.options.menuHeight)
-//        headerConstraint.constant = height
-    }
-    
-    
-    
-    
+//
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        guard scrollView.contentOffset.y < 0 else {
+//            return
+//        }
+//        updateScrollIndicatorInsets(in: scrollView)
+//    }
 }

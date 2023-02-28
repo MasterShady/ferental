@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class TabbarVC : UITabBarController{
+class TabbarVC : UITabBarController, UITabBarControllerDelegate{
     
     
     override func viewDidLoad() {
@@ -27,6 +27,7 @@ class TabbarVC : UITabBarController{
         tabBar.backgroundImage = UIImage(color: .white)
         tabBar.backgroundColor = .white
         tabBar.tintColor = UIColor(hexString: "#333333")
+        self.delegate = self
         addChilds()
     }
     
@@ -34,7 +35,7 @@ class TabbarVC : UITabBarController{
     func addChilds(){
         let childs : [(String,String,BaseVC)] = [
             ("home","首页",HomeVC()),
-            ("brand","品牌",BrandVC()),
+//            ("brand","品牌",BrandVC()),
             ("order","订单",OrderPageVC()),
             ("mine", "我的",MineVC()),
         ];
@@ -65,7 +66,4 @@ class TabbarVC : UITabBarController{
         }
         
     }
-    
-    
-    
 }

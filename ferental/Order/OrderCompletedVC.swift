@@ -8,7 +8,20 @@
 import UIKit
 
 class OrderCompletedVC: BaseVC {
-
+    
+    let order: Order
+    
+    init(order: Order) {
+        self.order = order
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    
     override func configSubViews() {
         self.navBarBgAlpha = 0
         self.extendedLayoutIncludesOpaqueBars = true
@@ -56,13 +69,14 @@ class OrderCompletedVC: BaseVC {
         }
         checkBtn.chain.backgroundColor(.kthemeColor).normalTitle(text: "查看订单").font(.boldSystemFont(ofSize: 16)).corner(radius: 6).clipsToBounds(true).normalTitleColor(color: .kTextBlack)
         checkBtn.addBlock(for: .touchUpInside) { [weak self] _ in
-            let orderVC = OrderStatusVC(order:AppData.order)
-            self?.navigationController?.pushViewController(orderVC, animated: true)
+            guard let self = self else {return}
+            let orderVC = OrderStatusVC(order:self.order)
+            self.navigationController?.pushViewController(orderVC, animated: true)
         }
+        
         setBackTitle("") {
             self.navigationController?.popToRootViewController(animated: true)
         }
-        
     }
-
+    
 }

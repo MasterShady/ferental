@@ -118,12 +118,21 @@ class RegisterVC: BaseVC {
             return
         }
         
-        userService.request(.register(mobile: mobile, passwd: passwd, name: "")) { result in
+        func generateRandom11DigitString() -> String {
+            var result = ""
+            for _ in 0..<11 {
+                let randomNumber = Int(arc4random_uniform(10))
+                result += String(randomNumber)
+            }
+            return result
+        }
+        
+        
+        userService.request(.register(mobile: mobile, passwd: passwd, name: generateRandom11DigitString())) { result in
             result.hj_map(UserAccount.self, atKeyPath: "data", failsOnEmptyData: true) { mappedReusult in
                 if case let .success((user,_)) = mappedReusult {
                     UserStore.currentUser = user
                     self.popToController(withBlackList: [
-                        "\(kNameSpage).RegisterVC",
                         "\(kNameSpage).LoginVC"
                     ])
                 }else{

@@ -77,7 +77,7 @@ class FeedbackVC: BaseVC, UITextViewDelegate{
         commitBtn.snp.makeConstraints { make in
             make.top.equalTo(textView.snp.bottom).offset(36)
             make.centerX.equalToSuperview()
-            make.size.equalTo(CGSizeMake(204, 48))
+            make.size.equalTo(CGSize(width:204, height:48))
         }
         commitBtn.chain.font(.boldSystemFont(ofSize: 16)).normalTitle(text: "提交").normalTitleColor(color: .kDeepBlack).backgroundColor(.kthemeColor).corner(radius: 6).clipsToBounds(true)
         

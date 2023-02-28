@@ -13,8 +13,8 @@ extension UIView{
         GEPopTool.popViewFormBottom(view: self, withMask: withMask, tapToDismss: tapToDismiss)
     }
     
-    func popDismiss(){
-        GEPopTool.dimssPopView()
+    func popDismiss(completedHandler: Block? = nil){
+        GEPopTool.dimssPopView(completedHandler: completedHandler)
     }
     
 }

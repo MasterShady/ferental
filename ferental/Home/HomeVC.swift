@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import YYKit
 import Kingfisher
+import AEAlertView
 
 
 class Rental{
@@ -28,13 +29,27 @@ class Rental{
 
 class HomeVC: BaseVC{
     
-    var computerBtn: UIButton?
-    var phoneBtn: UIButton?
-    var selectedIndex = 0
-    var indicator: UIImageView?
-    var gameItem: SelectItemView?
-    var startTimeItem: SelectItemView?
-    var durationItem: SelectItemView?
+    private var computerBtn: UIButton?
+    private var phoneBtn: UIButton?
+    private var selectedIndex = 0
+    private var indicator: UIImageView?
+    private var gameItem: SelectItemView?
+    private var startTimeItem: SelectItemView?
+    private var durationItem: SelectItemView?
+    private var scrollView = UIScrollView()
+    
+    lazy var hotContainer: UIStackView = {
+        let container = UIStackView()
+        container.axis = .vertical
+        container.spacing = 8
+        return container
+    }()
+    
+    var allDevices = [Device?](){
+        didSet{
+            updateHotDeviceView()
+        }
+    }
     
     lazy var rentCard = RentCard()
     
@@ -52,10 +67,8 @@ class HomeVC: BaseVC{
     override func configSubViews() {
         view.backgroundColor = .init(hexString: "#F4F6F9")
         
-        let scrollView = UIScrollView()
-        scrollView.contentInsetAdjustmentBehavior = .never
-
         
+        scrollView.contentInsetAdjustmentBehavior = .never
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -67,6 +80,14 @@ class HomeVC: BaseVC{
             make.edges.equalToSuperview()
             make.width.equalTo(kX(375))
 
+        }
+        
+        
+        
+        
+        scrollView.es.addPullToRefresh(animator: esHeader) { [weak self] in
+            //self?.pullHandler?()
+            self?.loadAllDevices()
         }
         
         
@@ -89,14 +110,62 @@ class HomeVC: BaseVC{
         moduleContainer.addSpacer(spacing: 10)
         moduleContainer.addModule(hotView)
         
-        //self.updateUI()
+        showPolicyIfNeeded()
+        
+    }
+    
+    func showPolicyIfNeeded(){
+        if(!AppData.policyAgreed){
+            let view = PolicyView()
+            view.popFromBottom()
+            view.resultHandler = { result in
+                AppData.policyAgreed = result
+                if !result{
+                    AEAlertView.show(title: "不同意将无法使用应用功能， 确认退出应用吗？", message: nil, actions: ["直接退出","继续使用"]) { action in
+                        if action.title == "直接退出"{
+                            exit(0)
+                        }
+                    }
+                }
+            }
+        }
     }
     
     
-    // MARK: data update
+    override func configData() {
+        loadAllDevices()
+    }
+    
+    override func onReconnet() {
+        loadAllDevices()
+    }
+    
+    func loadAllDevices(){
+        CommonService.getAllDevices(ignoreCache:true) {[weak self] devices, error in
+            self?.scrollView.es.stopPullToRefresh()
+            if let error = error {
+                //AutoProgressHUD.showAutoHud(error.localizedDescription)
+            }else{
+                self?.allDevices = devices
+            }
+        }
+    }
     
     
-    
+    func updateHotDeviceView(){
+        hotContainer.removeAllSubviews()
+        allDevices.reversed()[0..<min(10,allDevices.count)].forEach { device in
+            if let device = device{
+                let cell = DeviceCard(frame: .zero)
+                hotContainer.addArrangedSubview(cell)
+                cell.device = device
+                cell.chain.tap { [weak self] in
+                    let des = DeviceDetailVC(device: device)
+                    self?.navigationController?.pushViewController(des, animated: true)
+                }
+            }
+        }
+    }
     
     
     
@@ -107,7 +176,7 @@ class HomeVC: BaseVC{
         }
         let label = UILabel()
         view.addSubview(label)
-        label.chain.text(config.title).font(.systemFont(ofSize: 15)).text(color: UIColorFromHex("333333"))
+        label.chain.text(config.title).font(.systemFont(ofSize: 15)).text(color: UIColor(hexColor: "333333"))
         label.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(16)
             make.centerY.equalToSuperview()
@@ -121,7 +190,7 @@ class HomeVC: BaseVC{
                 make.right.equalToSuperview().offset(-15)
                 make.centerY.equalToSuperview()
             }
-            valueLabel.chain.text(defaultValue).font(.systemFont(ofSize: 15)).text(color: UIColorFromHex("333333"))
+            valueLabel.chain.text(defaultValue).font(.systemFont(ofSize: 15)).text(color: UIColor(hexColor: "333333"))
         }else{
             let selectBtn = UIButton()
             view.addSubview(selectBtn)
@@ -129,7 +198,7 @@ class HomeVC: BaseVC{
                 make.right.equalToSuperview().offset(-15)
                 make.centerY.equalToSuperview()
             }
-            selectBtn.chain.image(UIImage(safeNamed: "arrow_right"), for: .normal).title(text: "请选择", for: .normal).titleColor(color: UIColorFromHex("#D4D5DB"), for: .normal)
+            selectBtn.chain.image(UIImage(safeNamed: "arrow_right"), for: .normal).title(text: "请选择", for: .normal).titleColor(color: UIColor(hexColor: "#D4D5DB"), for: .normal)
             selectBtn.setImagePosition(.right, spacing: 4)
         }
         return view
@@ -159,7 +228,8 @@ class HomeVC: BaseVC{
         topRightView.snp.makeConstraints { make in
             make.top.right.equalToSuperview()
             make.left.equalTo(topLeftView.snp.right).offset(7)
-            make.height.equalTo(topLeftView.snp.width).multipliedBy(75/170.0)
+            make.height.equalTo(topRightView.snp.width).multipliedBy(75/170.0)
+            make.width.equalTo(topLeftView.snp.width)
         }
         topRightView.chain.normalBackgroundImage(.init(named: "rent_phone"))
         topRightView.chain.addAction { [weak self] _ in
@@ -177,11 +247,8 @@ class HomeVC: BaseVC{
             
         }
         bottomView.chain.normalBackgroundImage(.init(named: "no_lag")).addAction { [weak self ] _ in
-            let loginVc = LoginVC()
-            self?.navigationController?.pushViewController(loginVc, animated: true)
+
         }
-        
-        
         return bannerView
     }()
     
@@ -203,15 +270,16 @@ class HomeVC: BaseVC{
         let titleImageView = UIImageView()
         header.addSubview(titleImageView)
         titleImageView.snp.makeConstraints { make in
-            make.top.equalTo(57)
-            make.left.equalTo(14)
+            make.top.equalTo(kX(57))
+            make.left.equalTo(kX(14))
         }
         titleImageView.image = .init(named: "home_title")
         
         let stepView = UIImageView()
         header.addSubview(stepView)
         stepView.snp.makeConstraints { make in
-            make.top.equalTo(titleImageView.snp.bottom).offset(18)
+            make.top.equalTo(titleImageView.snp.bottom).offset(kX(18))
+            make.size.equalTo(CGSize(width: kX(347), height: kX(32)))
             make.centerX.equalToSuperview()
         }
         stepView.image = .init(named: "home_step")
@@ -246,35 +314,30 @@ class HomeVC: BaseVC{
             make.right.equalToSuperview()
         }
         
-        moreBtn.addBlock(for: .touchUpInside) { _ in
-            //
+        moreBtn.addBlock(for: .touchUpInside) {[weak self] _ in
+            guard let self = self else {return}
+//                let vc = DeviceListVC(deviceList:self.allDevices.compactMap {$0})
+//                vc.refreshHandler = {[weak self, weak vc] completedHandler in
+//                    CommonService.getAllDevices(ignoreCache:true) {[weak self] devices, error in
+//                        if (error == nil){
+//                            vc?.reloadDevices(devices: devices.reversed())
+//                        }else{
+//                            vc?.reloadFailed()
+//                        }
+//                    }
+//                }
+            let vc = DeviceListVC2(deviceList: [])
+            
+                self.navigationController?.pushViewController(vc, animated: true)
         }
-        
-        let container = UIStackView()
-        container.axis = .vertical
-        container.spacing = 8
-        
-        view.addSubview(container)
-        container.snp.makeConstraints { make in
+        view.addSubview(hotContainer)
+        hotContainer.snp.makeConstraints { make in
+            make.height.greaterThanOrEqualTo(400)
             make.top.equalTo(header.snp.bottom)
             make.left.right.bottom.equalToSuperview()
 
         }
-        
-        
-        
-        AppData.mockDevices.forEach { device in
-            let cell = DeviceCard(frame: .zero)
-            container.addArrangedSubview(cell)
-            cell.device = device
-            cell.chain.tap { [weak self] in
-                let des = DeviceDetailVC(device: device)
-                self?.navigationController?.pushViewController(des, animated: true)
-            }
-        }
-        
-        
-        
+
         return view
     }()
     

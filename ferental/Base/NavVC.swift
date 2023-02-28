@@ -18,7 +18,7 @@ class NavVC: UINavigationController, UINavigationControllerDelegate {
                                           .font: UIFont.boldSystemFont(ofSize: 18)]
         appearance.shadowColor = .clear
         appearance.shadowImage = nil
-        appearance.backgroundColor = UIColorFromHex("#C1F00C")
+        appearance.backgroundColor = .init(hexColor: "#C1F00C")
         UINavigationBar.appearance().tintColor = .init(hexColor: "#111111")
         
 //        //

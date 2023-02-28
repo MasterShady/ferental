@@ -10,7 +10,8 @@ target 'ferental' do
 #  pod 'BFKit-Swift'
   pod 'YYKit'
   #pod  'Alamofire'
-  pod 'Moya', '~> 15.0'
+  #pod 'Moya', '~> 15.0'
+  pod 'Moya/RxSwift', '~> 15.0'
   pod 'SwiftyJSON'
   pod 'HandyJSON'
   pod 'MBProgressHUD'
@@ -21,6 +22,8 @@ target 'ferental' do
   pod 'AEAlertView'
   pod 'JXPhotoBrowser', '~> 3.0'
   pod 'ETNavBarTransparent'
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
 
   target 'ferentalTests' do
     inherit! :search_paths

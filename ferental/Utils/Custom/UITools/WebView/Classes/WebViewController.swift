@@ -21,7 +21,7 @@ class WebViewController: UIViewController {
 	var webView: UIView!
 	
 	/// -是否使用UIWebView
-	private var useUIWebView: Bool = false
+	//private var useUIWebView: Bool = false
 	var needCache: Bool = false
 	
 	/// 网页的URL
@@ -76,10 +76,11 @@ class WebViewController: UIViewController {
 			
 			(webView as! WKWebView).load(request)
 			
-		} else {
-			
-			(webView as! UIWebView).loadRequest(request)
 		}
+//        else {
+//
+//			(webView as! UIWebView).loadRequest(request)
+//		}
 	}
 	
 	
@@ -97,15 +98,10 @@ class WebViewController: UIViewController {
 	/// 设置WebView
 	private func setupWebView() {
 		
-		if useUIWebView {
-			
-			setupUIWebView()
-			
-		} else {
+
 			
 			setupWKWebView()
 			
-		}
 		
 		view.addSubview(webView)
 		
@@ -133,10 +129,8 @@ class WebViewController: UIViewController {
 			
 			(webView as! WKWebView).loadHTMLString(lazyInfo.handledHTML, baseURL: lazyInfo.baseURL)
 			
-		} else {
-			
-			(webView as! UIWebView).loadHTMLString(lazyInfo.handledHTML, baseURL: lazyInfo.baseURL)
 		}
+
 	}
 	
 	

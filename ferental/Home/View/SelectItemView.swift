@@ -26,10 +26,10 @@ class SelectItemView: UIView {
                 let maxTitleLayoutW = valueBtn.titleLabel!.width
                 
                 if let newValue = newValue, newValue.count > 0{
-                    valueBtn.chain.title(text: newValue, for: .normal).titleColor(color: UIColorFromHex("333333"), for: .normal)
+                    valueBtn.chain.title(text: newValue, for: .normal).titleColor(color: .init(hexColor: "333333"), for: .normal)
                     valueBtn.setImagePosition(.right, maxTitleLayoutW: maxTitleLayoutW, spacing: 8)
                 }else{
-                    valueBtn.chain.title(text: "请选择", for: .normal).titleColor(color: UIColorFromHex("#D4D5DB"), for: .normal)
+                    valueBtn.chain.title(text: "请选择", for: .normal).titleColor(color: .init(hexColor: "#D4D5DB"), for: .normal)
                     valueBtn.setImagePosition(.right, maxTitleLayoutW: maxTitleLayoutW, spacing: 8)
                 }
             }

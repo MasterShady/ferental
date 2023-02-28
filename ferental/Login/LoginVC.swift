@@ -169,10 +169,18 @@ class LoginVC: BaseVC {
             AutoProgressHUD.showAutoHud("密码错误")
         }
         
-        userService.request(.login(mobile:phone, passwd: passwd)) { result in
-            switch result{
-            case .failure(let error): AutoProgressHUD.showAutoHud(error.localizedDescription)
-            case .success(let response): print("~~22")
+        
+        AutoProgressHUD.showHud { dissmissBlock in
+            userService.request(.login(mobile:phone, passwd: passwd)) {[weak self] result in
+                dissmissBlock()
+                result.hj_map2(UserAccount.self) { body, error in
+                    if let error = error{
+                        AutoProgressHUD.showAutoHud(error.msg)
+                    }else if let user = body!.decodedObj{
+                        UserStore.currentUser = user
+                        self?.navigationController?.popViewController(animated: true)
+                    }
+                }
             }
         }
         
