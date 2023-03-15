@@ -2,10 +2,96 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx47b5177c44092b6b</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent102006271</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.dofun.youyizu</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixinURLParamsAPI</string>
+		<string>alipay</string>
+		<string>alipays</string>
+		<string>wx80fbae21739d52f3</string>
+		<string>tencentlaunch1110196838</string>
+		<string>tencent1110196838</string>
+		<string>tencentlaunch1106576735</string>
+		<string>tencent1106576735</string>
+		<string>QQ0613D2DB</string>
+		<string>tencent101962459</string>
+		<string>tencent1105636778</string>
+		<string>tencent1106838536</string>
+		<string>zhwalisdk</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqzoneopensdk</string>
+		<string>mqzoneopensdkapi</string>
+		<string>mqzoneopensdkapi19</string>
+		<string>mqzoneopensdkapiV2</string>
+		<string>mqzone</string>
+		<string>wtloginmqq2</string>
+		<string>mqqopensdkapiV4</string>
+		<string>mqq</string>
+		<string>mqqwpa</string>
+		<string>mqqapi</string>
+		<string>wechat</string>
+		<string>weixin</string>
+		<string>tencent1104466820</string>
+		<string>tencentlaunch1104466820</string>
+		<string>tencentlaunch1104512706</string>
+		<string>tencent1104512706</string>
+		<string>tencentlaunch1104307008</string>
+		<string>tencent1104307008</string>
+		<string>tencentlaunch1104922185</string>
+		<string>tencent1104922185</string>
+		<string>hz-login</string>
+		<string>tencent1106467070</string>
+		<string>tencentlaunch1106467070</string>
+		<string>weixinULAPI</string>
+		<string>tencent1105204536</string>
+		<string>wx95a3a4d7c627e07d</string>
+		<string>wx58164a91f1821369</string>
+		<string>wxc4c0253df149f02d</string>
+		<string>wx360b06d575d20cc3</string>
+		<string>wx1a6e7e59c7e5b31e</string>
+		<string>wx82dd7436af5db835</string>
+		<string>tencent1106040804</string>
+		<string>tencent1109811436</string>
+		<string>tencent1110196838</string>
+	</array>
+	<key>MOBAppKey</key>
+	<string>1be0aad7ff630</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>long_verison_key</key>
+	<string>1.0.0.0</string>
 </dict>
 </plist>

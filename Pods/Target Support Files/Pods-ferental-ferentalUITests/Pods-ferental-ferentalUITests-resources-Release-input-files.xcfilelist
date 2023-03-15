@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests-resources.sh
+${PODS_ROOT}/DFFaceVerifyLib/DFFaceVerifyLib/Assets/DFFaceNeteasySource.bundle
+${PODS_ROOT}/DFFaceVerifyLib/DFFaceVerifyLib/Assets/DFFacePublicSource.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DFToGameLib/DFToGameLibBundle.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DFToGameLib/HaiMaSDK_Bundle_iOS.bundle
+${PODS_ROOT}/NTESLiveDetect/Assets/NTESLiveDetectBundle.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK.bundle
+${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_QQ.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_WeChat.bundle
+${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/Optional/ShareSDKUI.bundle

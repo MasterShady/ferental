@@ -10,7 +10,7 @@ import UIKit
 import MBProgressHUD
 import Moya
 
-class AutoProgressHUD {
+@objcMembers class AutoProgressHUD : NSObject {
 	
     static var makeHud: MBProgressHUD {
         let topWindow: UIWindow = UIViewController.topmostVisiableWindow()

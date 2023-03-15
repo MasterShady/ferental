@@ -700,7 +700,7 @@ extension UIApplication {
     var alertWindow: UIWindow? {
         return currentWindow()
     }
-    func currentWindow() -> UIWindow? {
+    public func currentWindow() -> UIWindow? {
         if Thread.isMainThread {
             if #available(iOS 13, *) {
                 let connectedScenes = UIApplication.shared.connectedScenes

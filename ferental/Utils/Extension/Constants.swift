@@ -9,7 +9,28 @@
 import UIKit
 import HandyJSON
 
+//appId 生产 com.fundo.ferental
 
+@objcMembers class Global: NSObject{
+    static let kAppId = "500180009"
+    static let kStatusBarHeight: CGFloat = UIApplication.shared.windows.first!.safeAreaInsets.top
+    static let kBottomSafeInset = UIApplication.shared.windows.first!.safeAreaInsets.bottom
+    static var isTest = true //是否是测试. 这个会影响到上号Lib的接口.
+    static let df_version = Bundle.main.infoDictionary!["long_verison_key"] as? String ?? "1.0.0.0"
+    static var notificationAvaliable = false
+    static let kNotificationStatusChanged = "kNotificationStatusChanged"
+}
+
+
+let kBundleName = Bundle.main.infoDictionary!["CFBundleName"] as? String ?? ""
+let kCachesPath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
+let kDocumentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+let kTempPath = NSTemporaryDirectory()
+let kNameSpage = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+let kAppVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+let kBuildNumber = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
+
+let kJushAppKey = "0acbd33bc6e17e7dd664e690"
 
 
 extension URL {
@@ -51,14 +72,6 @@ enum AppData{
     
     static var isLogin = false
     
-//    //"绝地求生","英雄联盟","王者荣耀","逆战","QQ飞车","枪神纪", "原神", "倩女幽魂"
-//    static var computerGames: [Game] = {
-//      (0...10).map {.init(name:"电脑游戏" + String($0))}
-//    }()
-//
-//    static var phoneGames: [Game] = {
-//        (0...10).map {.init(name:"手机游戏" + String($0))}
-//    }()
     
     static var dates: [Date] =  {
         let calendar = Calendar.current
@@ -71,49 +84,7 @@ enum AppData{
     
     static let rentDuration = [7,15,30,60,90]
     
-    static let computeBrands = [
-        Brand(name: "Intel", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Intel2", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Intel3", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Intel4", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Intel5", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Intel6", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Intel7", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Intel8", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel")
-    ]
-    
-    static let phoneBrands = [
-        Brand(name: "Apple", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Apple2", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Apple3", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Apple4", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Apple5", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Apple6", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Apple7", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel"),
-        Brand(name: "Apple8", logo: "https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png", id: "Intel")
-    ]
-    
-    
-    //Device(cover:"https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png" , name: "夜空铺满狼的眼睛\n刺穿天真的梦呓", cpu: "Intel Core i9", gpu: "GeForce RTX 3080Ti", screenSize: 27, deposit: 5000, price: 20)
-    
-    static let mockDevices = [
-        Device()
-//        Device(cover:"https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png" , name: "HUAWEI WATCH GT 2 Pro 联想笔记本电脑 拯救者专业电竞本锐龙8核处理器", cpu: "Intel Core i9", gpu: "GeForce RTX 3080Ti", screenSize: 27, deposit: 5000, price: 25),
-//        Device(cover:"https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png" , name: "HUAWEI WATCH GT 2 Pro 联想笔记本电脑 拯救者专业电竞本锐龙8核处理器", cpu: "Intel Core i9", gpu: "GeForce RTX 3080Ti", screenSize: 27, deposit: 5000, price: 21),
-//        Device(cover:"https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png" , name: "HUAWEI WATCH GT 2 Pro 联想笔记本电脑 拯救者专业电竞本锐龙8核处理器", cpu: "Intel Core i9", gpu: "GeForce RTX 3080Ti", screenSize: 27, deposit: 5000, price: 22),
-//        Device(cover:"https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png" , name: "HUAWEI WATCH GT 2 Pro 联想笔记本电脑 拯救者专业电竞本锐龙8核处理器", cpu: "Intel Core i9", gpu: "GeForce RTX 3080Ti", screenSize: 27, deposit: 5000, price: 23),
-//        Device(cover:"https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png" , name: "HUAWEI WATCH GT 2 Pro 联想笔记本电脑 拯救者专业电竞本锐龙8核处理器", cpu: "Intel Core i9", gpu: "GeForce RTX 3080Ti", screenSize: 27, deposit: 5000, price: 24)
-    ]
-    
-    
-    static let order = Order()
-    //Order(status: .pendingReview, cover:"https://i3.hoopchina.com.cn/newsPost/2277-9qbkanrc-upload-1657173425541-143.png" , title: "HUAWEI WATCH GT 2 Pro 联想笔记本电脑 拯救者专业电竞本锐龙8核处理器", orderDate: Date() , orderId: "1234567", startDate:Date())
-    
-    static let orders = [
-        Order(),
-        Order(),
-        Order()
-    ]
+   
 }
 
 
@@ -224,13 +195,6 @@ func kX(_ x: CGFloat) -> CGFloat{
     return x/375 * kScreenWidth
 }
 
-
-// MARK: - Other
-let kCachesPath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
-let kTempPath = NSTemporaryDirectory()
-
-
-let kNameSpage = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
 let kDebugServer = "http://app.cywj.info/api"
 var kServerHost: String {
     return kDebugServer
@@ -239,9 +203,13 @@ var kServerHost: String {
 let kUserChanged = Notification(name: Notification.Name("kUserChanged"), object: nil)
 
 let kUserMakeOrder = Notification(name: Notification.Name("kUserMakeOrder"), object: nil)
-
 //用户重新联网
 let kUserReConnectedNetwork = Notification(name: Notification.Name("kUserReConnectedNetwork"), object: nil)
 
 
 
+
+struct BaseError: Error {
+    let message: String
+    var code: Int? = 0
+}

@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  ferental
+//
+//  Created by 刘思源 on 2023/3/7.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define KKAjaxProtocolHook 1
+
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define NSLog(...) do {} while (0)
+#endif
+
+
+#endif /* PrefixHeader_pch */

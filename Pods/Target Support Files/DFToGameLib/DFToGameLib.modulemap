@@ -1,0 +1,6 @@
+framework module DFToGameLib {
+  umbrella header "DFToGameLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

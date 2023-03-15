@@ -11,6 +11,45 @@ import SnapKit
 import ETNavBarTransparent
 import ESPullToRefresh
 
+extension UIViewController{
+    @objc func setBackTitle(_ title: String, withBg:Bool = false){
+        let backBtn = UIButton()
+        backBtn.chain.normalTitle(text: title).font(.boldSystemFont(ofSize: 18)).normalTitleColor(color: .init(hexColor: "#111111")).normalImage(.init(named: "back"))
+        if title.count > 0{
+            backBtn.setImagePosition(.left, spacing: 4)
+        }else{
+            backBtn.sy_touchAreaInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
+            backBtn.size = CGSize(width: 22, height: 22)
+        }
+        if withBg{
+            backBtn.backgroundColor = .white.withAlphaComponent(0.5)
+            backBtn.layer.cornerRadius = 11
+            backBtn.layer.masksToBounds = true
+        }
+        
+        backBtn.addBlock(for: .touchUpInside) { [weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+        }
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
+    }
+    
+    @objc func setBackTitle(_ title: String, action: @escaping Block){
+        let backBtn = UIButton()
+        backBtn.chain.normalTitle(text: title).font(.boldSystemFont(ofSize: 18)).normalTitleColor(color: .init(hexColor: "#111111")).normalImage(.init(named: "back"))
+        if title.count > 0{
+            backBtn.setImagePosition(.left, spacing: 4)
+        }else{
+            backBtn.sy_touchAreaInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
+            backBtn.size = CGSize(width: 20, height: 20)
+        }
+        backBtn.addBlock(for: .touchUpInside) { _ in
+            action()
+        }
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
+    }
+}
+
+
 class BaseVC : UIViewController{
     
     var popView: UIView?
@@ -55,41 +94,9 @@ class BaseVC : UIViewController{
     }
     
     
-    func setBackTitle(_ title: String, withBg:Bool = false){
-        let backBtn = UIButton()
-        backBtn.chain.normalTitle(text: title).font(.boldSystemFont(ofSize: 18)).normalTitleColor(color: .init(hexColor: "#111111")).normalImage(.init(named: "back"))
-        if title.count > 0{
-            backBtn.setImagePosition(.left, spacing: 4)
-        }else{
-            backBtn.sy_touchAreaInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
-            backBtn.size = CGSize(width: 22, height: 22)
-        }
-        if withBg{
-            backBtn.backgroundColor = .white.withAlphaComponent(0.5)
-            backBtn.layer.cornerRadius = 11
-            backBtn.layer.masksToBounds = true
-        }
-        
-        backBtn.addBlock(for: .touchUpInside) { [weak self] _ in
-            self?.navigationController?.popViewController(animated: true)
-        }
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
-    }
     
-    func setBackTitle(_ title: String, action: @escaping Block){
-        let backBtn = UIButton()
-        backBtn.chain.normalTitle(text: title).font(.boldSystemFont(ofSize: 18)).normalTitleColor(color: .init(hexColor: "#111111")).normalImage(.init(named: "back"))
-        if title.count > 0{
-            backBtn.setImagePosition(.left, spacing: 4)
-        }else{
-            backBtn.sy_touchAreaInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
-            backBtn.size = CGSize(width: 20, height: 20)
-        }
-        backBtn.addBlock(for: .touchUpInside) { _ in
-            action()
-        }
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
-    }
+    
+
     
     var esHeader: ESRefreshHeaderAnimator {
         get {
