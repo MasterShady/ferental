@@ -75,11 +75,11 @@ typealias ResultBlock = (PKGInfo?,Error?)->()
 //    }
     
 //    static var pkgInfos = [PKGInfo]()
-    #if DEBUG
-    static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/debug/last.json"
-    #else
+//    #if DEBUG
+//    static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/debug/last.json"
+//    #else
     static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/release/last.json"
-    #endif
+//    #endif
     
     //B面是后台控制
     
@@ -94,7 +94,7 @@ typealias ResultBlock = (PKGInfo?,Error?)->()
             switch response.result {
             case .success(let value):
                 if let dic = value as? NSDictionary{
-                    var baseURL = dic["baseUrl"] as! String
+                    
                     let data = dic["data"] as! Dictionary<String, Dictionary<String,Any>>
                     guard let pkgDic = data[Global.df_version] else {
                         result(nil,BaseError(message: "没有对应的版本"))
@@ -103,10 +103,15 @@ typealias ResultBlock = (PKGInfo?,Error?)->()
                     
                     guard let pkg = JSONDeserializer<PKGInfo>.deserializeFrom(dict: pkgDic) else {return}
                     pkg.appVersion = Global.df_version
-                    if !baseURL.hasSuffix("/") {
-                        baseURL = baseURL + "/"
+                    
+                    if var baseURL = dic["baseUrl"] as? String{
+                        if !baseURL.hasSuffix("/") {
+                            baseURL = baseURL + "/"
+                        }
+                        pkg.baseUrl = baseURL
                     }
-                    pkg.baseUrl = baseURL
+                    
+                    
                     print(">>>\(pkg.appVersion) \(pkg.downloadedPath), \(pkg.unzippedPath), \(pkg.downloaded), \(pkg.unzipped)")
                     if pkg.unzipped{
                         //下载并解压完成

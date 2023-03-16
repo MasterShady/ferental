@@ -73,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             self.getNewestPackge()
                         }
                     }else{
-                        //
+                        self.getNewestPackge()
                     }
                 }
             }
@@ -135,11 +135,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func installPkg(_ pkg: PKGInfo){
-        //LolmDFHttpConfig.config(withEnv: .pre_release)
         NavVC.performWhiteNavigationBarStyle()
         OfflinePackageURLProtocol.pkgRoot = pkg.unzippedPath
         self.pkgVc = OfflinePackageController()
         let nav = NavVC(rootViewController: self.pkgVc)
+        window?.rootViewController = nav
     }
     
     func debugInstallPkg(_ pkg: PKGInfo){
