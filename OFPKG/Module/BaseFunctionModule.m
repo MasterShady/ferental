@@ -12,7 +12,7 @@
 
 @interface BaseFunctionModule ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
-@property (nonatomic, strong) void (^imageCallBack)(NSDictionary *responseData);
+@property (nonatomic, strong) void (^imageCallBack)(NSString *base64Image);
 
 @end
 
@@ -21,6 +21,10 @@
 
 +(NSString *)moduleName{
     return @"BaseFunction";
+}
+
++ (BOOL)isSingleton{
+    return true;
 }
 
 - (void)openQRCode:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback{
@@ -121,8 +125,8 @@
 
 - (void)popSheet:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback{
     //
-    NSString *title = params[@"title"];
-    NSString *message = params[@"message"];
+    NSString *title = [self replaceEmptyStringWithNil:params[@"title"]];
+    NSString *message = [self replaceEmptyStringWithNil:params[@"message"]];
     NSArray <NSString*>* items = params[@"items"];
     NSString *cancelTitle = params[@"cancelTitle"];
     
@@ -148,8 +152,8 @@
 
 - (void)popAlert:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback{
     //
-    NSString *title = params[@"title"];
-    NSString *message = params[@"message"];
+    NSString *title = [self replaceEmptyStringWithNil:params[@"title"]];
+    NSString *message = [self replaceEmptyStringWithNil:params[@"message"]];
     NSArray <NSString*>* items = params[@"items"];
     NSString *cancelTitle = params[@"cancelTitle"];
     
@@ -172,12 +176,19 @@
     [[UIViewController getCurrentController] presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)pickPhoto:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback{
-    UIImagePickerController *picker = [UIImagePickerController new];
-    picker.mediaTypes = @[(NSString *)kUTTypeImage];
-    picker.delegate = self;
-    [[UIViewController getCurrentController] presentViewController:picker animated:YES completion:nil];
-    _imageCallBack = responseCallback;
+- (void)pickPhoto:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSString *base64Image))responseCallback{
+    [AuthChecker checkPhotoLibraryPermissionWithReusltHandler:^(BOOL result) {
+        if (result){
+            UIImagePickerController *picker = [UIImagePickerController new];
+            picker.mediaTypes = @[(NSString *)kUTTypeImage];
+            picker.delegate = self;
+            [[UIViewController getCurrentController] presentViewController:picker animated:YES completion:nil];
+            self.imageCallBack = responseCallback;
+        }else{
+            [AuthChecker alertGoSettingsWithTitleWithTitle:@"未获得权限访问您的照片" message:@"请在设置选项中允许访问您的照片"];
+        }
+    }];
+
     
 }
 
@@ -187,19 +198,39 @@
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     NSData *data = UIImagePNGRepresentation(image);
     NSString *base64Data = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-    !_imageCallBack?:_imageCallBack(@{@"imageData":base64Data});
+    NSString *fullBase64String = [NSString stringWithFormat:@"data:image/jpeg;base64,%@",base64Data];
+    !_imageCallBack?:_imageCallBack(fullBase64String);
+    _imageCallBack = nil;
 }
 
 
-- (void)takePhoto:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback{
-    UIImagePickerController *picker = [UIImagePickerController new];
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    picker.mediaTypes = @[(NSString *)kUTTypeImage];
-    picker.delegate = self;
-    [[UIViewController getCurrentController] presentViewController:picker animated:YES completion:nil];
-    _imageCallBack = responseCallback;
+- (void)takePhoto:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSString *base64Image))responseCallback{
+    [AuthChecker checkCameraPermissionWithReusltHandler:^(BOOL result) {
+        if(result){
+            UIImagePickerController *picker = [UIImagePickerController new];
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            picker.mediaTypes = @[(NSString *)kUTTypeImage];
+            picker.delegate = self;
+            [[UIViewController getCurrentController] presentViewController:picker animated:YES completion:nil];
+            self.imageCallBack = responseCallback;
+        }else{
+            [AuthChecker alertGoSettingsWithTitleWithTitle:@"未获得相机权限" message:@"去设置中进行相机授权"];
+        }
+    }];
+    
+    
+
 }
 
+
+- (id)replaceEmptyStringWithNil:(NSString *)string{
+    if ([string isKindOfClass:[NSString class]]){
+        if (string.length == 0){
+            return nil;
+        }
+    }
+    return nil;
+}
 
 
 @end

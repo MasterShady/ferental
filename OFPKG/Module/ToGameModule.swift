@@ -62,14 +62,14 @@ import AEAlertView
         
         let token: String = params["token"] as! String
         
-        var apiType = 3 // for release
-        if Global.isTest == true{
-            apiType = 1
-        }else{
-            apiType = 3
-        }
+//        var apiType = 3 // for release
+//        if Global.isTest == true{
+//            apiType = 1
+//        }else{
+//            apiType = 3
+//        }
         
-        lolmp_loginGameTool = SWLoginGameTool(isShanghaoqi:false,withToken: token, withUUID: LolmDF_uuid(),withApiType: apiType,appversion: Global.df_version,appsign:DFHttpSignKey,appId: Global.kAppId,websocketSign: DFWebSocketSignKey)
+        lolmp_loginGameTool = SWLoginGameTool(isShanghaoqi:false,withToken: token, withUUID: LolmDF_uuid(),withApiType: LolmDFHttpConfig.shared.env.rawValue(),appversion: Global.df_version,appsign:DFHttpSignKey,appId: Global.kAppId,websocketSign: DFWebSocketSignKey)
         lolmp_loginGameTool.delegate = self
         
         

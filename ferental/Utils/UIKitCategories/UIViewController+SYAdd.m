@@ -59,6 +59,10 @@ void * popActionKey;
 
 + (UIViewController *)getCurrentController{
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    if (window == nil) {
+        window = [UIApplication sharedApplication].delegate.window;
+    }
+    
     UIViewController *vc = [self currentViewControllerFromWindow:window];
     return vc;
 }

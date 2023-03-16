@@ -9,6 +9,7 @@
 #define PrefixHeader_pch
 
 #define KKAjaxProtocolHook 1
+//#define PreRelease 1
 
 #ifdef DEBUG
 #define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);

@@ -75,11 +75,11 @@ typealias ResultBlock = (PKGInfo?,Error?)->()
 //    }
     
 //    static var pkgInfos = [PKGInfo]()
-//    #if DEBUG
+    #if DEBUG
     static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/debug/last.json"
-//    #else
-//    static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/release/last.json"
-//    #endif
+    #else
+    static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/release/last.json"
+    #endif
     
     //B面是后台控制
     
@@ -96,13 +96,13 @@ typealias ResultBlock = (PKGInfo?,Error?)->()
                 if let dic = value as? NSDictionary{
                     var baseURL = dic["baseUrl"] as! String
                     let data = dic["data"] as! Dictionary<String, Dictionary<String,Any>>
-                    guard let pkgDic = data[kAppVersion] else {
+                    guard let pkgDic = data[Global.df_version] else {
                         result(nil,BaseError(message: "没有对应的版本"))
                         return
                     }
                     
                     guard let pkg = JSONDeserializer<PKGInfo>.deserializeFrom(dict: pkgDic) else {return}
-                    pkg.appVersion = kAppVersion
+                    pkg.appVersion = Global.df_version
                     if !baseURL.hasSuffix("/") {
                         baseURL = baseURL + "/"
                     }

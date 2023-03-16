@@ -114,7 +114,9 @@
 		EBB0C49D295C1255004444EA /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0C49C295C1255004444EA /* ConfirmView.swift */; };
 		EBB0C49F295C127E004444EA /* DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0C49E295C127E004444EA /* DeviceCard.swift */; };
 		EBB0C4A1295C132A004444EA /* SinglePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0C4A0295C132A004444EA /* SinglePicker.swift */; };
-		EBB3452429C16E7400D1E43D /* h5.zip in Resources */ = {isa = PBXBuildFile; fileRef = EBB3452329C16E3F00D1E43D /* h5.zip */; };
+		EBB3452A29C302D400D1E43D /* AuthChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3452929C302D400D1E43D /* AuthChecker.swift */; };
+		EBB3452C29C3103400D1E43D /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3452B29C3103400D1E43D /* Poster.swift */; };
+		EBB3452E29C31F5500D1E43D /* h5.zip in Resources */ = {isa = PBXBuildFile; fileRef = EBB3452D29C31F5500D1E43D /* h5.zip */; };
 		EBB62B9F296EA09B00CA8433 /* DeviceListVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62B9E296EA09B00CA8433 /* DeviceListVC2.swift */; };
 		EBCDFC602965167200F5D470 /* BrandAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDFC5F2965167200F5D470 /* BrandAPI.swift */; };
 		EBD6D3D529B73BDD00E161CB /* PKGManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35329B73BDB00E161CB /* PKGManager.swift */; };
@@ -216,7 +218,7 @@
 		EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lolm_tb_game.json; sourceTree = "<group>"; };
 		EB35763E2967D0050013A55D /* BasePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePicker.swift; sourceTree = "<group>"; };
 		EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		EB71EEC0295A8A18007FB8B8 /* yyz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yyz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB71EEC0295A8A18007FB8B8 /* yyz1803.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yyz1803.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71EEC7295A8A18007FB8B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB71EECA295A8A18007FB8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB71EECC295A8A1A007FB8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -328,7 +330,9 @@
 		EBB0C49C295C1255004444EA /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		EBB0C49E295C127E004444EA /* DeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCard.swift; sourceTree = "<group>"; };
 		EBB0C4A0295C132A004444EA /* SinglePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePicker.swift; sourceTree = "<group>"; };
-		EBB3452329C16E3F00D1E43D /* h5.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = h5.zip; sourceTree = "<group>"; };
+		EBB3452929C302D400D1E43D /* AuthChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChecker.swift; sourceTree = "<group>"; };
+		EBB3452B29C3103400D1E43D /* Poster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
+		EBB3452D29C31F5500D1E43D /* h5.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = h5.zip; sourceTree = "<group>"; };
 		EBB62B9E296EA09B00CA8433 /* DeviceListVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListVC2.swift; sourceTree = "<group>"; };
 		EBBCD10B29BF4CEB0028CAC3 /* ferental.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ferental.entitlements; sourceTree = "<group>"; };
 		EBCDFC5F2965167200F5D470 /* BrandAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandAPI.swift; sourceTree = "<group>"; };
@@ -511,7 +515,7 @@
 		EB71EEB7295A8A18007FB8B8 = {
 			isa = PBXGroup;
 			children = (
-				EBB3452329C16E3F00D1E43D /* h5.zip */,
+				EBB3452D29C31F5500D1E43D /* h5.zip */,
 				EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */,
 				EBD6D35229B73BDB00E161CB /* OFPKG */,
 				EB71EEC2295A8A18007FB8B8 /* ferental */,
@@ -526,7 +530,7 @@
 		EB71EEC1295A8A18007FB8B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB71EEC0295A8A18007FB8B8 /* yyz.app */,
+				EB71EEC0295A8A18007FB8B8 /* yyz1803.app */,
 				EB71EED6295A8A1A007FB8B8 /* ferentalTests.xctest */,
 				EB71EEE0295A8A1A007FB8B8 /* ferentalUITests.xctest */,
 			);
@@ -872,6 +876,7 @@
 			isa = PBXGroup;
 			children = (
 				EB828A7829640771000780D3 /* MyOrderView.swift */,
+				EBB3452B29C3103400D1E43D /* Poster.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -906,6 +911,7 @@
 				EBD6D35729B73BDB00E161CB /* ToGameModule.swift */,
 				EBD6D35929B73BDB00E161CB /* BaseFunctionModule.h */,
 				EBD6D35A29B73BDB00E161CB /* BaseFunctionModule.m */,
+				EBB3452929C302D400D1E43D /* AuthChecker.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -1178,7 +1184,7 @@
 			);
 			name = ferental;
 			productName = ferental;
-			productReference = EB71EEC0295A8A18007FB8B8 /* yyz.app */;
+			productReference = EB71EEC0295A8A18007FB8B8 /* yyz1803.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EB71EED5295A8A1A007FB8B8 /* ferentalTests */ = {
@@ -1272,7 +1278,7 @@
 				EB71F1E5295A8B53007FB8B8 /* lazyload.html in Resources */,
 				EB71EED0295A8A1A007FB8B8 /* LaunchScreen.storyboard in Resources */,
 				EB71F1E8295A8B53007FB8B8 /* jquery-2.2.0.js in Resources */,
-				EBB3452429C16E7400D1E43D /* h5.zip in Resources */,
+				EBB3452E29C31F5500D1E43D /* h5.zip in Resources */,
 				EB71EECD295A8A1A007FB8B8 /* Assets.xcassets in Resources */,
 				EB2B2CE529B8664C0058C1EE /* lolm_loading.json in Resources */,
 				EB71F1E4295A8B53007FB8B8 /* holder.png in Resources */,
@@ -1512,6 +1518,7 @@
 				EB71F1FD295B0CD5007FB8B8 /* SwiftLoader.m in Sources */,
 				EB71F19A295A8B53007FB8B8 /* PolicyView.swift in Sources */,
 				EB71F193295A8B53007FB8B8 /* MapVC.swift in Sources */,
+				EBB3452A29C302D400D1E43D /* AuthChecker.swift in Sources */,
 				EB71F1BC295A8B53007FB8B8 /* UIView+Chain.swift in Sources */,
 				EB71F185295A8B53007FB8B8 /* LoginVC.swift in Sources */,
 				EB71F1C2295A8B53007FB8B8 /* UITextView+Chain.swift in Sources */,
@@ -1529,6 +1536,7 @@
 				EB71F1BF295A8B53007FB8B8 /* UIGestureRecognizer+Chain.swift in Sources */,
 				EB71F191295A8B53007FB8B8 /* ModuleContainer.swift in Sources */,
 				EB71F1C0295A8B53007FB8B8 /* UICollectionView+Chain.swift in Sources */,
+				EBB3452C29C3103400D1E43D /* Poster.swift in Sources */,
 				EBD6D41229B73BDD00E161CB /* LolmDFHttpUtil.swift in Sources */,
 				EB71F1C5295A8B53007FB8B8 /* UIView+VisualHelper.m in Sources */,
 				EB71F183295A8B53007FB8B8 /* ResetPwVC.swift in Sources */,
@@ -1787,9 +1795,9 @@
 					"\"$(SRCROOT)/Pods/JPush\"",
 				);
 				INFOPLIST_FILE = ferental/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "访问系统相机,进行扫码";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "使用麦克风，发送语音信息";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "保存图片到系统相册";
+				INFOPLIST_KEY_NSCameraUsageDescription = "访问系统相机,选取图片";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "使用麦克风，进行语音录制";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "使用系统相册的图片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1802,7 +1810,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
-				PRODUCT_NAME = yyz;
+				PRODUCT_NAME = yyz1803;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ferental/ferental-Bridging-Header.h";
@@ -1832,9 +1840,9 @@
 					"\"$(SRCROOT)/Pods/JPush\"",
 				);
 				INFOPLIST_FILE = ferental/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "访问系统相机,进行扫码";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "使用麦克风，发送语音信息";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "保存图片到系统相册";
+				INFOPLIST_KEY_NSCameraUsageDescription = "访问系统相机,选取图片";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "使用麦克风，进行语音录制";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "使用系统相册的图片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1847,7 +1855,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
-				PRODUCT_NAME = yyz;
+				PRODUCT_NAME = yyz1803;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ferental/ferental-Bridging-Header.h";

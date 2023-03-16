@@ -72,10 +72,20 @@ class FeedbackVC: BaseVC, UITextViewDelegate{
         
         placeholder.chain.text(color: .init(hexColor: "#999999")).font(.systemFont(ofSize: 15)).text("在这里写下您想说的吧")
         
+        
+        let poster = Poster(layoutWidth: kScreenWidth - 56, itemSize: 60)
+        container.addSubview(poster)
+        poster.snp.makeConstraints { make in
+            make.left.equalTo(14)
+            make.right.equalTo(-14)
+            make.top.equalTo(textView.snp.bottom).offset(20)
+        }
+        
+        
         let commitBtn = UIButton()
         view.addSubview(commitBtn)
         commitBtn.snp.makeConstraints { make in
-            make.top.equalTo(textView.snp.bottom).offset(36)
+            make.top.equalTo(poster.snp.bottom).offset(20)
             make.centerX.equalToSuperview()
             make.size.equalTo(CGSize(width:204, height:48))
         }
@@ -86,10 +96,14 @@ class FeedbackVC: BaseVC, UITextViewDelegate{
                 AutoProgressHUD.showAutoHud("请至少输入10个字符.")
                 return
             }
-            self?.navigationController?.popViewController(animated: true)
-            AutoProgressHUD.showAutoHud("感谢您的反馈, 我们会进行改进!")
+            AutoProgressHUD.showHud {[weak self] hide in
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    hide()
+                    self?.navigationController?.popViewController(animated: true)
+                    AutoProgressHUD.showAutoHud("感谢您的反馈, 我们会进行改进!")
+                }
+            }
         }
-
     }
 
     

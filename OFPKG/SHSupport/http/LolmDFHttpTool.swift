@@ -82,11 +82,8 @@ struct LolmDFHttpConfig {
     static var shared:LolmDFHttpConfig = .init()
     var env:LOLDF_APIEnv = .release
     
-    
-    static  func config(withEnv:LOLDF_APIEnv)  {
-        
+    static func config(withEnv:LOLDF_APIEnv)  {
         shared.env = withEnv
-        
     }
     
     

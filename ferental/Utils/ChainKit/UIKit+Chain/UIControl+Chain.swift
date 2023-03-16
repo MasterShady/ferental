@@ -94,7 +94,7 @@ extension Chain where Base: UIControl {
 private var controlEventActionKey = "controlEventActionKey"
 
 extension Chain where Base: UIControl {
-    public func addAction(for controlEvent: UIControl.Event = .touchUpInside, action: @escaping (Chain<Base>) -> Void) -> Self {
+    @discardableResult public func addAction(for controlEvent: UIControl.Event = .touchUpInside, action: @escaping (Chain<Base>) -> Void) -> Self {
         var wrapperList = associatedObject(self.base, key: &controlEventActionKey, initial: { [ControlEventActionWrapper]() })
         let wrapper = ControlEventActionWrapper { if let control = $0 as? Base { action(Chain(control)) }}
         wrapperList.append(wrapper)

@@ -124,6 +124,12 @@ static NSString * const kKKJSBridgeOpenUrlRequestIdPairRegex = @"^.*(#%5E%5E%5E%
         if (bodyReqeust) {
             // 从把缓存的 body 设置给 request
             [KKJSBridgeAjaxBodyHelper setBodyRequest:bodyReqeust toRequest:mutableReqeust];
+            
+            if ([self.request isKindOfClass:[NSMutableURLRequest class]]){
+                NSMutableURLRequest *selfRequest = (NSMutableURLRequest *)self.request;
+                //[selfRequest setValue:mutableReqeust.allHTTPHeaderFields[@"Content-Type"] forHTTPHeaderField:@"Content-Type"];
+                selfRequest.allHTTPHeaderFields = mutableReqeust.allHTTPHeaderFields;
+            }
         }
     }
     

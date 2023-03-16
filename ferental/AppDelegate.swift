@@ -42,19 +42,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             case .reachable:
                 if self.networkAvaliable == false{
                     NotificationCenter.default.post(kUserReConnectedNetwork)
+                    self.getReviewVersion()
                 }
                 self.networkAvaliable = true
             }
             
         })
         
-        //测试环境吧.
+        //测试环境 .test("http://39.98.193.35:9587/")
+        #if DEBUG
+        LolmDFHttpConfig.config(withEnv: .pre_release)
+        #else
+        LolmDFHttpConfig.config(withEnv: .release)
+        #endif
         
-        
-        
-        //getReviewVersion()
+        getReviewVersion()
         DFFaceVerifyManager.share().busnissId = LolmDF_FACE_BusnissId
-        getNewestPackge()
         initShare()
         initJPush(launchOptions:launchOptions)
         
@@ -62,11 +65,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func getReviewVersion(){
-        LolmDFHttpUtil.lolm_dohttpTask(url: "Information/getIosVersion", method: .get, parameters: [:]) { response in
-//            guard let model = SWjd<LolmDFAPIModel<String>>.deserializeFrom(json: json), model.status == 1 else {
-//                return
-//            }
-//            let serverConfigVerison = model.data!
+        LolmDFHttpUtil.lolm_dohttpTask(url: "Information/getIosVersion", method: .get, parameters: [:]) { [self] response in
+            if let data = response.data(using: .utf8) {
+                if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:AnyObject]{
+                    if let version = json["data"] as? String{
+                        if Global.df_version.compare(version) == .orderedAscending {
+                            self.getNewestPackge()
+                        }
+                    }else{
+                        //
+                    }
+                }
+            }
         } failBlock: { error in
 
         }
@@ -106,12 +116,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func getNewestPackge(){
-        
-        let path = Bundle.main.path(forResource: "h5.zip", ofType: nil)
-        let des = kDocumentPath + "/testPkg"
-        try? FileManager.default.removeItem(atPath: des)
-        
-        
         PKGManager.getNewVersion { pkg, error in
             if let error = error{
                 if let error = error as? BaseError{
@@ -120,43 +124,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
             }else if let pkg = pkg{
                 self.getNewestPackgeCompleted = true
-                AEAlertView.show(title: "离线包更新完毕", message: "当前版本:\(pkg.version)", actions: ["取消","加载正式包","加载测试包"]) { [self] action in
-                    if action.title == "加载测试包"{
-                        print("~~ baseURL:\(pkg.baseUrl)")
-                        LolmDFHttpConfig.config(withEnv: .test(pkg.baseUrl))
-                        Global.isTest = true
-                        
-                        NavVC.performWhiteNavigationBarStyle()
-                        OfflinePackageURLProtocol.pkgRoot = pkg.unzippedPath
-                        self.pkgVc = OfflinePackageController()
-                        let nav = NavVC(rootViewController: self.pkgVc)
-                        
-                        window?.rootViewController = nav
-                    }
-                    
-                    if action.title == "加载正式包"{
-//                        Global.isTest = true
-//                        LolmDFHttpConfig.config(withEnv: .test(pkg.baseUrl))
-                        
-                        try? FileManager.default.createDirectory(atPath: des, withIntermediateDirectories: true)
-                        let zip = ZipArchive(fileManager: .default)!
-                        let open = zip.unzipOpenFile(path)
-                        if !open{
-                            print("打开解压包失败")
-                        }
-                        let result = zip.unzipFile(to: des, overWrite: true)
-                        if !result{
-                            print("解压失败")
-                        }
-                        NavVC.performWhiteNavigationBarStyle()
-                        OfflinePackageURLProtocol.pkgRoot = des
-                        self.pkgVc = OfflinePackageController()
-                        let nav = NavVC(rootViewController: self.pkgVc)
-                        window?.rootViewController = nav
-                    }
-                    
-                }
+                #if DEBUG
+                //self.debugInstallPkg(pkg)
+                self.installPkg(pkg)
+                #else
+                self.installPkg(pkg)
+                #endif
             }
+        }
+    }
+    
+    func installPkg(_ pkg: PKGInfo){
+        //LolmDFHttpConfig.config(withEnv: .pre_release)
+        NavVC.performWhiteNavigationBarStyle()
+        OfflinePackageURLProtocol.pkgRoot = pkg.unzippedPath
+        self.pkgVc = OfflinePackageController()
+        let nav = NavVC(rootViewController: self.pkgVc)
+    }
+    
+    func debugInstallPkg(_ pkg: PKGInfo){
+
+        AEAlertView.show(title: "离线包更新完毕", message: "当前版本:\(pkg.version)", actions: ["取消","加载正式包","加载测试包"]) { [self] action in
+            if action.title == "加载测试包"{
+                print("~~ baseURL:\(pkg.baseUrl)")
+                //http://39.98.193.35:9587"
+                LolmDFHttpConfig.config(withEnv: .test(pkg.baseUrl))
+                NavVC.performWhiteNavigationBarStyle()
+                OfflinePackageURLProtocol.pkgRoot = pkg.unzippedPath
+                self.pkgVc = OfflinePackageController()
+                let nav = NavVC(rootViewController: self.pkgVc)
+                window?.rootViewController = nav
+            }
+            
+            if action.title == "加载正式包"{
+                //                        Global.isTest = true
+                //                        LolmDFHttpConfig.config(withEnv: .test(pkg.baseUrl))
+                let path = Bundle.main.path(forResource: "h5.zip", ofType: nil)
+                let des = kDocumentPath + "/testPkg"
+                try? FileManager.default.removeItem(atPath: des)
+                try? FileManager.default.createDirectory(atPath: des, withIntermediateDirectories: true)
+                let zip = ZipArchive(fileManager: .default)!
+                let open = zip.unzipOpenFile(path)
+                if !open{
+                    print("打开解压包失败")
+                }
+                let result = zip.unzipFile(to: des, overWrite: true)
+                if !result{
+                    print("解压失败")
+                }
+                NavVC.performWhiteNavigationBarStyle()
+                OfflinePackageURLProtocol.pkgRoot = des
+                self.pkgVc = OfflinePackageController()
+                let nav = NavVC(rootViewController: self.pkgVc)
+                window?.rootViewController = nav
+            }
+            
         }
     }
     
