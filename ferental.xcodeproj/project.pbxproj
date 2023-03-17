@@ -15,6 +15,7 @@
 		EB2B2CE529B8664C0058C1EE /* lolm_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2B2CE429B8664C0058C1EE /* lolm_loading.json */; };
 		EB2B2CE729B8668E0058C1EE /* lolm_tb_game.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */; };
 		EB35763F2967D0050013A55D /* BasePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB35763E2967D0050013A55D /* BasePicker.swift */; };
+		EB38C3B629C480B900FB323E /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38C3B529C480B900FB323E /* Convenience.swift */; };
 		EB71EEC8295A8A18007FB8B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB71EEC7295A8A18007FB8B8 /* ViewController.swift */; };
 		EB71EECB295A8A18007FB8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB71EEC9295A8A18007FB8B8 /* Main.storyboard */; };
 		EB71EECD295A8A1A007FB8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB71EECC295A8A1A007FB8B8 /* Assets.xcassets */; };
@@ -153,7 +154,6 @@
 		EBD6D3F629B73BDD00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3A129B73BDC00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m */; };
 		EBD6D3F729B73BDD00E161CB /* OfflinePackageURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3A829B73BDC00E161CB /* OfflinePackageURLProtocol.m */; };
 		EBD6D3F829B73BDD00E161CB /* URLProtocolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3A929B73BDC00E161CB /* URLProtocolHelper.m */; };
-		EBD6D3F929B73BDD00E161CB /* UIColor(ext).swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3AE29B73BDC00E161CB /* UIColor(ext).swift */; };
 		EBD6D3FA29B73BDD00E161CB /* LolmDFLoadingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3AF29B73BDC00E161CB /* LolmDFLoadingWidget.swift */; };
 		EBD6D3FB29B73BDD00E161CB /* LolmDFAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3B029B73BDC00E161CB /* LolmDFAPIConst.swift */; };
 		EBD6D3FF29B73BDD00E161CB /* LolmDFBaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3B429B73BDC00E161CB /* LolmDFBaseModels.swift */; };
@@ -176,13 +176,11 @@
 		EBD6D41729B73BDD00E161CB /* LolmDFConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3CF29B73BDC00E161CB /* LolmDFConst.swift */; };
 		EBD6D41A29B73BDD00E161CB /* lolm_actDetail_share_alert_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3D329B73BDC00E161CB /* lolm_actDetail_share_alert_view.swift */; };
 		EBD6D41B29B73BDD00E161CB /* lolm_actDetail_shareImg_alert_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3D429B73BDC00E161CB /* lolm_actDetail_shareImg_alert_view.swift */; };
-		EBD6D41F29B7435A00E161CB /* AppDelegate+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D41E29B7435A00E161CB /* AppDelegate+Rotation.swift */; };
 		EBD6D42129B7438200E161CB /* DFPlatformShareUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D42029B7438200E161CB /* DFPlatformShareUtil.swift */; };
 		EBD98458295D2F8400F468B9 /* MultiplePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD98457295D2F8400F468B9 /* MultiplePicker.swift */; };
 		EBD9845D295D6A5300F468B9 /* RentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9845C295D6A5300F468B9 /* RentCard.swift */; };
 		EBE17A6C2965659800E66C11 /* OrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE17A6B2965659800E66C11 /* OrderAPI.swift */; };
 		EBFA7C7229797F8C0000EC36 /* LogoffVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFA7C7129797F8C0000EC36 /* LogoffVC.swift */; };
-		EBFCCB6829C078B800A66B08 /* UIViewController+Gigi.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFCCB6729C078B800A66B08 /* UIViewController+Gigi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +214,7 @@
 		EB2B2CE429B8664C0058C1EE /* lolm_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lolm_loading.json; sourceTree = "<group>"; };
 		EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lolm_tb_game.json; sourceTree = "<group>"; };
 		EB35763E2967D0050013A55D /* BasePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePicker.swift; sourceTree = "<group>"; };
+		EB38C3B529C480B900FB323E /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 		EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EB71EEC0295A8A18007FB8B8 /* 游易租.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "游易租.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71EEC7295A8A18007FB8B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -403,7 +402,6 @@
 		EBD6D3A929B73BDC00E161CB /* URLProtocolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLProtocolHelper.m; sourceTree = "<group>"; };
 		EBD6D3AA29B73BDC00E161CB /* OfflinePackageURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflinePackageURLProtocol.h; sourceTree = "<group>"; };
 		EBD6D3AC29B73BDC00E161CB /* OfflinePackageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflinePackageController.h; sourceTree = "<group>"; };
-		EBD6D3AE29B73BDC00E161CB /* UIColor(ext).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor(ext).swift"; sourceTree = "<group>"; };
 		EBD6D3AF29B73BDC00E161CB /* LolmDFLoadingWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFLoadingWidget.swift; sourceTree = "<group>"; };
 		EBD6D3B029B73BDC00E161CB /* LolmDFAPIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFAPIConst.swift; sourceTree = "<group>"; };
 		EBD6D3B429B73BDC00E161CB /* LolmDFBaseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFBaseModels.swift; sourceTree = "<group>"; };
@@ -427,14 +425,11 @@
 		EBD6D3CF29B73BDC00E161CB /* LolmDFConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFConst.swift; sourceTree = "<group>"; };
 		EBD6D3D329B73BDC00E161CB /* lolm_actDetail_share_alert_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_actDetail_share_alert_view.swift; sourceTree = "<group>"; };
 		EBD6D3D429B73BDC00E161CB /* lolm_actDetail_shareImg_alert_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_actDetail_shareImg_alert_view.swift; sourceTree = "<group>"; };
-		EBD6D41E29B7435A00E161CB /* AppDelegate+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Rotation.swift"; sourceTree = "<group>"; };
 		EBD6D42029B7438200E161CB /* DFPlatformShareUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFPlatformShareUtil.swift; sourceTree = "<group>"; };
 		EBD98457295D2F8400F468B9 /* MultiplePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePicker.swift; sourceTree = "<group>"; };
 		EBD9845C295D6A5300F468B9 /* RentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentCard.swift; sourceTree = "<group>"; };
 		EBE17A6B2965659800E66C11 /* OrderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAPI.swift; sourceTree = "<group>"; };
 		EBFA7C7129797F8C0000EC36 /* LogoffVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoffVC.swift; sourceTree = "<group>"; };
-		EBFCCB6629C078B700A66B08 /* UIViewController+Gigi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Gigi.h"; sourceTree = "<group>"; };
-		EBFCCB6729C078B800A66B08 /* UIViewController+Gigi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Gigi.m"; sourceTree = "<group>"; };
 		FF3BBA9585019EE048B00510 /* Pods-ferental-ferentalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ferental-ferentalUITests.debug.xcconfig"; path = "Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -695,6 +690,7 @@
 				EB71F128295A8B52007FB8B8 /* DateExtension.swift */,
 				EB71F1F7295A9698007FB8B8 /* UIImage++.swift */,
 				EB71F1F9295B0516007FB8B8 /* UIView++.swift */,
+				EB38C3B529C480B900FB323E /* Convenience.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -916,8 +912,6 @@
 		EBD6D35C29B73BDB00E161CB /* KKJSBridge */ = {
 			isa = PBXGroup;
 			children = (
-				EBFCCB6629C078B700A66B08 /* UIViewController+Gigi.h */,
-				EBFCCB6729C078B800A66B08 /* UIViewController+Gigi.m */,
 				EBD6D35D29B73BDB00E161CB /* Util */,
 				EBD6D36B29B73BDB00E161CB /* KKJSBridgeEngine.m */,
 				EBD6D36C29B73BDB00E161CB /* Config */,
@@ -1115,8 +1109,6 @@
 			isa = PBXGroup;
 			children = (
 				EB2B2CE129B8661F0058C1EE /* Resource */,
-				EBD6D41E29B7435A00E161CB /* AppDelegate+Rotation.swift */,
-				EBD6D3AE29B73BDC00E161CB /* UIColor(ext).swift */,
 				EBD6D3AF29B73BDC00E161CB /* LolmDFLoadingWidget.swift */,
 				EBD6D3B029B73BDC00E161CB /* LolmDFAPIConst.swift */,
 				EBD6D3B429B73BDC00E161CB /* LolmDFBaseModels.swift */,
@@ -1452,7 +1444,6 @@
 				EBD6D42129B7438200E161CB /* DFPlatformShareUtil.swift in Sources */,
 				EB71F1B6295A8B53007FB8B8 /* CALayer+Chain.swift in Sources */,
 				EB71F184295A8B53007FB8B8 /* RegisterVC.swift in Sources */,
-				EBD6D41F29B7435A00E161CB /* AppDelegate+Rotation.swift in Sources */,
 				EB71F192295A8B53007FB8B8 /* BaseVC.swift in Sources */,
 				EBD6D3EE29B73BDD00E161CB /* KKWebViewPool.m in Sources */,
 				EBD6D3F629B73BDD00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m in Sources */,
@@ -1547,7 +1538,6 @@
 				EB71F1CA295A8B53007FB8B8 /* Aspects.m in Sources */,
 				EBD6D41329B73BDD00E161CB /* LolmDFHttpFactory.swift in Sources */,
 				EBD6D40C29B73BDD00E161CB /* lolm_scan_dfvc.swift in Sources */,
-				EBFCCB6829C078B800A66B08 /* UIViewController+Gigi.m in Sources */,
 				EB71F1B8295A8B53007FB8B8 /* UITableView+Chain.swift in Sources */,
 				EBD6D3E729B73BDD00E161CB /* KKJSBridgeModuleMetaClass.m in Sources */,
 				EBD6D41729B73BDD00E161CB /* LolmDFConst.swift in Sources */,
@@ -1576,13 +1566,13 @@
 				EB71F1A3295A8B53007FB8B8 /* NSObject++.swift in Sources */,
 				EBD6D3E529B73BDD00E161CB /* KKJSBridgeMessageDispatcher.m in Sources */,
 				EB71F1B9295A8B53007FB8B8 /* UILabel+Chain.swift in Sources */,
-				EBD6D3F929B73BDD00E161CB /* UIColor(ext).swift in Sources */,
 				EB71F1F8295A9698007FB8B8 /* UIImage++.swift in Sources */,
 				EB71F195295A8B53007FB8B8 /* NavVC.swift in Sources */,
 				EB71F188295A8B53007FB8B8 /* LoginAPI.swift in Sources */,
 				EB71F196295A8B53007FB8B8 /* BaseView.swift in Sources */,
 				EBB0C49F295C127E004444EA /* DeviceCard.swift in Sources */,
 				EB35763F2967D0050013A55D /* BasePicker.swift in Sources */,
+				EB38C3B629C480B900FB323E /* Convenience.swift in Sources */,
 				EB71F1D7295A8B53007FB8B8 /* CacheManager.swift in Sources */,
 				EB71F1DF295A8B53007FB8B8 /* AutoProgressHUD.swift in Sources */,
 				EB71F1AD295A8B53007FB8B8 /* NSAttributedString+Extensions.swift in Sources */,

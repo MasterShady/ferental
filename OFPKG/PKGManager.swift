@@ -68,25 +68,14 @@ typealias ResultBlock = (PKGInfo?,Error?)->()
 @objcMembers class PKGManager : NSObject {
     static let unzipPath = kDocumentPath + "/unzip"
     static let zipPath = kDocumentPath + "/zip"
-    //static var updateCompletedHandler : ((PKGInfo) ->())?
-    
-//    static var newestPkg: PKGInfo{
-//        pkgInfos.sorted(by: \PKGInfo.version).last!
-//    }
-    
-//    static var pkgInfos = [PKGInfo]()
-//    #if DEBUG
-//    static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/debug/last.json"
-//    #else
-    static let versionRequestURL =  "https://static.zuhaowan.com/client/download/fe-hot-update-elec/h5app-500180009/release/last.json"
-//    #endif
-    
-    //B面是后台控制
-    
-    //资源包是前端
-    
     
     static func getNewVersion(_ result:@escaping ResultBlock){
+#if DEBUG
+        let versionRequestURL = kReleaseVersionRequestURL
+#else
+        let versionRequestURL = kReleaseVersionRequestURL
+#endif
+        
         let request = AF.request(versionRequestURL, method: .get)
         var urlRequest = try! request.convertible.asURLRequest()
         urlRequest.cachePolicy = .reloadIgnoringLocalCacheData
