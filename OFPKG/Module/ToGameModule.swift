@@ -82,8 +82,12 @@ import AEAlertView
         let is_cloudGame = (params["is_cloudGame"] as! Int) == 1 ? true : false
         
         let wxServerLoadingMsgs = params["wxServerLoadingMsgs"] as? [String]
-
+        
+        
+        
         actInfo = .init()
+        actInfo.wx_type = is_wx_server ? 1 : 0
+        actInfo.order_id = id
         actInfo.yx = yx
         actInfo.id = id
         actInfo.is_wx_server = is_wx_server

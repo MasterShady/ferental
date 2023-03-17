@@ -116,7 +116,6 @@
 		EBB0C4A1295C132A004444EA /* SinglePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0C4A0295C132A004444EA /* SinglePicker.swift */; };
 		EBB3452A29C302D400D1E43D /* AuthChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3452929C302D400D1E43D /* AuthChecker.swift */; };
 		EBB3452C29C3103400D1E43D /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3452B29C3103400D1E43D /* Poster.swift */; };
-		EBB3452E29C31F5500D1E43D /* h5.zip in Resources */ = {isa = PBXBuildFile; fileRef = EBB3452D29C31F5500D1E43D /* h5.zip */; };
 		EBB62B9F296EA09B00CA8433 /* DeviceListVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62B9E296EA09B00CA8433 /* DeviceListVC2.swift */; };
 		EBCDFC602965167200F5D470 /* BrandAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDFC5F2965167200F5D470 /* BrandAPI.swift */; };
 		EBD6D3D529B73BDD00E161CB /* PKGManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35329B73BDB00E161CB /* PKGManager.swift */; };
@@ -218,7 +217,7 @@
 		EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lolm_tb_game.json; sourceTree = "<group>"; };
 		EB35763E2967D0050013A55D /* BasePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePicker.swift; sourceTree = "<group>"; };
 		EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		EB71EEC0295A8A18007FB8B8 /* yyz1604.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yyz1604.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB71EEC0295A8A18007FB8B8 /* 游易租.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "游易租.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71EEC7295A8A18007FB8B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB71EECA295A8A18007FB8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB71EECC295A8A1A007FB8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -332,7 +331,6 @@
 		EBB0C4A0295C132A004444EA /* SinglePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePicker.swift; sourceTree = "<group>"; };
 		EBB3452929C302D400D1E43D /* AuthChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChecker.swift; sourceTree = "<group>"; };
 		EBB3452B29C3103400D1E43D /* Poster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
-		EBB3452D29C31F5500D1E43D /* h5.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = h5.zip; sourceTree = "<group>"; };
 		EBB62B9E296EA09B00CA8433 /* DeviceListVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListVC2.swift; sourceTree = "<group>"; };
 		EBBCD10B29BF4CEB0028CAC3 /* ferental.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ferental.entitlements; sourceTree = "<group>"; };
 		EBCDFC5F2965167200F5D470 /* BrandAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandAPI.swift; sourceTree = "<group>"; };
@@ -515,7 +513,6 @@
 		EB71EEB7295A8A18007FB8B8 = {
 			isa = PBXGroup;
 			children = (
-				EBB3452D29C31F5500D1E43D /* h5.zip */,
 				EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */,
 				EBD6D35229B73BDB00E161CB /* OFPKG */,
 				EB71EEC2295A8A18007FB8B8 /* ferental */,
@@ -530,7 +527,7 @@
 		EB71EEC1295A8A18007FB8B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB71EEC0295A8A18007FB8B8 /* yyz1604.app */,
+				EB71EEC0295A8A18007FB8B8 /* 游易租.app */,
 				EB71EED6295A8A1A007FB8B8 /* ferentalTests.xctest */,
 				EB71EEE0295A8A1A007FB8B8 /* ferentalUITests.xctest */,
 			);
@@ -1184,7 +1181,7 @@
 			);
 			name = ferental;
 			productName = ferental;
-			productReference = EB71EEC0295A8A18007FB8B8 /* yyz1604.app */;
+			productReference = EB71EEC0295A8A18007FB8B8 /* 游易租.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EB71EED5295A8A1A007FB8B8 /* ferentalTests */ = {
@@ -1278,7 +1275,6 @@
 				EB71F1E5295A8B53007FB8B8 /* lazyload.html in Resources */,
 				EB71EED0295A8A1A007FB8B8 /* LaunchScreen.storyboard in Resources */,
 				EB71F1E8295A8B53007FB8B8 /* jquery-2.2.0.js in Resources */,
-				EBB3452E29C31F5500D1E43D /* h5.zip in Resources */,
 				EB71EECD295A8A1A007FB8B8 /* Assets.xcassets in Resources */,
 				EB2B2CE529B8664C0058C1EE /* lolm_loading.json in Resources */,
 				EB71F1E4295A8B53007FB8B8 /* holder.png in Resources */,
@@ -1810,7 +1806,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
-				PRODUCT_NAME = yyz1604;
+				PRODUCT_NAME = "游易租";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ferental/ferental-Bridging-Header.h";
@@ -1855,7 +1851,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
-				PRODUCT_NAME = yyz1604;
+				PRODUCT_NAME = "游易租";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ferental/ferental-Bridging-Header.h";
