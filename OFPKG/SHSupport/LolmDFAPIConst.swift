@@ -9,8 +9,5 @@
 
 
 
-let SW_KHOST = ""
 
-let LolDF_QQLogin = "Login/qqLoginNew"
-let LolDF_WECHATLogin = "Login/wxLoginV2"
 

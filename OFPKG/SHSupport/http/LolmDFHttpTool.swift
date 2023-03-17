@@ -88,16 +88,6 @@ struct LolmDFHttpConfig {
     
     
     func getHost() -> String {
-        
-        #if DEBUG
-        
-        if  let server = UserDefaults.standard.string(forKey: "df.debug.server")  {
-            
-            return server
-        }
-        
-        #endif
-
         switch env {
        
         case .test(let baseUrl):
@@ -105,10 +95,10 @@ struct LolmDFHttpConfig {
             //return "http://39.98.193.35:\(int)/"
         case .pre_release:
             
-            return "http://10.10.24.178:9502/"
+            return kPreviewReleaseServer
         case .release:
             
-            return "https://zhwapp.zuhaowan.com/"
+            return kReleaseServer
         }
         
         
@@ -160,13 +150,8 @@ class LolmDFNetStatusMonitor {
             case .notReachable,.unknown:
                 
                 print("断网")
-                
                 self._netUseable = false
-                
-                
-                
                 self.changeBlock?(false)
-                
                 NotificationCenter.default.post(name: self.netStatusNotification, object: nil, userInfo: ["status":false])
             
             default:

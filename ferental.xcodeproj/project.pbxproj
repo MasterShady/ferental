@@ -218,7 +218,7 @@
 		EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lolm_tb_game.json; sourceTree = "<group>"; };
 		EB35763E2967D0050013A55D /* BasePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePicker.swift; sourceTree = "<group>"; };
 		EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		EB71EEC0295A8A18007FB8B8 /* yyz1938.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yyz1938.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB71EEC0295A8A18007FB8B8 /* yyz1604.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yyz1604.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71EEC7295A8A18007FB8B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB71EECA295A8A18007FB8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB71EECC295A8A1A007FB8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -530,7 +530,7 @@
 		EB71EEC1295A8A18007FB8B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB71EEC0295A8A18007FB8B8 /* yyz1938.app */,
+				EB71EEC0295A8A18007FB8B8 /* yyz1604.app */,
 				EB71EED6295A8A1A007FB8B8 /* ferentalTests.xctest */,
 				EB71EEE0295A8A1A007FB8B8 /* ferentalUITests.xctest */,
 			);
@@ -1184,7 +1184,7 @@
 			);
 			name = ferental;
 			productName = ferental;
-			productReference = EB71EEC0295A8A18007FB8B8 /* yyz1938.app */;
+			productReference = EB71EEC0295A8A18007FB8B8 /* yyz1604.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EB71EED5295A8A1A007FB8B8 /* ferentalTests */ = {
@@ -1810,7 +1810,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
-				PRODUCT_NAME = yyz1938;
+				PRODUCT_NAME = yyz1604;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ferental/ferental-Bridging-Header.h";
@@ -1855,7 +1855,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
-				PRODUCT_NAME = yyz1938;
+				PRODUCT_NAME = yyz1604;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ferental/ferental-Bridging-Header.h";

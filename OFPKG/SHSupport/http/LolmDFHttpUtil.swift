@@ -145,9 +145,6 @@ class LolmDFHttpUtil: NSObject {
                         
                         successBlock(jsonstr)
                     }
-                    
-                    
-                    
                 }else{
                     
                       let statusCode:Int = response.response?.statusCode ?? 0

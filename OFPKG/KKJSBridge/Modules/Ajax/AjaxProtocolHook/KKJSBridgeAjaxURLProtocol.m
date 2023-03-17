@@ -16,6 +16,7 @@
 #import "KKJSBridgeSwizzle.h"
 #import "KKJSBridgeWeakProxy.h"
 #import "KKWebViewCookieManager.h"
+#import "ferental-swift.h"
 
 
 typedef CFHTTPMessageRef (*KKJSBridgeURLResponseGetHTTPResponse)(CFURLRef response);
@@ -138,9 +139,9 @@ static NSString * const kKKJSBridgeOpenUrlRequestIdPairRegex = @"^.*(#%5E%5E%5E%
         NSMutableURLRequest *realRequest = (NSMutableURLRequest *)self.request;
         NSMutableDictionary *headerFileds = realRequest.allHTTPHeaderFields.mutableCopy;
         //移除Referer和Origin 避免后端风控触发.
-        if(![realRequest.URL.absoluteString containsString:@"alipay"]){
-            headerFileds[@"Referer"] = @"www.zuhaowan.com";
-            headerFileds[@"Origin"] = @"www.zuhaowan.com";
+        if(![realRequest.URL.absoluteString containsString:@"alipay"] && ![realRequest.URL.absoluteString containsString:@"wenjuan"]){
+            headerFileds[@"Referer"] = [Global kOrigin];
+            headerFileds[@"Origin"] = [Global kOrigin];
         }
         realRequest.allHTTPHeaderFields = headerFileds.copy;
         mutableReqeust.allHTTPHeaderFields = headerFileds.copy;
@@ -285,7 +286,7 @@ static NSString * const kKKJSBridgeOpenUrlRequestIdPairRegex = @"^.*(#%5E%5E%5E%
         }
         headers[kKKJSBridgeAjaxResponseHeaderAC] = [string copy];
         headers[@"Access-Control-Allow-Credentials"] = @"true";
-        headers[@"Access-Control-Allow-Origin"] = @"http://h5.package.zuhaowan";
+        headers[@"Access-Control-Allow-Origin"] = @"*";
         headers[@"Access-Control-Allow-Methods"] = @"OPTIONS,GET,POST,PUT,DELETE";
         
         NSHTTPURLResponse *updateRes = [[NSHTTPURLResponse alloc] initWithURL:res.URL statusCode:res.statusCode HTTPVersion:[self getHttpVersionFromResponse:res] headerFields:[headers copy]];

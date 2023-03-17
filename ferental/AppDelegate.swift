@@ -51,21 +51,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //测试环境 .test("http://39.98.193.35:9587/")
         #if DEBUG
-        LolmDFHttpConfig.config(withEnv: .pre_release)
+        LolmDFHttpConfig.config(withEnv: .release)
         #else
         LolmDFHttpConfig.config(withEnv: .release)
         #endif
         
         getReviewVersion()
         DFFaceVerifyManager.share().busnissId = LolmDF_FACE_BusnissId
-        initShare()
         initJPush(launchOptions:launchOptions)
         
         return true
     }
     
     func getReviewVersion(){
-        LolmDFHttpUtil.lolm_dohttpTask(url: "Information/getIosVersion", method: .get, parameters: [:]) { [self] response in
+        LolmDFHttpUtil.lolm_dohttpTask(url: kGetAppInfo, method: .get, parameters: [:]) { [self] response in
             if let data = response.data(using: .utf8) {
                 if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:AnyObject]{
                     if let version = json["data"] as? String{
@@ -73,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             self.getNewestPackge()
                         }
                     }else{
-                        self.getNewestPackge()
+                        //self.getNewestPackge()
                     }
                 }
             }
@@ -101,18 +100,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func initShare(){
-        ShareSDK.registPlatforms { register in
-            register?.setupWeChat(withAppId: LolmDF_WX_APPID, appSecret: LolmDF_WX_APPKEY, universalLink: DF_Universal_link)
-            register?.setupQQ(withAppId: LolmDF_QQ_APPID, appkey: LolmDF_QQ_APPKEY, enableUniversalLink: true, universalLink: DF_Universal_link)
-        }
-        
-        WXApi.registerApp(LolmDF_WX_APPID, universalLink: DF_Universal_link)
-        WXApi.startLog(by: .normal) { msg in
-            
-        }
-        
-    }
+//    func initShare(){
+//        ShareSDK.registPlatforms { register in
+//            register?.setupWeChat(withAppId: LolmDF_WX_APPID, appSecret: LolmDF_WX_APPKEY, universalLink: DF_Universal_link)
+//            register?.setupQQ(withAppId: LolmDF_QQ_APPID, appkey: LolmDF_QQ_APPKEY, enableUniversalLink: true, universalLink: DF_Universal_link)
+//        }
+//        
+//        WXApi.registerApp(LolmDF_WX_APPID, universalLink: DF_Universal_link)
+//        WXApi.startLog(by: .normal) { msg in
+//            
+//        }
+//        
+//    }
     
     
     func getNewestPackge(){
@@ -142,12 +141,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = nav
     }
     
+    #if DEBUG
     func debugInstallPkg(_ pkg: PKGInfo){
 
         AEAlertView.show(title: "离线包更新完毕", message: "当前版本:\(pkg.version)", actions: ["取消","加载正式包","加载测试包"]) { [self] action in
             if action.title == "加载测试包"{
                 print("~~ baseURL:\(pkg.baseUrl)")
-                //http://39.98.193.35:9587"
                 LolmDFHttpConfig.config(withEnv: .test(pkg.baseUrl))
                 NavVC.performWhiteNavigationBarStyle()
                 OfflinePackageURLProtocol.pkgRoot = pkg.unzippedPath
@@ -181,6 +180,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
     }
+    #endif
     
     func applicationWillEnterForeground(_ application: UIApplication) {
         updateNotificationStatus()

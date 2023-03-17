@@ -19,6 +19,11 @@ import HandyJSON
     static let df_version = Bundle.main.infoDictionary!["long_verison_key"] as? String ?? "1.0.0.0"
     static var notificationAvaliable = false
     static let kNotificationStatusChanged = "kNotificationStatusChanged"
+    static let kOrigin = "https://www.zuhaowan.com"
+    static let kPkgHost = "http://h5.package.zuhaowan"
+    static let kPkgHostPart = "h5.package.zuhaowan"
+    static let kWKBCCClassName = "WKBrowsingContextController"
+    static let kRegisterProtocolSelectorName = "registerSchemeForCustomProtocol:"
 }
 
 
@@ -30,7 +35,6 @@ let kNameSpage = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
 let kAppVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
 let kBuildNumber = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
 
-let kJushAppKey = "0acbd33bc6e17e7dd664e690"
 
 
 extension URL {
@@ -84,7 +88,6 @@ enum AppData{
     
     static let rentDuration = [7,15,30,60,90]
     
-   
 }
 
 
@@ -104,7 +107,6 @@ extension UIColor{
 }
 
 
-
 // MARK: - Typealias
 typealias Block = () -> Void
 typealias BoolBlock = (Bool) -> Void
@@ -115,76 +117,6 @@ typealias StringBlock = (String) -> Void
 typealias ImageBlock = (UIImage) -> Void
 
 
-// MARK: - Font
-func kRegularFont(_ size: CGFloat) -> UIFont {
-    if let font = getFontWithName("AcariSans Regular", size) {
-        return font
-    }
-    return UIFont.systemFont(ofSize: size, weight: .regular)
-}
-
-func kMediumFont(_ size: CGFloat) -> UIFont {
-    if let font = getFontWithName("Acari Sans Medium", size) {
-        return font
-    }
-    return UIFont.systemFont(ofSize: size, weight: .medium)
-}
-
-func kBoldFont(_ size: CGFloat) -> UIFont {
-    if let font = getFontWithName("Acari Sans Bold", size) {
-        return font
-    }
-    return UIFont.systemFont(ofSize: size, weight: .bold)
-}
-
-func kBlackFont(_ size: CGFloat) -> UIFont {
-    if let font = getFontWithName("Acari Sans Black", size) {
-        return font
-    }
-    return UIFont.systemFont(ofSize: size, weight: .black)
-}
-
-func kSemiBoldFont(_ size: CGFloat) -> UIFont {
-    if let font = getFontWithName("Acari Sans SemiBold", size) {
-        return font
-    }
-    return UIFont.systemFont(ofSize: size, weight: .bold)
-}
-
-private func getFontWithName(_ name: String, _ size: CGFloat) -> UIFont? {
-    if let font = UIFont(name: name, size: size) {
-        return font
-    }
-    if let font = UIFont(name: name.replacingOccurrences(of: " ", with: "-"), size: size) {
-        return font
-    }
-    if let font = UIFont(name: name.replacingOccurrences(of: " ", with: ""), size: size) {
-        return font
-    }
-    return nil
-}
-
-
-
-//MARK: Layout
-
-/*
- 获取设备statusBar高度的方式
- 
- 方式一: UIApplication.sharedApplication.windows.firstObject.safeAreaInsets.top
- 方式二: UIApplication.shared.statusBarFrame.height
- 
- safeAreaInsets 说明:
- 
- 实际上这个top的值就是设备statusBar的高度. safeAreaInsets.top  == [[UIApplication sharedApplication] statusBarFrame].size.height
-
- 不同型号设备值是不一样的, 下面为测试结果.
- (top = 44, left = 0, bottom = 34, right = 0) for iphoneX
- (50,0,34,0) for iphone12 mini
- (47,0,34,0) for 12 pro & 12 pro max
- (20,0,0,0) for normal device eg: iphone6.
- (24,0,20,0) for 4th iPad Air
- */
 let kStatusBarHeight: CGFloat = UIApplication.shared.windows.first!.safeAreaInsets.top
 let kNavBarHeight = 44
 let kNavBarMaxY = kStatusBarHeight + kNavBarHeight
@@ -205,8 +137,6 @@ let kUserChanged = Notification(name: Notification.Name("kUserChanged"), object:
 let kUserMakeOrder = Notification(name: Notification.Name("kUserMakeOrder"), object: nil)
 //用户重新联网
 let kUserReConnectedNetwork = Notification(name: Notification.Name("kUserReConnectedNetwork"), object: nil)
-
-
 
 
 struct BaseError: Error {

@@ -27,8 +27,8 @@
 
 +(void)load{
     __block id observer = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-        Class cls = NSClassFromString(@"WKBrowsingContextController");
-        SEL sel = NSSelectorFromString(@"registerSchemeForCustomProtocol:");
+        Class cls = NSClassFromString(Global.kWKBCCClassName);
+        SEL sel = NSSelectorFromString(Global.kRegisterProtocolSelectorName);
         [(id)cls performSelector:sel withObject:@"http"];
         [(id)cls performSelector:sel withObject:@"https"];
         [NSURLProtocol registerClass:[OfflinePackageURLProtocol class]];
@@ -49,7 +49,7 @@
 
 - (instancetype)init{
     if (self = [super init]){
-        _url = [NSString stringWithFormat:@"http://h5.package.zuhaowan"];
+        _url = [NSString stringWithFormat:[Global kPkgHost]];
         [self commonInit];
     }
     return self;
@@ -60,8 +60,8 @@
     [[KKWebViewPool sharedInstance] makeWebViewConfiguration:^(WKWebViewConfiguration * _Nonnull configuration) {
         configuration.preferences.javaScriptEnabled = YES;
         configuration.preferences.javaScriptCanOpenWindowsAutomatically = YES;
-        [configuration.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
-        [configuration setValue:@YES forKey:@"allowUniversalAccessFromFileURLs"];
+//        [configuration.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
+//        [configuration setValue:@YES forKey:@"allowUniversalAccessFromFileURLs"];
         configuration.applicationNameForUserAgent = [NSString stringWithFormat:@"appId=%@ version=%@ topSafeInsets=%.0f bottomSafeInsets=%.0f",Global.kAppId,Global.df_version,Global.kStatusBarHeight,Global.kBottomSafeInset];
     }];
     [[KKWebViewPool sharedInstance] enqueueWebViewWithClass:KKWebView.class];

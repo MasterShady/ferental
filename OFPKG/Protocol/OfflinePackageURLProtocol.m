@@ -62,7 +62,7 @@ static NSString *innerPkgRoot;
     NSMutableURLRequest *mutableReqeust = [originRequest mutableCopy];
     // 标示改request已经处理过了，防止无限循环
     [NSURLProtocol setProperty:@YES forKey:kKKJSBridgeNSURLProtocolKey inRequest:mutableReqeust];
-    if ([self.request.URL.host containsString:@"package.zuhaowan"]) {
+    if ([self.request.URL.host containsString:Global.kPkgHostPart]) {
         //本地
         NSString *relativePath;
         if (self.request.URL.pathExtension.length > 0) {
@@ -100,8 +100,8 @@ static NSString *innerPkgRoot;
             NSMutableDictionary *headerFileds = realRequest.allHTTPHeaderFields.mutableCopy;
             //移除Referer和Origin 避免后端风控触发.
             if (![realRequest.URL.absoluteString containsString:@"alipay"]){
-                headerFileds[@"Referer"] = @"www.zuhaowan.com";
-                headerFileds[@"Origin"] = @"www.zuhaowan.com";
+                headerFileds[@"Referer"] = [Global kOrigin];
+                headerFileds[@"Origin"] = [Global kOrigin];
             }
             realRequest.allHTTPHeaderFields = headerFileds.copy;
             mutableReqeust.allHTTPHeaderFields = headerFileds.copy;
