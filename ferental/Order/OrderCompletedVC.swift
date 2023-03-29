@@ -75,12 +75,9 @@ class OrderCompletedVC: BaseVC {
                 self.navigationController?.pushViewController(orderVC, animated: true)
             }else{
                 self.navigationController?.popToRootViewController(animated: true)
-                DispatchQueue.main.async {
-                    DispatchQueue.main.async {
-                        UIViewController.getCurrent().tabBarController?.selectedIndex = 2
-                    }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    UIViewController.getCurrent().tabBarController?.selectedIndex = 2
                 }
-                
             }
         }
         

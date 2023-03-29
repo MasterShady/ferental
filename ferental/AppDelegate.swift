@@ -14,10 +14,23 @@ import PKGModule
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var networkAvaliable = true
         
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+        NetworkReachabilityManager.default!.startListening(onUpdatePerforming: { status in
+            switch status {
+            case .notReachable:
+                self.networkAvaliable = false
+            case .unknown:
+                self.networkAvaliable = false
+            case .reachable:
+                if self.networkAvaliable == false{
+                    NotificationCenter.default.post(kUserReConnectedNetwork)
+                }
+                
+            }
+            
+        })
         //http://39.98.193.35:9587/
         //初始化离线包配置
         let config = PKGConfig(appId: "500180009", appVersion: "1.0.0.0", httpSignKey: "x8ecLyhIl4BT7tCD", webSocketSignKey: "0n6gJtCK3I1Hv2Cs", appURLScheme: "com.dofun.youyizu", faceBusnissId: "eb9a910f5019499786c3cd6011a94dcf", source: .online, apiEnv: .release, checkVersion: true)

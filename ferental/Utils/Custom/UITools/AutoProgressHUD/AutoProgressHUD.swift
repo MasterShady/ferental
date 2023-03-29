@@ -12,12 +12,12 @@ import Moya
 
 @objcMembers class AutoProgressHUD : NSObject {
 	
-    static var makeHud: MBProgressHUD {
+    static var makeHud: MBProgressHUD = {
         let topWindow: UIWindow = UIViewController.topmostVisiableWindow()
 		let hud = MBProgressHUD(view: topWindow)
         topWindow.addSubview(hud)
 		return hud
-    }
+    }()
 	
 	class func showAutoHud(_ msg: String) {
         DispatchQueue.main.async {

@@ -1235,7 +1235,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.dofan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.dofun;
 				PRODUCT_NAME = "游易租";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1280,7 +1280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.dofan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.dofun;
 				PRODUCT_NAME = "游易租";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

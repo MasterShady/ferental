@@ -50,6 +50,7 @@ class CartComfirmVC: BaseVC{
         
         cartItems.forEach { item in
             let itemView = UIView()
+            itemView.backgroundColor = .white
             let card = DeviceCard()
             card.device = item.device
             itemView.addSubview(card)
@@ -60,9 +61,9 @@ class CartComfirmVC: BaseVC{
             let countTitleLabel = UILabel()
             itemView.addSubview(countTitleLabel)
             countTitleLabel.snp.makeConstraints { make in
-                make.left.equalTo(0)
+                make.left.equalTo(14)
                 make.top.equalTo(card.snp.bottom).offset(5)
-                make.bottom.equalTo(0)
+                make.bottom.equalTo(-12)
             }
             countTitleLabel.chain.text(color: .kTextBlack).font(.systemFont(ofSize: 14)).text("租赁数量")
             
@@ -70,12 +71,14 @@ class CartComfirmVC: BaseVC{
             let countValueLabel = UILabel()
             itemView.addSubview(countValueLabel)
             countValueLabel.snp.makeConstraints { make in
-                make.right.equalTo(0)
+                make.right.equalTo(-14)
                 make.top.equalTo(countTitleLabel)
             }
             countValueLabel.chain.text(color: .kTextBlack).font(.systemFont(ofSize: 14)).text(String(item.count))
             
-            container.addModule(itemView)
+            itemView.chain.corner(radius: 6).shadow(color: .kLightGray).shadow(offset: .init(width: 0, height: 0)).shadow(opacity: 0.5)
+            
+            container.addModule(itemView,beforeSpacing: 12)
             
         }
         
@@ -90,15 +93,17 @@ class CartComfirmVC: BaseVC{
         rentInfoLabel.chain.text(color: .kTextBlack).font(.systemFont(ofSize: 14)).numberOfLines(0)
         let attrInfo = NSMutableAttributedString(rentInfo, color: .kTextBlack, font: .systemFont(ofSize: 14))
         let range = (rentInfo as NSString).range(of: "租赁流程")
+//        attrInfo.setAttributes([
+//            .font: UIFont.boldSystemFont(ofSize: 16),
+//        ], range: range)
+        attrInfo.alignment = .center
+        attrInfo.setAlignment(.center, range: range)
+        attrInfo.setFont(.boldSystemFont(ofSize: 14), range: range)
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 10
+        
         attrInfo.paragraphStyle = paragraphStyle
-        attrInfo.alignment = .center
-
-
-        attrInfo.setAttributes([
-            .font: UIFont.boldSystemFont(ofSize: 16)
-        ], range: range)
         rentInfoLabel.attributedText = attrInfo
         
         let confirmView = UIView()
@@ -133,15 +138,28 @@ class CartComfirmVC: BaseVC{
     
     
     @objc func confirmOrder(){
+        if !UserStore.isLogin{
+            let vc = LoginVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            return
+        }
         AutoProgressHUD.showHud("订单处理中...")
         DispatchQueue.global().async { [weak self] in
             guard let self = self else {return}
             let group = DispatchGroup()
-    
+            var orders = [Order]()
             self.cartItems.forEach { item in
+                CartManager.cartItems.remove(item)
                 for _ in 0 ..< item.count{
                     group.enter()
                     orderService.request(.makeOrder(deviceId: item.device.id, dayCount: self.duration, totalPrice: item.device.price * self.duration)) { result in
+                        result.hj_map2(Order.self) { response, error in
+                            if let response = response{
+                                let order = response.decodedObj!
+                                orders.append(order)
+                            }
+                        }
+                        
                         result.hj_map(Order.self, atKeyPath: "data") { result in
                             group.leave()
                         }
@@ -151,8 +169,16 @@ class CartComfirmVC: BaseVC{
             
             group.notify(queue: .main) {
                 AutoProgressHUD.hideHud()
-                let vc = OrderCompletedVC(order:nil)
-                self.navigationController?.pushViewController(vc, animated: true)
+                if orders.count == 1{
+                    let vc = OrderCompletedVC(order:orders[0])
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }else{
+                    let vc = OrderCompletedVC(order:nil)
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+                
+                
+                
             }
         }
         

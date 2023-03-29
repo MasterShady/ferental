@@ -40,13 +40,13 @@ class CartItemCell : UITableViewCell{
         self.contentView.addSubview(checkbox)
         checkbox.snp.makeConstraints { make in
             make.left.equalTo(14)
-            make.width.height.equalTo(16)
+            make.width.height.equalTo(32)
             make.centerY.equalToSuperview()
         }
         
-        let cart_checkbox_normal = UIImage.init(named: "cart_checkbox_normal")?.resizeImageToSize(size: CGSize(width: 20, height: 20))
-        let cart_checkbox_selected = UIImage.init(named: "cart_checkbox_selected")?.resizeImageToSize(size: CGSize(width: 20, height: 20))
-        checkbox.chain.normalImage(cart_checkbox_normal).selectedImage(cart_checkbox_selected)
+        let cart_checkbox_normal = UIImage.init(named: "cart_checkbox_normal")
+        let cart_checkbox_selected = UIImage.init(named: "cart_checkbox_selected")
+        checkbox.chain.normalImage(cart_checkbox_normal).selectedImage(cart_checkbox_selected).userInteractionEnabled(false)
         
         
         self.contentView.addSubview(deviceCard)
@@ -61,16 +61,22 @@ class CartItemCell : UITableViewCell{
         minusBtn.addBlock(for: .touchUpInside) {[weak self] _ in
             guard let self = self else { return }
             self.minusHandler()
-            
+        }
+        minusBtn.sy_touchAreaInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
+        minusBtn.snp.makeConstraints { make in
+            make.width.height.equalTo(32)
         }
         
         let addBtn = UIButton()
-        addBtn.chain.normalImage("cart_add")
+        addBtn.chain.normalImage("cart_add").size(CGSize(width: 32, height: 32))
         addBtn.addBlock(for: .touchUpInside) {[weak self] _ in
             guard let self = self else {return}
             self.addHandler()
         }
-        
+        addBtn.sy_touchAreaInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
+        addBtn.snp.makeConstraints { make in
+            make.width.height.equalTo(32)
+        }
 
         
         itemsCount.snp.makeConstraints { make in
@@ -90,5 +96,6 @@ class CartItemCell : UITableViewCell{
             make.right.equalTo(-14)
             make.bottom.equalTo(-14)
         }
+        stack.sy_touchAreaInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import AEAlertView
+import EmptyDataSet_Swift
 
 class CartManager{
     static var cartItems : [CartItem] = {
@@ -116,7 +117,7 @@ class CartSumView : BaseView {
         payBtn.snp.makeConstraints { make in
             make.right.equalTo(-14)
             make.centerY.equalToSuperview()
-            make.size.equalTo(CGSize(width: 80, height:40))
+            make.size.equalTo(CGSize(width: 90, height:40))
         }
     }
     
@@ -128,7 +129,11 @@ class CartSumView : BaseView {
 }
 
 
-class CartVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
+class CartVC: BaseVC, UITableViewDelegate, UITableViewDataSource, EmptyDataSetSource, EmptyDataSetDelegate {
+    
+    func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        return NSMutableAttributedString("空空如也,去选购心仪的商品吧~", color: .kTextBlack, font: .systemFont(ofSize: 14))
+    }
     
     private var tableView: UITableView!
     let sumView = CartSumView()
@@ -149,6 +154,17 @@ class CartVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        let gradientHeader = UIView()
+        view.addSubview(gradientHeader)
+        gradientHeader.snp.makeConstraints { make in
+            make.top.left.right.equalTo(0)
+            make.height.equalTo(200)
+        }
+        gradientHeader.size = CGSize(width: kScreenWidth, height: 200)
+        gradientHeader.backgroundColor = .gradient(colors: [.kthemeColor,.kthemeColor.withAlphaComponent(0.0)], from: CGPoint(x: kScreenWidth/2, y: 0), to: CGPoint(x: kScreenWidth/2, y: 200), size: CGSize(width: kScreenWidth, height: 200))
+        
+        
+        
         let pageNameLabel = UILabel()
         view.addSubview(pageNameLabel)
         pageNameLabel.snp.makeConstraints { make in
@@ -162,7 +178,7 @@ class CartVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         tableView = UITableView()
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
-            make.top.equalTo(pageNameLabel.snp.bottom)
+            make.top.equalTo(pageNameLabel.snp.bottom).offset(20)
             make.left.right.equalToSuperview()
         }
         tableView.delegate = self
@@ -170,6 +186,10 @@ class CartVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         tableView.register(CartItemCell.self, forCellReuseIdentifier: "cellId")
         tableView.separatorStyle = .none
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
+        tableView.backgroundColor = .clear
+        
         
         view.addSubview(sumView)
         sumView.checkbox.addBlock(for: .touchUpInside) {[weak self] _ in
