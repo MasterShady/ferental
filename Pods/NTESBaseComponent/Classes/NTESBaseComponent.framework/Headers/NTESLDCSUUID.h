@@ -8,11 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-/*  说明：
-    请用混淆后的方式调用：NSString *deviceId = [IVBMhuLApGrpTszy UlHCteTrJOgTlTha];
- */
-
-@interface NTESLDCSUUID : NSObject
+@interface NTESLDCSUUID
+: NSObject
 
 /**
  获取设备 ID

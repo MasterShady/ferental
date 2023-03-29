@@ -114,11 +114,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MOBFoundation.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -139,22 +134,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PKGModule-PKGModule.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PKGModule.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parchment.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ferental-ferentalUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ferental.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ferentalTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -205,26 +200,6 @@
 			<false/>
 		</dict>
 		<key>lottie-ios.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>mob_sharesdk-ShareSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>mob_sharesdk-ShareSDK_JS_QQ.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>mob_sharesdk-ShareSDK_JS_WeChat.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>mob_sharesdk.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

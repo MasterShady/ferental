@@ -46,13 +46,6 @@ class NavVC: UINavigationController, UINavigationControllerDelegate {
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //self.delegate = self
-
-    }
-    
-    
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if (self.viewControllers.count > 0){
             viewController.hidesBottomBarWhenPushed = true;

@@ -147,10 +147,24 @@ extension Chain where Base: UIButton {
     }
     
     @discardableResult
+    public func normalImage(_ imageName: String) -> Self {
+        base.setImage(.init(named: imageName), for: .normal)
+        return self
+    }
+    
+    
+    @discardableResult
     public func selectedImage(_ image: UIImage?) -> Self {
         base.setImage(image, for: .selected)
         return self
     }
+    
+    @discardableResult
+    public func selectedImage(_ imageName: String) -> Self {
+        base.setImage(.init(named: imageName), for: .selected)
+        return self
+    }
+    
     
     @discardableResult
     public func backgroundImage(_ backgroundImage: UIImage?, for state: UIControl.State) -> Self {
@@ -164,12 +178,25 @@ extension Chain where Base: UIButton {
         return self
     }
     
+    @discardableResult
+    public func normalBackgroundImage(_ imageName: String) -> Self {
+        base.setBackgroundImage(.init(named: imageName), for: .normal)
+        return self
+    }
+    
     
     @discardableResult
     public func selectedBackgroundImage(_ backgroundImage: UIImage?) -> Self {
         base.setBackgroundImage(backgroundImage, for: .selected)
         return self
     }
+    
+    @discardableResult
+    public func selectedBackgroundImage(_ imageName: String) -> Self {
+        base.setBackgroundImage(.init(named: imageName), for: .selected)
+        return self
+    }
+    
     
     @discardableResult
     public func disabledBackgroundImage(_ backgroundImage: UIImage?) -> Self {

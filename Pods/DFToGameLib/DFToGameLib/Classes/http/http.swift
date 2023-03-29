@@ -134,7 +134,7 @@ class SimpleHttp {
     init() {
         
         var php = MJHttpConfig.init()
-        php.serverMap = [.release:"https://zhwapp.zuhaowan.com/",.test:"http://39.98.193.35:9504/",.pre_release:"http://10.10.24.178:9502/",.developer:"http://39.98.193.35:9521/"]
+        php.serverMap = [.release:"https://zhwapp.zuhaowan.com/",.test:"http://39.98.193.35:9596/",.pre_release:"http://10.10.24.178:9502/",.developer:"http://39.98.193.35:9596/"]
         
         apiServerMap[0] = php
         
@@ -189,6 +189,11 @@ class SimpleHttp {
         base["app_version_name"] = versionName
         
         base["app_id"] = SWOtherInfoWrap.shared.appId
+        
+        if let _shumeiId = SWOtherInfoWrap.shared.shumei_id, _shumeiId.isEmpty == false {
+            
+            base["smanti_id"] = _shumeiId
+        }
         if SWOtherInfoWrap.shared.channel == .dfapp {
             
             let token  = SWOtherInfoWrap.shared.token
@@ -308,6 +313,7 @@ class SimpleHttp {
         
         let dateformat = DateFormatter.init()
         dateformat.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateformat.locale = NSLocale.system
         let formatDate_current = dateformat.string(from: currentDate)
         
         let httpbody = ["request":formatDate_current,"requestBody":encryptData,"requestBizId":SWOtherInfoWrap.shared.zhongtai_bid]

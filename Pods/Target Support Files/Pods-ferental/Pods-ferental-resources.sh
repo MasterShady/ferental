@@ -102,11 +102,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DFToGameLib/DFToGameLibBundle.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DFToGameLib/HaiMaSDK_Bundle_iOS.bundle"
   install_resource "${PODS_ROOT}/NTESLiveDetect/Assets/NTESLiveDetectBundle.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK.bundle"
-  install_resource "${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_QQ.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_WeChat.bundle"
-  install_resource "${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/Optional/ShareSDKUI.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/PKGModule/PKGModule.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/DFFaceVerifyLib/DFFaceVerifyLib/Assets/DFFaceNeteasySource.bundle"
@@ -114,11 +110,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DFToGameLib/DFToGameLibBundle.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DFToGameLib/HaiMaSDK_Bundle_iOS.bundle"
   install_resource "${PODS_ROOT}/NTESLiveDetect/Assets/NTESLiveDetectBundle.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK.bundle"
-  install_resource "${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_QQ.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_WeChat.bundle"
-  install_resource "${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/Optional/ShareSDKUI.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/PKGModule/PKGModule.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

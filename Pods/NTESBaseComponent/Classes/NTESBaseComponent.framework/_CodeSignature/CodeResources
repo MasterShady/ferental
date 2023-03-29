@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/NTESBaseLDCollectModel.h</key>
 		<data>
-		UVu65cGH4e6fIsuuBAGlPhyz+fs=
+		10OSgH2tyuVmZ8jYVlN3ytrJcbU=
 		</data>
 		<key>Headers/NTESBasePublicData.h</key>
 		<data>
-		AiC2ZWSHL7Wa1wUpYIj+ysjxje8=
+		ITDYM3IH5eUAs3SI+SHCGYzWXzk=
 		</data>
 		<key>Headers/NTESBaseQPCollectModel.h</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Headers/NTESLDCSUUID.h</key>
 		<data>
-		FQsvtorupHAf6oYNleLgn/PoDLE=
+		tYJZ+LYtC1WVO61JZKRAlOcyelQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y6cjJpTP5pp2OsetZwbLvuUsSjk=
+		4GBgjorGnKh3bqFGlpZjDGWr+ec=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,22 +99,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UVu65cGH4e6fIsuuBAGlPhyz+fs=
+			10OSgH2tyuVmZ8jYVlN3ytrJcbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			uMhJ/fEEf4yFKxW9rzglOA54iR5mIUpXh6MR5billeg=
+			60THibT5wGd0Q4/398MdjHBHGK9mnCEhSUF+Y6n42Go=
 			</data>
 		</dict>
 		<key>Headers/NTESBasePublicData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AiC2ZWSHL7Wa1wUpYIj+ysjxje8=
+			ITDYM3IH5eUAs3SI+SHCGYzWXzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XiWs8YE/tVkluM1Wx0peZYEAe8J6v1kdR/WPiT6IVRQ=
+			ARFLY/W2xF2cxI2UCXCeATlDRJuzX5XYk5AT8sdNZqc=
 			</data>
 		</dict>
 		<key>Headers/NTESBaseQPCollectModel.h</key>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FQsvtorupHAf6oYNleLgn/PoDLE=
+			tYJZ+LYtC1WVO61JZKRAlOcyelQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			MauqKqaMHbKnVcGEpJtBq4z6HffYv1VnbQJ7/lz8qgQ=
+			LR1LEZP2HM3cSFeVmEgMU3VF6dQPvppisscPmb8TL78=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

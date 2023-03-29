@@ -13,12 +13,7 @@ import HandyJSON
 
 
 
-public func wxText()  {
-     
-   
-    
-    
-}
+
 
 
 class SWWechatLoginBase: SWLoginGamePlatformProtocol {

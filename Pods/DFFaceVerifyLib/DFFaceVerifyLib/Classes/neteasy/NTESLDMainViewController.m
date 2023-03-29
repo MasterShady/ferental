@@ -312,7 +312,7 @@ static NSOperationQueue *_queue;
     
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"请在iphone的“设置-游易租”选项中，允许使用相机权限" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"请在iphone的“设置-刀锋互娱”选项中，允许使用相机权限" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* action = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             NSLog(@"知道啦");
         }];

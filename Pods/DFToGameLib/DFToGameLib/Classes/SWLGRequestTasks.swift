@@ -210,7 +210,7 @@ func sw_logingame_qq_getOrderInfo(withUnlockCode:String,withcallBack:@escaping (
     
     param["quick_version"] = "7"
     
-    SWNetworkingTool.requestFun(url:  SW_API_QQ_GetOrderInfo, method: .get, parameters: param) { (json) in
+    SWNetworkingTool.requestFun(url:  SW_API_QQ_GetOrderInfo, method: .post, parameters: param) { (json) in
         
         SWLGLog(withMsg: "获取上号信息:\(json)")
         guard let model = SWjd<SWHttpResponse<SWQuickLoginGameModel>>.deserializeFrom(json: json) else {

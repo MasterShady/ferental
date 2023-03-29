@@ -166,7 +166,7 @@ class SWOtherInfoWrap {
     
     var hmcloudLouadingView:SWLoginGameLoadingViewProtocol?
     
-    var obj:Any?
+    var shumei_id:String?
     
 }
 
@@ -192,7 +192,8 @@ public class SWLoginGameTool {
     ///   - appversion: app版本号
     ///   - appsign: app签名sign
     ///   - appId: appid
-    public convenience init(isShanghaoqi:Bool,withToken:String,withUUID:String, withApiType:Int = 3,appversion:String,appsign:String? = nil,appId:String? = nil,websocketSign:String? = nil) {
+    ///   - shumeiId: 数美sdk id
+    public convenience init(isShanghaoqi:Bool,withToken:String,withUUID:String, withApiType:Int = 3,appversion:String,appsign:String? = nil,appId:String? = nil,websocketSign:String? = nil,shumeiId:String?) {
         
         if isShanghaoqi {
             
@@ -201,6 +202,8 @@ public class SWLoginGameTool {
             
             self.init(withToken: withToken, withUUID: withUUID, withApiType: withApiType)
         }
+        
+        SWOtherInfoWrap.shared.shumei_id = shumeiId
         
         SWOtherInfoWrap.shared.appversion = appversion
         if let _appid = appId {

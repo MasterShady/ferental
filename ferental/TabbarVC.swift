@@ -35,7 +35,7 @@ class TabbarVC : UITabBarController, UITabBarControllerDelegate{
     func addChilds(){
         let childs : [(String,String,BaseVC)] = [
             ("home","首页",HomeVC()),
-//            ("brand","品牌",BrandVC()),
+            ("brand","购物车",CartVC()),
             ("order","订单",OrderPageVC()),
             ("mine", "我的",MineVC()),
         ];

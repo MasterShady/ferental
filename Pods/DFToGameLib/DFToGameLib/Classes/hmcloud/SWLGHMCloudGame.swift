@@ -103,6 +103,7 @@ class SWHMCloudGame:NSObject,SWLoginGamePlatformProtocol {
     
     var cloudGameVC:UIViewController?
     
+
     deinit {
 #if !targetEnvironment(simulator)
          websocket_sendTask_cancel()
@@ -118,8 +119,6 @@ class SWHMCloudGame:NSObject,SWLoginGamePlatformProtocol {
         CloudPlayerWarpper.sharedWrapper().delegate = self
         
         hmSDKRegisted = CloudPlayerWarpper.sharedWrapper().isRegisted() ? 1 : -1
-        
-        self.motitorApp()
         
         #endif
         
@@ -379,7 +378,7 @@ class SWHMCloudGame:NSObject,SWLoginGamePlatformProtocol {
         
         cloudGameVC = vc
        
-        
+        self.motitorApp()
     }
     
     //游戏登录成功启动
@@ -419,6 +418,8 @@ class SWHMCloudGame:NSObject,SWLoginGamePlatformProtocol {
         websocket_sendTask_cancel()
         
         closeWebsocket()
+        
+        stopMotiorApp()
         
         //游戏订单结束  501 投诉撤单
         if withEventId == 0  {
@@ -470,6 +471,10 @@ class SWHMCloudGame:NSObject,SWLoginGamePlatformProtocol {
         NotificationCenter.default.addObserver(self, selector: #selector(appEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
+    func stopMotiorApp()  {
+        
+        NotificationCenter.default.removeObserver(self)
+    }
     
     
    @objc  func appEnterBackground()  {
@@ -478,6 +483,7 @@ class SWHMCloudGame:NSObject,SWLoginGamePlatformProtocol {
     }
     
     @objc  func appEnterForeground()  {
+        
         
         CloudPlayerWarpper.sharedWrapper().resume(0)
         

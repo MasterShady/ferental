@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		10C4CBF416423E407E673593 /* Pods_ferental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B04EA4F05B8C596A71B8F /* Pods_ferental.framework */; };
-		374EF45F58A40EE2CA24FA39 /* Pods_ferental_ferentalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D11DB47D1460A36FCF36B84 /* Pods_ferental_ferentalUITests.framework */; };
-		C466D741684867AD836FD047 /* Pods_ferentalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1EF8B4158385E1013AA161 /* Pods_ferentalTests.framework */; };
 		EB1355332974FE68002E310E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1355312974FE68002E310E /* WebViewController.swift */; };
-		EB2B2CE329B8662F0058C1EE /* quick_login_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2B2CE229B8662F0058C1EE /* quick_login_loading.json */; };
-		EB2B2CE529B8664C0058C1EE /* lolm_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2B2CE429B8664C0058C1EE /* lolm_loading.json */; };
-		EB2B2CE729B8668E0058C1EE /* lolm_tb_game.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */; };
+		EB1721C129D1A33900BBB326 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1721C029D1A33900BBB326 /* CartVC.swift */; };
 		EB35763F2967D0050013A55D /* BasePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB35763E2967D0050013A55D /* BasePicker.swift */; };
 		EB38C3B629C480B900FB323E /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38C3B529C480B900FB323E /* Convenience.swift */; };
 		EB71EEC8295A8A18007FB8B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB71EEC7295A8A18007FB8B8 /* ViewController.swift */; };
@@ -112,71 +108,15 @@
 		EB7F98F22966C0180071CD13 /* Moya++.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F98F12966C0180071CD13 /* Moya++.swift */; };
 		EB828A7929640771000780D3 /* MyOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB828A7829640771000780D3 /* MyOrderView.swift */; };
 		EBA1220D296D4EB000B6B393 /* LoginVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1220C296D4EAF00B6B393 /* LoginVC2.swift */; };
+		EBAB121A29D4243B003855FA /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB121929D4243B003855FA /* CartItemCell.swift */; };
+		EBAB121D29D42451003855FA /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB121C29D42451003855FA /* CartItem.swift */; };
+		EBAB121F29D42612003855FA /* CartComfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB121E29D42612003855FA /* CartComfirmVC.swift */; };
 		EBB0C49D295C1255004444EA /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0C49C295C1255004444EA /* ConfirmView.swift */; };
 		EBB0C49F295C127E004444EA /* DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0C49E295C127E004444EA /* DeviceCard.swift */; };
 		EBB0C4A1295C132A004444EA /* SinglePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0C4A0295C132A004444EA /* SinglePicker.swift */; };
-		EBB3452A29C302D400D1E43D /* AuthChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3452929C302D400D1E43D /* AuthChecker.swift */; };
 		EBB3452C29C3103400D1E43D /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3452B29C3103400D1E43D /* Poster.swift */; };
 		EBB62B9F296EA09B00CA8433 /* DeviceListVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62B9E296EA09B00CA8433 /* DeviceListVC2.swift */; };
 		EBCDFC602965167200F5D470 /* BrandAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDFC5F2965167200F5D470 /* BrandAPI.swift */; };
-		EBD6D3D529B73BDD00E161CB /* PKGManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35329B73BDB00E161CB /* PKGManager.swift */; };
-		EBD6D3D629B73BDD00E161CB /* File++.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35429B73BDB00E161CB /* File++.swift */; };
-		EBD6D3D729B73BDD00E161CB /* OfflinePackageController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35529B73BDB00E161CB /* OfflinePackageController.m */; };
-		EBD6D3D829B73BDD00E161CB /* ToGameModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35729B73BDB00E161CB /* ToGameModule.swift */; };
-		EBD6D3D929B73BDD00E161CB /* BaseFunctionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35A29B73BDB00E161CB /* BaseFunctionModule.m */; };
-		EBD6D3DB29B73BDD00E161CB /* KKJSBridgeWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D35F29B73BDB00E161CB /* KKJSBridgeWeakProxy.m */; };
-		EBD6D3DC29B73BDD00E161CB /* KKJSBridgeJSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D36429B73BDB00E161CB /* KKJSBridgeJSExecutor.m */; };
-		EBD6D3DD29B73BDD00E161CB /* KKJSBridgeWeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D36629B73BDB00E161CB /* KKJSBridgeWeakScriptMessageDelegate.m */; };
-		EBD6D3DE29B73BDD00E161CB /* KKJSBridgeSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D36729B73BDB00E161CB /* KKJSBridgeSafeDictionary.m */; };
-		EBD6D3DF29B73BDD00E161CB /* KKJSBridgeSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D36829B73BDB00E161CB /* KKJSBridgeSwizzle.m */; };
-		EBD6D3E029B73BDD00E161CB /* KKJSBridgeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D36A29B73BDB00E161CB /* KKJSBridgeLogger.m */; };
-		EBD6D3E129B73BDD00E161CB /* KKJSBridgeEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D36B29B73BDB00E161CB /* KKJSBridgeEngine.m */; };
-		EBD6D3E229B73BDD00E161CB /* KKJSBridgeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D36D29B73BDB00E161CB /* KKJSBridgeConfig.m */; };
-		EBD6D3E329B73BDD00E161CB /* BaseFunction.js in Resources */ = {isa = PBXBuildFile; fileRef = EBD6D37129B73BDB00E161CB /* BaseFunction.js */; };
-		EBD6D3E429B73BDD00E161CB /* KKJSBridgeAJAXProtocolHook.js in Resources */ = {isa = PBXBuildFile; fileRef = EBD6D37229B73BDB00E161CB /* KKJSBridgeAJAXProtocolHook.js */; };
-		EBD6D3E529B73BDD00E161CB /* KKJSBridgeMessageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D37529B73BDB00E161CB /* KKJSBridgeMessageDispatcher.m */; };
-		EBD6D3E629B73BDD00E161CB /* KKJSBridgeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D37629B73BDB00E161CB /* KKJSBridgeMessage.m */; };
-		EBD6D3E729B73BDD00E161CB /* KKJSBridgeModuleMetaClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D37929B73BDC00E161CB /* KKJSBridgeModuleMetaClass.m */; };
-		EBD6D3E829B73BDD00E161CB /* KKJSBridgeModuleRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D37C29B73BDC00E161CB /* KKJSBridgeModuleRegister.m */; };
-		EBD6D3E929B73BDD00E161CB /* KKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D37F29B73BDC00E161CB /* KKWebView.m */; };
-		EBD6D3EA29B73BDD00E161CB /* WKWebView+KKWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D38129B73BDC00E161CB /* WKWebView+KKWebViewExtension.m */; };
-		EBD6D3EB29B73BDD00E161CB /* WKWebView+KKJSBridgeEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D38229B73BDC00E161CB /* WKWebView+KKJSBridgeEngine.m */; };
-		EBD6D3EC29B73BDD00E161CB /* KKWebViewCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D38729B73BDC00E161CB /* KKWebViewCookieManager.m */; };
-		EBD6D3ED29B73BDD00E161CB /* WKWebView+KKWebViewReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D38A29B73BDC00E161CB /* WKWebView+KKWebViewReusable.m */; };
-		EBD6D3EE29B73BDD00E161CB /* KKWebViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D38D29B73BDC00E161CB /* KKWebViewPool.m */; };
-		EBD6D3EF29B73BDD00E161CB /* KKJSBridgeModuleCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D39129B73BDC00E161CB /* KKJSBridgeModuleCookie.m */; };
-		EBD6D3F029B73BDD00E161CB /* KKJSBridgeAjaxBodyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D39429B73BDC00E161CB /* KKJSBridgeAjaxBodyHelper.m */; };
-		EBD6D3F129B73BDD00E161CB /* KKJSBridgeFormDataFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D39929B73BDC00E161CB /* KKJSBridgeFormDataFile.m */; };
-		EBD6D3F229B73BDD00E161CB /* KKJSBridgeStreamingMultipartFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D39A29B73BDC00E161CB /* KKJSBridgeStreamingMultipartFormData.m */; };
-		EBD6D3F329B73BDD00E161CB /* KKJSBridgeURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D39B29B73BDC00E161CB /* KKJSBridgeURLRequestSerialization.m */; };
-		EBD6D3F429B73BDD00E161CB /* KKJSBridgeAjaxURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D39F29B73BDC00E161CB /* KKJSBridgeAjaxURLProtocol.m */; };
-		EBD6D3F529B73BDD00E161CB /* KKJSBridgeXMLBodyCacheRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3A029B73BDC00E161CB /* KKJSBridgeXMLBodyCacheRequest.m */; };
-		EBD6D3F629B73BDD00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3A129B73BDC00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m */; };
-		EBD6D3F729B73BDD00E161CB /* OfflinePackageURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3A829B73BDC00E161CB /* OfflinePackageURLProtocol.m */; };
-		EBD6D3F829B73BDD00E161CB /* URLProtocolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3A929B73BDC00E161CB /* URLProtocolHelper.m */; };
-		EBD6D3FA29B73BDD00E161CB /* LolmDFLoadingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3AF29B73BDC00E161CB /* LolmDFLoadingWidget.swift */; };
-		EBD6D3FB29B73BDD00E161CB /* LolmDFAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3B029B73BDC00E161CB /* LolmDFAPIConst.swift */; };
-		EBD6D3FF29B73BDD00E161CB /* LolmDFBaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3B429B73BDC00E161CB /* LolmDFBaseModels.swift */; };
-		EBD6D40229B73BDD00E161CB /* lolm_base_dfvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3B729B73BDC00E161CB /* lolm_base_dfvc.swift */; };
-		EBD6D40329B73BDD00E161CB /* UIDevice+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3B829B73BDC00E161CB /* UIDevice+Utils.m */; };
-		EBD6D40429B73BDD00E161CB /* Loldf_hmCloud_loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3B929B73BDC00E161CB /* Loldf_hmCloud_loadingView.swift */; };
-		EBD6D40929B73BDD00E161CB /* LolmDFFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3BF29B73BDC00E161CB /* LolmDFFunctions.swift */; };
-		EBD6D40B29B73BDD00E161CB /* UIFont(ext).swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C129B73BDC00E161CB /* UIFont(ext).swift */; };
-		EBD6D40C29B73BDD00E161CB /* lolm_scan_dfvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C229B73BDC00E161CB /* lolm_scan_dfvc.swift */; };
-		EBD6D40D29B73BDD00E161CB /* Notification(ext).swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C329B73BDC00E161CB /* Notification(ext).swift */; };
-		EBD6D40E29B73BDD00E161CB /* LolmDFFileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C529B73BDC00E161CB /* LolmDFFileConfig.swift */; };
-		EBD6D40F29B73BDD00E161CB /* LolmDFHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C629B73BDC00E161CB /* LolmDFHttpTool.swift */; };
-		EBD6D41029B73BDD00E161CB /* Lolmdf_LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C729B73BDC00E161CB /* Lolmdf_LoginModel.swift */; };
-		EBD6D41129B73BDD00E161CB /* LolmDF_RealNameLotterySuccAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C829B73BDC00E161CB /* LolmDF_RealNameLotterySuccAlertView.swift */; };
-		EBD6D41229B73BDD00E161CB /* LolmDFHttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3C929B73BDC00E161CB /* LolmDFHttpUtil.swift */; };
-		EBD6D41329B73BDD00E161CB /* LolmDFHttpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3CA29B73BDC00E161CB /* LolmDFHttpFactory.swift */; };
-		EBD6D41429B73BDD00E161CB /* lolm_base_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3CB29B73BDC00E161CB /* lolm_base_view.swift */; };
-		EBD6D41529B73BDD00E161CB /* lolm_shanghao_loading_dfview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3CD29B73BDC00E161CB /* lolm_shanghao_loading_dfview.swift */; };
-		EBD6D41629B73BDD00E161CB /* UILabel(ext).swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3CE29B73BDC00E161CB /* UILabel(ext).swift */; };
-		EBD6D41729B73BDD00E161CB /* LolmDFConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3CF29B73BDC00E161CB /* LolmDFConst.swift */; };
-		EBD6D41A29B73BDD00E161CB /* lolm_actDetail_share_alert_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3D329B73BDC00E161CB /* lolm_actDetail_share_alert_view.swift */; };
-		EBD6D41B29B73BDD00E161CB /* lolm_actDetail_shareImg_alert_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D3D429B73BDC00E161CB /* lolm_actDetail_shareImg_alert_view.swift */; };
-		EBD6D42129B7438200E161CB /* DFPlatformShareUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D42029B7438200E161CB /* DFPlatformShareUtil.swift */; };
 		EBD98458295D2F8400F468B9 /* MultiplePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD98457295D2F8400F468B9 /* MultiplePicker.swift */; };
 		EBD9845D295D6A5300F468B9 /* RentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9845C295D6A5300F468B9 /* RentCard.swift */; };
 		EBE17A6C2965659800E66C11 /* OrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE17A6B2965659800E66C11 /* OrderAPI.swift */; };
@@ -201,18 +141,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		388A530ABD151BF1E78996CF /* Pods-ferentalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ferentalTests.release.xcconfig"; path = "Target Support Files/Pods-ferentalTests/Pods-ferentalTests.release.xcconfig"; sourceTree = "<group>"; };
-		3D11DB47D1460A36FCF36B84 /* Pods_ferental_ferentalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ferental_ferentalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAB6B60489764735DD37EEA /* Pods-ferental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ferental.release.xcconfig"; path = "Target Support Files/Pods-ferental/Pods-ferental.release.xcconfig"; sourceTree = "<group>"; };
 		9F83059081537A3FB52CF6DE /* Pods-ferental.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ferental.debug.xcconfig"; path = "Target Support Files/Pods-ferental/Pods-ferental.debug.xcconfig"; sourceTree = "<group>"; };
-		C356B440BA7688C847451A91 /* Pods-ferental-ferentalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ferental-ferentalUITests.release.xcconfig"; path = "Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D6AB61BA0111E22D24277692 /* Pods-ferentalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ferentalTests.debug.xcconfig"; path = "Target Support Files/Pods-ferentalTests/Pods-ferentalTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB1EF8B4158385E1013AA161 /* Pods_ferentalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ferentalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0B04EA4F05B8C596A71B8F /* Pods_ferental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ferental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1355312974FE68002E310E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		EB2B2CE229B8662F0058C1EE /* quick_login_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quick_login_loading.json; sourceTree = "<group>"; };
-		EB2B2CE429B8664C0058C1EE /* lolm_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lolm_loading.json; sourceTree = "<group>"; };
-		EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lolm_tb_game.json; sourceTree = "<group>"; };
+		EB1721C029D1A33900BBB326 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		EB35763E2967D0050013A55D /* BasePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePicker.swift; sourceTree = "<group>"; };
 		EB38C3B529C480B900FB323E /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 		EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -325,112 +258,20 @@
 		EB7F98F12966C0180071CD13 /* Moya++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya++.swift"; sourceTree = "<group>"; };
 		EB828A7829640771000780D3 /* MyOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderView.swift; sourceTree = "<group>"; };
 		EBA1220C296D4EAF00B6B393 /* LoginVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC2.swift; sourceTree = "<group>"; };
+		EBAB121929D4243B003855FA /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		EBAB121C29D42451003855FA /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		EBAB121E29D42612003855FA /* CartComfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartComfirmVC.swift; sourceTree = "<group>"; };
 		EBB0C49C295C1255004444EA /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		EBB0C49E295C127E004444EA /* DeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCard.swift; sourceTree = "<group>"; };
 		EBB0C4A0295C132A004444EA /* SinglePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePicker.swift; sourceTree = "<group>"; };
-		EBB3452929C302D400D1E43D /* AuthChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChecker.swift; sourceTree = "<group>"; };
 		EBB3452B29C3103400D1E43D /* Poster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
 		EBB62B9E296EA09B00CA8433 /* DeviceListVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListVC2.swift; sourceTree = "<group>"; };
 		EBBCD10B29BF4CEB0028CAC3 /* ferental.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ferental.entitlements; sourceTree = "<group>"; };
 		EBCDFC5F2965167200F5D470 /* BrandAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandAPI.swift; sourceTree = "<group>"; };
-		EBD6D35329B73BDB00E161CB /* PKGManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKGManager.swift; sourceTree = "<group>"; };
-		EBD6D35429B73BDB00E161CB /* File++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "File++.swift"; sourceTree = "<group>"; };
-		EBD6D35529B73BDB00E161CB /* OfflinePackageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflinePackageController.m; sourceTree = "<group>"; };
-		EBD6D35729B73BDB00E161CB /* ToGameModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToGameModule.swift; sourceTree = "<group>"; };
-		EBD6D35929B73BDB00E161CB /* BaseFunctionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFunctionModule.h; sourceTree = "<group>"; };
-		EBD6D35A29B73BDB00E161CB /* BaseFunctionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFunctionModule.m; sourceTree = "<group>"; };
-		EBD6D35E29B73BDB00E161CB /* KKJSBridgeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMacro.h; sourceTree = "<group>"; };
-		EBD6D35F29B73BDB00E161CB /* KKJSBridgeWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeWeakProxy.m; sourceTree = "<group>"; };
-		EBD6D36029B73BDB00E161CB /* KKJSBridgeWeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeWeakScriptMessageDelegate.h; sourceTree = "<group>"; };
-		EBD6D36129B73BDB00E161CB /* KKJSBridgeSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeSwizzle.h; sourceTree = "<group>"; };
-		EBD6D36229B73BDB00E161CB /* KKJSBridgeSafeDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeSafeDictionary.h; sourceTree = "<group>"; };
-		EBD6D36329B73BDB00E161CB /* KKJSBridgeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeLogger.h; sourceTree = "<group>"; };
-		EBD6D36429B73BDB00E161CB /* KKJSBridgeJSExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeJSExecutor.m; sourceTree = "<group>"; };
-		EBD6D36529B73BDB00E161CB /* KKJSBridgeWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeWeakProxy.h; sourceTree = "<group>"; };
-		EBD6D36629B73BDB00E161CB /* KKJSBridgeWeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeWeakScriptMessageDelegate.m; sourceTree = "<group>"; };
-		EBD6D36729B73BDB00E161CB /* KKJSBridgeSafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeSafeDictionary.m; sourceTree = "<group>"; };
-		EBD6D36829B73BDB00E161CB /* KKJSBridgeSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeSwizzle.m; sourceTree = "<group>"; };
-		EBD6D36929B73BDB00E161CB /* KKJSBridgeJSExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeJSExecutor.h; sourceTree = "<group>"; };
-		EBD6D36A29B73BDB00E161CB /* KKJSBridgeLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeLogger.m; sourceTree = "<group>"; };
-		EBD6D36B29B73BDB00E161CB /* KKJSBridgeEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeEngine.m; sourceTree = "<group>"; };
-		EBD6D36D29B73BDB00E161CB /* KKJSBridgeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeConfig.m; sourceTree = "<group>"; };
-		EBD6D36E29B73BDB00E161CB /* KKJSBridgeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeConfig.h; sourceTree = "<group>"; };
-		EBD6D36F29B73BDB00E161CB /* KKJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridge.h; sourceTree = "<group>"; };
-		EBD6D37129B73BDB00E161CB /* BaseFunction.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = BaseFunction.js; sourceTree = "<group>"; };
-		EBD6D37229B73BDB00E161CB /* KKJSBridgeAJAXProtocolHook.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = KKJSBridgeAJAXProtocolHook.js; sourceTree = "<group>"; };
-		EBD6D37429B73BDB00E161CB /* KKJSBridgeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMessage.h; sourceTree = "<group>"; };
-		EBD6D37529B73BDB00E161CB /* KKJSBridgeMessageDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeMessageDispatcher.m; sourceTree = "<group>"; };
-		EBD6D37629B73BDB00E161CB /* KKJSBridgeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeMessage.m; sourceTree = "<group>"; };
-		EBD6D37729B73BDB00E161CB /* KKJSBridgeMessageDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMessageDispatcher.h; sourceTree = "<group>"; };
-		EBD6D37929B73BDC00E161CB /* KKJSBridgeModuleMetaClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeModuleMetaClass.m; sourceTree = "<group>"; };
-		EBD6D37A29B73BDC00E161CB /* KKJSBridgeModuleRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeModuleRegister.h; sourceTree = "<group>"; };
-		EBD6D37B29B73BDC00E161CB /* KKJSBridgeModuleMetaClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeModuleMetaClass.h; sourceTree = "<group>"; };
-		EBD6D37C29B73BDC00E161CB /* KKJSBridgeModuleRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeModuleRegister.m; sourceTree = "<group>"; };
-		EBD6D37D29B73BDC00E161CB /* KKJSBridgeEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeEngine.h; sourceTree = "<group>"; };
-		EBD6D37F29B73BDC00E161CB /* KKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebView.m; sourceTree = "<group>"; };
-		EBD6D38129B73BDC00E161CB /* WKWebView+KKWebViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+KKWebViewExtension.m"; sourceTree = "<group>"; };
-		EBD6D38229B73BDC00E161CB /* WKWebView+KKJSBridgeEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+KKJSBridgeEngine.m"; sourceTree = "<group>"; };
-		EBD6D38329B73BDC00E161CB /* WKWebView+KKJSBridgeEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+KKJSBridgeEngine.h"; sourceTree = "<group>"; };
-		EBD6D38429B73BDC00E161CB /* WKWebView+KKWebViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+KKWebViewExtension.h"; sourceTree = "<group>"; };
-		EBD6D38629B73BDC00E161CB /* KKWebViewCookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebViewCookieManager.h; sourceTree = "<group>"; };
-		EBD6D38729B73BDC00E161CB /* KKWebViewCookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebViewCookieManager.m; sourceTree = "<group>"; };
-		EBD6D38829B73BDC00E161CB /* KKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebView.h; sourceTree = "<group>"; };
-		EBD6D38A29B73BDC00E161CB /* WKWebView+KKWebViewReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+KKWebViewReusable.m"; sourceTree = "<group>"; };
-		EBD6D38B29B73BDC00E161CB /* KKWebViewPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebViewPool.h; sourceTree = "<group>"; };
-		EBD6D38C29B73BDC00E161CB /* WKWebView+KKWebViewReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+KKWebViewReusable.h"; sourceTree = "<group>"; };
-		EBD6D38D29B73BDC00E161CB /* KKWebViewPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebViewPool.m; sourceTree = "<group>"; };
-		EBD6D39029B73BDC00E161CB /* KKJSBridgeModuleCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeModuleCookie.h; sourceTree = "<group>"; };
-		EBD6D39129B73BDC00E161CB /* KKJSBridgeModuleCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeModuleCookie.m; sourceTree = "<group>"; };
-		EBD6D39429B73BDC00E161CB /* KKJSBridgeAjaxBodyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeAjaxBodyHelper.m; sourceTree = "<group>"; };
-		EBD6D39529B73BDC00E161CB /* KKJSBridgeAjaxBodyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeAjaxBodyHelper.h; sourceTree = "<group>"; };
-		EBD6D39729B73BDC00E161CB /* KKJSBridgeURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeURLRequestSerialization.h; sourceTree = "<group>"; };
-		EBD6D39829B73BDC00E161CB /* KKJSBridgeMultipartFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMultipartFormData.h; sourceTree = "<group>"; };
-		EBD6D39929B73BDC00E161CB /* KKJSBridgeFormDataFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeFormDataFile.m; sourceTree = "<group>"; };
-		EBD6D39A29B73BDC00E161CB /* KKJSBridgeStreamingMultipartFormData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeStreamingMultipartFormData.m; sourceTree = "<group>"; };
-		EBD6D39B29B73BDC00E161CB /* KKJSBridgeURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeURLRequestSerialization.m; sourceTree = "<group>"; };
-		EBD6D39C29B73BDC00E161CB /* KKJSBridgeFormDataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeFormDataFile.h; sourceTree = "<group>"; };
-		EBD6D39D29B73BDC00E161CB /* KKJSBridgeStreamingMultipartFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeStreamingMultipartFormData.h; sourceTree = "<group>"; };
-		EBD6D39F29B73BDC00E161CB /* KKJSBridgeAjaxURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeAjaxURLProtocol.m; sourceTree = "<group>"; };
-		EBD6D3A029B73BDC00E161CB /* KKJSBridgeXMLBodyCacheRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeXMLBodyCacheRequest.m; sourceTree = "<group>"; };
-		EBD6D3A129B73BDC00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+KKJSBridgeWKWebView.m"; sourceTree = "<group>"; };
-		EBD6D3A229B73BDC00E161CB /* KKJSBridgeAjaxURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeAjaxURLProtocol.h; sourceTree = "<group>"; };
-		EBD6D3A329B73BDC00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+KKJSBridgeWKWebView.h"; sourceTree = "<group>"; };
-		EBD6D3A429B73BDC00E161CB /* KKJSBridgeXMLBodyCacheRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeXMLBodyCacheRequest.h; sourceTree = "<group>"; };
-		EBD6D3A529B73BDC00E161CB /* KKJSBridgeAjaxDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeAjaxDelegate.h; sourceTree = "<group>"; };
-		EBD6D3A729B73BDC00E161CB /* URLProtocolHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLProtocolHelper.h; sourceTree = "<group>"; };
-		EBD6D3A829B73BDC00E161CB /* OfflinePackageURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflinePackageURLProtocol.m; sourceTree = "<group>"; };
-		EBD6D3A929B73BDC00E161CB /* URLProtocolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLProtocolHelper.m; sourceTree = "<group>"; };
-		EBD6D3AA29B73BDC00E161CB /* OfflinePackageURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflinePackageURLProtocol.h; sourceTree = "<group>"; };
-		EBD6D3AC29B73BDC00E161CB /* OfflinePackageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflinePackageController.h; sourceTree = "<group>"; };
-		EBD6D3AF29B73BDC00E161CB /* LolmDFLoadingWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFLoadingWidget.swift; sourceTree = "<group>"; };
-		EBD6D3B029B73BDC00E161CB /* LolmDFAPIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFAPIConst.swift; sourceTree = "<group>"; };
-		EBD6D3B429B73BDC00E161CB /* LolmDFBaseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFBaseModels.swift; sourceTree = "<group>"; };
-		EBD6D3B729B73BDC00E161CB /* lolm_base_dfvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_base_dfvc.swift; sourceTree = "<group>"; };
-		EBD6D3B829B73BDC00E161CB /* UIDevice+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Utils.m"; sourceTree = "<group>"; };
-		EBD6D3B929B73BDC00E161CB /* Loldf_hmCloud_loadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loldf_hmCloud_loadingView.swift; sourceTree = "<group>"; };
-		EBD6D3BF29B73BDC00E161CB /* LolmDFFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFFunctions.swift; sourceTree = "<group>"; };
-		EBD6D3C129B73BDC00E161CB /* UIFont(ext).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont(ext).swift"; sourceTree = "<group>"; };
-		EBD6D3C229B73BDC00E161CB /* lolm_scan_dfvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_scan_dfvc.swift; sourceTree = "<group>"; };
-		EBD6D3C329B73BDC00E161CB /* Notification(ext).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification(ext).swift"; sourceTree = "<group>"; };
-		EBD6D3C529B73BDC00E161CB /* LolmDFFileConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFFileConfig.swift; sourceTree = "<group>"; };
-		EBD6D3C629B73BDC00E161CB /* LolmDFHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFHttpTool.swift; sourceTree = "<group>"; };
-		EBD6D3C729B73BDC00E161CB /* Lolmdf_LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lolmdf_LoginModel.swift; sourceTree = "<group>"; };
-		EBD6D3C829B73BDC00E161CB /* LolmDF_RealNameLotterySuccAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDF_RealNameLotterySuccAlertView.swift; sourceTree = "<group>"; };
-		EBD6D3C929B73BDC00E161CB /* LolmDFHttpUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFHttpUtil.swift; sourceTree = "<group>"; };
-		EBD6D3CA29B73BDC00E161CB /* LolmDFHttpFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFHttpFactory.swift; sourceTree = "<group>"; };
-		EBD6D3CB29B73BDC00E161CB /* lolm_base_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_base_view.swift; sourceTree = "<group>"; };
-		EBD6D3CC29B73BDC00E161CB /* UIDevice+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Utils.h"; sourceTree = "<group>"; };
-		EBD6D3CD29B73BDC00E161CB /* lolm_shanghao_loading_dfview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_shanghao_loading_dfview.swift; sourceTree = "<group>"; };
-		EBD6D3CE29B73BDC00E161CB /* UILabel(ext).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel(ext).swift"; sourceTree = "<group>"; };
-		EBD6D3CF29B73BDC00E161CB /* LolmDFConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolmDFConst.swift; sourceTree = "<group>"; };
-		EBD6D3D329B73BDC00E161CB /* lolm_actDetail_share_alert_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_actDetail_share_alert_view.swift; sourceTree = "<group>"; };
-		EBD6D3D429B73BDC00E161CB /* lolm_actDetail_shareImg_alert_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lolm_actDetail_shareImg_alert_view.swift; sourceTree = "<group>"; };
-		EBD6D42029B7438200E161CB /* DFPlatformShareUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFPlatformShareUtil.swift; sourceTree = "<group>"; };
 		EBD98457295D2F8400F468B9 /* MultiplePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePicker.swift; sourceTree = "<group>"; };
 		EBD9845C295D6A5300F468B9 /* RentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentCard.swift; sourceTree = "<group>"; };
 		EBE17A6B2965659800E66C11 /* OrderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAPI.swift; sourceTree = "<group>"; };
 		EBFA7C7129797F8C0000EC36 /* LogoffVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoffVC.swift; sourceTree = "<group>"; };
-		FF3BBA9585019EE048B00510 /* Pods-ferental-ferentalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ferental-ferentalUITests.debug.xcconfig"; path = "Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,7 +287,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C466D741684867AD836FD047 /* Pods_ferentalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +294,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374EF45F58A40EE2CA24FA39 /* Pods_ferental_ferentalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,8 +304,6 @@
 			isa = PBXGroup;
 			children = (
 				DD0B04EA4F05B8C596A71B8F /* Pods_ferental.framework */,
-				3D11DB47D1460A36FCF36B84 /* Pods_ferental_ferentalUITests.framework */,
-				DB1EF8B4158385E1013AA161 /* Pods_ferentalTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -476,22 +313,18 @@
 			children = (
 				9F83059081537A3FB52CF6DE /* Pods-ferental.debug.xcconfig */,
 				6DAB6B60489764735DD37EEA /* Pods-ferental.release.xcconfig */,
-				FF3BBA9585019EE048B00510 /* Pods-ferental-ferentalUITests.debug.xcconfig */,
-				C356B440BA7688C847451A91 /* Pods-ferental-ferentalUITests.release.xcconfig */,
-				D6AB61BA0111E22D24277692 /* Pods-ferentalTests.debug.xcconfig */,
-				388A530ABD151BF1E78996CF /* Pods-ferentalTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EB2B2CE129B8661F0058C1EE /* Resource */ = {
+		EB1721BF29D1A2A800BBB326 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				EB2B2CE629B8668E0058C1EE /* lolm_tb_game.json */,
-				EB2B2CE429B8664C0058C1EE /* lolm_loading.json */,
-				EB2B2CE229B8662F0058C1EE /* quick_login_loading.json */,
+				EBAB121B29D42448003855FA /* Model */,
+				EBAB121829D4242C003855FA /* View */,
+				EB1721C029D1A33900BBB326 /* CartVC.swift */,
 			);
-			path = Resource;
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		EB3576402967D0330013A55D /* Picker */ = {
@@ -509,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				EB5EA7FA29B7482B00B6F1E3 /* PrefixHeader.pch */,
-				EBD6D35229B73BDB00E161CB /* OFPKG */,
 				EB71EEC2295A8A18007FB8B8 /* ferental */,
 				EB71EED9295A8A1A007FB8B8 /* ferentalTests */,
 				EB71EEE3295A8A1A007FB8B8 /* ferentalUITests */,
@@ -532,6 +364,7 @@
 		EB71EEC2295A8A18007FB8B8 /* ferental */ = {
 			isa = PBXGroup;
 			children = (
+				EB1721BF29D1A2A800BBB326 /* Cart */,
 				EBBCD10B29BF4CEB0028CAC3 /* ferental.entitlements */,
 				EB7F98F02966BFC50071CD13 /* Service */,
 				EB71F1EF295A92E3007FB8B8 /* Podfile */,
@@ -874,6 +707,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EBAB121829D4242C003855FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBAB121929D4243B003855FA /* CartItemCell.swift */,
+				EBAB121E29D42612003855FA /* CartComfirmVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBAB121B29D42448003855FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBAB121C29D42451003855FA /* CartItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EBB0C49B295C1214004444EA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -881,276 +731,6 @@
 				EBB0C49E295C127E004444EA /* DeviceCard.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		EBD6D35229B73BDB00E161CB /* OFPKG */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D35329B73BDB00E161CB /* PKGManager.swift */,
-				EBD6D35429B73BDB00E161CB /* File++.swift */,
-				EBD6D35529B73BDB00E161CB /* OfflinePackageController.m */,
-				EBD6D35629B73BDB00E161CB /* Module */,
-				EBD6D35C29B73BDB00E161CB /* KKJSBridge */,
-				EBD6D3A629B73BDC00E161CB /* Protocol */,
-				EBD6D3AC29B73BDC00E161CB /* OfflinePackageController.h */,
-				EBD6D3AD29B73BDC00E161CB /* SHSupport */,
-			);
-			path = OFPKG;
-			sourceTree = "<group>";
-		};
-		EBD6D35629B73BDB00E161CB /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D35729B73BDB00E161CB /* ToGameModule.swift */,
-				EBD6D35929B73BDB00E161CB /* BaseFunctionModule.h */,
-				EBD6D35A29B73BDB00E161CB /* BaseFunctionModule.m */,
-				EBB3452929C302D400D1E43D /* AuthChecker.swift */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		EBD6D35C29B73BDB00E161CB /* KKJSBridge */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D35D29B73BDB00E161CB /* Util */,
-				EBD6D36B29B73BDB00E161CB /* KKJSBridgeEngine.m */,
-				EBD6D36C29B73BDB00E161CB /* Config */,
-				EBD6D36F29B73BDB00E161CB /* KKJSBridge.h */,
-				EBD6D37029B73BDB00E161CB /* JS */,
-				EBD6D37329B73BDB00E161CB /* Dispatcher */,
-				EBD6D37829B73BDB00E161CB /* Register */,
-				EBD6D37D29B73BDC00E161CB /* KKJSBridgeEngine.h */,
-				EBD6D37E29B73BDC00E161CB /* View */,
-				EBD6D38E29B73BDC00E161CB /* Modules */,
-			);
-			path = KKJSBridge;
-			sourceTree = "<group>";
-		};
-		EBD6D35D29B73BDB00E161CB /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D35E29B73BDB00E161CB /* KKJSBridgeMacro.h */,
-				EBD6D35F29B73BDB00E161CB /* KKJSBridgeWeakProxy.m */,
-				EBD6D36029B73BDB00E161CB /* KKJSBridgeWeakScriptMessageDelegate.h */,
-				EBD6D36129B73BDB00E161CB /* KKJSBridgeSwizzle.h */,
-				EBD6D36229B73BDB00E161CB /* KKJSBridgeSafeDictionary.h */,
-				EBD6D36329B73BDB00E161CB /* KKJSBridgeLogger.h */,
-				EBD6D36429B73BDB00E161CB /* KKJSBridgeJSExecutor.m */,
-				EBD6D36529B73BDB00E161CB /* KKJSBridgeWeakProxy.h */,
-				EBD6D36629B73BDB00E161CB /* KKJSBridgeWeakScriptMessageDelegate.m */,
-				EBD6D36729B73BDB00E161CB /* KKJSBridgeSafeDictionary.m */,
-				EBD6D36829B73BDB00E161CB /* KKJSBridgeSwizzle.m */,
-				EBD6D36929B73BDB00E161CB /* KKJSBridgeJSExecutor.h */,
-				EBD6D36A29B73BDB00E161CB /* KKJSBridgeLogger.m */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		EBD6D36C29B73BDB00E161CB /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D36D29B73BDB00E161CB /* KKJSBridgeConfig.m */,
-				EBD6D36E29B73BDB00E161CB /* KKJSBridgeConfig.h */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		EBD6D37029B73BDB00E161CB /* JS */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D37129B73BDB00E161CB /* BaseFunction.js */,
-				EBD6D37229B73BDB00E161CB /* KKJSBridgeAJAXProtocolHook.js */,
-			);
-			path = JS;
-			sourceTree = "<group>";
-		};
-		EBD6D37329B73BDB00E161CB /* Dispatcher */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D37429B73BDB00E161CB /* KKJSBridgeMessage.h */,
-				EBD6D37529B73BDB00E161CB /* KKJSBridgeMessageDispatcher.m */,
-				EBD6D37629B73BDB00E161CB /* KKJSBridgeMessage.m */,
-				EBD6D37729B73BDB00E161CB /* KKJSBridgeMessageDispatcher.h */,
-			);
-			path = Dispatcher;
-			sourceTree = "<group>";
-		};
-		EBD6D37829B73BDB00E161CB /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D37929B73BDC00E161CB /* KKJSBridgeModuleMetaClass.m */,
-				EBD6D37A29B73BDC00E161CB /* KKJSBridgeModuleRegister.h */,
-				EBD6D37B29B73BDC00E161CB /* KKJSBridgeModuleMetaClass.h */,
-				EBD6D37C29B73BDC00E161CB /* KKJSBridgeModuleRegister.m */,
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		EBD6D37E29B73BDC00E161CB /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D37F29B73BDC00E161CB /* KKWebView.m */,
-				EBD6D38029B73BDC00E161CB /* Extension */,
-				EBD6D38529B73BDC00E161CB /* CookieManager */,
-				EBD6D38829B73BDC00E161CB /* KKWebView.h */,
-				EBD6D38929B73BDC00E161CB /* WebViewPool */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		EBD6D38029B73BDC00E161CB /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D38129B73BDC00E161CB /* WKWebView+KKWebViewExtension.m */,
-				EBD6D38229B73BDC00E161CB /* WKWebView+KKJSBridgeEngine.m */,
-				EBD6D38329B73BDC00E161CB /* WKWebView+KKJSBridgeEngine.h */,
-				EBD6D38429B73BDC00E161CB /* WKWebView+KKWebViewExtension.h */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		EBD6D38529B73BDC00E161CB /* CookieManager */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D38629B73BDC00E161CB /* KKWebViewCookieManager.h */,
-				EBD6D38729B73BDC00E161CB /* KKWebViewCookieManager.m */,
-			);
-			path = CookieManager;
-			sourceTree = "<group>";
-		};
-		EBD6D38929B73BDC00E161CB /* WebViewPool */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D38A29B73BDC00E161CB /* WKWebView+KKWebViewReusable.m */,
-				EBD6D38B29B73BDC00E161CB /* KKWebViewPool.h */,
-				EBD6D38C29B73BDC00E161CB /* WKWebView+KKWebViewReusable.h */,
-				EBD6D38D29B73BDC00E161CB /* KKWebViewPool.m */,
-			);
-			path = WebViewPool;
-			sourceTree = "<group>";
-		};
-		EBD6D38E29B73BDC00E161CB /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D38F29B73BDC00E161CB /* Cookie */,
-				EBD6D39229B73BDC00E161CB /* Ajax */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		EBD6D38F29B73BDC00E161CB /* Cookie */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D39029B73BDC00E161CB /* KKJSBridgeModuleCookie.h */,
-				EBD6D39129B73BDC00E161CB /* KKJSBridgeModuleCookie.m */,
-			);
-			path = Cookie;
-			sourceTree = "<group>";
-		};
-		EBD6D39229B73BDC00E161CB /* Ajax */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D39329B73BDC00E161CB /* Util */,
-				EBD6D39629B73BDC00E161CB /* FormData */,
-				EBD6D39E29B73BDC00E161CB /* AjaxProtocolHook */,
-				EBD6D3A529B73BDC00E161CB /* KKJSBridgeAjaxDelegate.h */,
-			);
-			path = Ajax;
-			sourceTree = "<group>";
-		};
-		EBD6D39329B73BDC00E161CB /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D39429B73BDC00E161CB /* KKJSBridgeAjaxBodyHelper.m */,
-				EBD6D39529B73BDC00E161CB /* KKJSBridgeAjaxBodyHelper.h */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		EBD6D39629B73BDC00E161CB /* FormData */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D39729B73BDC00E161CB /* KKJSBridgeURLRequestSerialization.h */,
-				EBD6D39829B73BDC00E161CB /* KKJSBridgeMultipartFormData.h */,
-				EBD6D39929B73BDC00E161CB /* KKJSBridgeFormDataFile.m */,
-				EBD6D39A29B73BDC00E161CB /* KKJSBridgeStreamingMultipartFormData.m */,
-				EBD6D39B29B73BDC00E161CB /* KKJSBridgeURLRequestSerialization.m */,
-				EBD6D39C29B73BDC00E161CB /* KKJSBridgeFormDataFile.h */,
-				EBD6D39D29B73BDC00E161CB /* KKJSBridgeStreamingMultipartFormData.h */,
-			);
-			path = FormData;
-			sourceTree = "<group>";
-		};
-		EBD6D39E29B73BDC00E161CB /* AjaxProtocolHook */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D39F29B73BDC00E161CB /* KKJSBridgeAjaxURLProtocol.m */,
-				EBD6D3A029B73BDC00E161CB /* KKJSBridgeXMLBodyCacheRequest.m */,
-				EBD6D3A129B73BDC00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m */,
-				EBD6D3A229B73BDC00E161CB /* KKJSBridgeAjaxURLProtocol.h */,
-				EBD6D3A329B73BDC00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.h */,
-				EBD6D3A429B73BDC00E161CB /* KKJSBridgeXMLBodyCacheRequest.h */,
-			);
-			path = AjaxProtocolHook;
-			sourceTree = "<group>";
-		};
-		EBD6D3A629B73BDC00E161CB /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D3A729B73BDC00E161CB /* URLProtocolHelper.h */,
-				EBD6D3A829B73BDC00E161CB /* OfflinePackageURLProtocol.m */,
-				EBD6D3A929B73BDC00E161CB /* URLProtocolHelper.m */,
-				EBD6D3AA29B73BDC00E161CB /* OfflinePackageURLProtocol.h */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		EBD6D3AD29B73BDC00E161CB /* SHSupport */ = {
-			isa = PBXGroup;
-			children = (
-				EB2B2CE129B8661F0058C1EE /* Resource */,
-				EBD6D3AF29B73BDC00E161CB /* LolmDFLoadingWidget.swift */,
-				EBD6D3B029B73BDC00E161CB /* LolmDFAPIConst.swift */,
-				EBD6D3B429B73BDC00E161CB /* LolmDFBaseModels.swift */,
-				EBD6D3B729B73BDC00E161CB /* lolm_base_dfvc.swift */,
-				EBD6D3B829B73BDC00E161CB /* UIDevice+Utils.m */,
-				EBD6D3B929B73BDC00E161CB /* Loldf_hmCloud_loadingView.swift */,
-				EBD6D3BF29B73BDC00E161CB /* LolmDFFunctions.swift */,
-				EBD6D3C129B73BDC00E161CB /* UIFont(ext).swift */,
-				EBD6D3C229B73BDC00E161CB /* lolm_scan_dfvc.swift */,
-				EBD6D3C329B73BDC00E161CB /* Notification(ext).swift */,
-				EBD6D3C429B73BDC00E161CB /* http */,
-				EBD6D3CB29B73BDC00E161CB /* lolm_base_view.swift */,
-				EBD6D3CC29B73BDC00E161CB /* UIDevice+Utils.h */,
-				EBD6D3CD29B73BDC00E161CB /* lolm_shanghao_loading_dfview.swift */,
-				EBD6D3CE29B73BDC00E161CB /* UILabel(ext).swift */,
-				EBD6D3CF29B73BDC00E161CB /* LolmDFConst.swift */,
-				EBD6D3D229B73BDC00E161CB /* share */,
-			);
-			path = SHSupport;
-			sourceTree = "<group>";
-		};
-		EBD6D3C429B73BDC00E161CB /* http */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D3C529B73BDC00E161CB /* LolmDFFileConfig.swift */,
-				EBD6D3C629B73BDC00E161CB /* LolmDFHttpTool.swift */,
-				EBD6D3C729B73BDC00E161CB /* Lolmdf_LoginModel.swift */,
-				EBD6D3C829B73BDC00E161CB /* LolmDF_RealNameLotterySuccAlertView.swift */,
-				EBD6D3C929B73BDC00E161CB /* LolmDFHttpUtil.swift */,
-				EBD6D3CA29B73BDC00E161CB /* LolmDFHttpFactory.swift */,
-			);
-			path = http;
-			sourceTree = "<group>";
-		};
-		EBD6D3D229B73BDC00E161CB /* share */ = {
-			isa = PBXGroup;
-			children = (
-				EBD6D42029B7438200E161CB /* DFPlatformShareUtil.swift */,
-				EBD6D3D329B73BDC00E161CB /* lolm_actDetail_share_alert_view.swift */,
-				EBD6D3D429B73BDC00E161CB /* lolm_actDetail_shareImg_alert_view.swift */,
-			);
-			path = share;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1180,7 +760,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB71EEED295A8A1A007FB8B8 /* Build configuration list for PBXNativeTarget "ferentalTests" */;
 			buildPhases = (
-				8C061371388FA7F659921CE6 /* [CP] Check Pods Manifest.lock */,
 				EB71EED2295A8A1A007FB8B8 /* Sources */,
 				EB71EED3295A8A1A007FB8B8 /* Frameworks */,
 				EB71EED4295A8A1A007FB8B8 /* Resources */,
@@ -1199,12 +778,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB71EEF0295A8A1A007FB8B8 /* Build configuration list for PBXNativeTarget "ferentalUITests" */;
 			buildPhases = (
-				62A5EB8EAF8F9AF042CA7721 /* [CP] Check Pods Manifest.lock */,
 				EB71EEDC295A8A1A007FB8B8 /* Sources */,
 				EB71EEDD295A8A1A007FB8B8 /* Frameworks */,
 				EB71EEDE295A8A1A007FB8B8 /* Resources */,
-				5DCA8E7926EDC8736D42B6C2 /* [CP] Embed Pods Frameworks */,
-				C1BE5741827F9938135FC1AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1268,14 +844,9 @@
 				EB71EED0295A8A1A007FB8B8 /* LaunchScreen.storyboard in Resources */,
 				EB71F1E8295A8B53007FB8B8 /* jquery-2.2.0.js in Resources */,
 				EB71EECD295A8A1A007FB8B8 /* Assets.xcassets in Resources */,
-				EB2B2CE529B8664C0058C1EE /* lolm_loading.json in Resources */,
 				EB71F1E4295A8B53007FB8B8 /* holder.png in Resources */,
 				EB71EECB295A8A18007FB8B8 /* Main.storyboard in Resources */,
-				EB2B2CE329B8662F0058C1EE /* quick_login_loading.json in Resources */,
-				EBD6D3E429B73BDD00E161CB /* KKJSBridgeAJAXProtocolHook.js in Resources */,
-				EB2B2CE729B8668E0058C1EE /* lolm_tb_game.json in Resources */,
 				EB71F1E6295A8B53007FB8B8 /* app.css in Resources */,
-				EBD6D3E329B73BDD00E161CB /* BaseFunction.js in Resources */,
 				EB71F1E7295A8B53007FB8B8 /* test.html in Resources */,
 				EB71F1E9295A8B53007FB8B8 /* jquery.lazyload.js in Resources */,
 			);
@@ -1332,45 +903,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ferental/Pods-ferental-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5DCA8E7926EDC8736D42B6C2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62A5EB8EAF8F9AF042CA7721 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ferental-ferentalUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8555A83BD9338375F1B63E41 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1393,45 +925,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C061371388FA7F659921CE6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ferentalTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1BE5741827F9938135FC1AC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ferental-ferentalUITests/Pods-ferental-ferentalUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1441,81 +934,54 @@
 			files = (
 				EB71F1A5295A8B53007FB8B8 /* NotificationCenter++.swift in Sources */,
 				EB71F1B7295A8B53007FB8B8 /* UIImage+Chain.swift in Sources */,
-				EBD6D42129B7438200E161CB /* DFPlatformShareUtil.swift in Sources */,
 				EB71F1B6295A8B53007FB8B8 /* CALayer+Chain.swift in Sources */,
 				EB71F184295A8B53007FB8B8 /* RegisterVC.swift in Sources */,
 				EB71F192295A8B53007FB8B8 /* BaseVC.swift in Sources */,
-				EBD6D3EE29B73BDD00E161CB /* KKWebViewPool.m in Sources */,
-				EBD6D3F629B73BDD00E161CB /* NSURLProtocol+KKJSBridgeWKWebView.m in Sources */,
 				EBCDFC602965167200F5D470 /* BrandAPI.swift in Sources */,
 				EB71F1E0295A8B53007FB8B8 /* WKWebViewController.swift in Sources */,
 				EBFA7C7229797F8C0000EC36 /* LogoffVC.swift in Sources */,
-				EBD6D3F129B73BDD00E161CB /* KKJSBridgeFormDataFile.m in Sources */,
 				EB71F1A6295A8B53007FB8B8 /* Array++.swift in Sources */,
 				EB71F1B1295A8B53007FB8B8 /* FoundationExtension.swift in Sources */,
-				EBD6D3DE29B73BDD00E161CB /* KKJSBridgeSafeDictionary.m in Sources */,
-				EBD6D41B29B73BDD00E161CB /* lolm_actDetail_shareImg_alert_view.swift in Sources */,
 				EB71F1C7295A8B53007FB8B8 /* SYBasePopView.m in Sources */,
 				EBD98458295D2F8400F468B9 /* MultiplePicker.swift in Sources */,
 				EB71F1D8295A8B53007FB8B8 /* AppManager.swift in Sources */,
-				EBD6D41029B73BDD00E161CB /* Lolmdf_LoginModel.swift in Sources */,
-				EBD6D3DB29B73BDD00E161CB /* KKJSBridgeWeakProxy.m in Sources */,
-				EBD6D3EC29B73BDD00E161CB /* KKWebViewCookieManager.m in Sources */,
-				EBD6D3E229B73BDD00E161CB /* KKJSBridgeConfig.m in Sources */,
-				EBD6D3E829B73BDD00E161CB /* KKJSBridgeModuleRegister.m in Sources */,
 				EB71F1E2295A8B53007FB8B8 /* WebUtils.swift in Sources */,
 				EB71F1A4295A8B53007FB8B8 /* UIButton++.swift in Sources */,
 				EB71F19F295A8B53007FB8B8 /* DeviceDetailVC.swift in Sources */,
-				EBD6D3ED29B73BDD00E161CB /* WKWebView+KKWebViewReusable.m in Sources */,
+				EB1721C129D1A33900BBB326 /* CartVC.swift in Sources */,
 				EB71F189295A8B53007FB8B8 /* MineVC.swift in Sources */,
 				EB71EEC8295A8A18007FB8B8 /* ViewController.swift in Sources */,
 				EB71F1BB295A8B53007FB8B8 /* UIButton+Chain.swift in Sources */,
 				EB71F1AF295A8B53007FB8B8 /* FileManagerExtension.swift in Sources */,
 				EB71F1AB295A8B53007FB8B8 /* Image++.swift in Sources */,
-				EBD6D3FF29B73BDD00E161CB /* LolmDFBaseModels.swift in Sources */,
-				EBD6D3E029B73BDD00E161CB /* KKJSBridgeLogger.m in Sources */,
 				EB71F187295A8B53007FB8B8 /* BaseAPI.swift in Sources */,
 				EBA1220D296D4EB000B6B393 /* LoginVC2.swift in Sources */,
 				EB71F18C295A8B53007FB8B8 /* OrderCompletedVC.swift in Sources */,
 				EB71F1C3295A8B53007FB8B8 /* UIViewController+SYAdd.m in Sources */,
-				EBD6D3E929B73BDD00E161CB /* KKWebView.m in Sources */,
-				EBD6D3D929B73BDD00E161CB /* BaseFunctionModule.m in Sources */,
 				EB71F18B295A8B53007FB8B8 /* AboutUsVC.swift in Sources */,
-				EBD6D41529B73BDD00E161CB /* lolm_shanghao_loading_dfview.swift in Sources */,
 				EB71F1B5295A8B53007FB8B8 /* Associate.swift in Sources */,
-				EBD6D41129B73BDD00E161CB /* LolmDF_RealNameLotterySuccAlertView.swift in Sources */,
 				EB71F1C8295A8B53007FB8B8 /* SYPopTool.m in Sources */,
-				EBD6D3E129B73BDD00E161CB /* KKJSBridgeEngine.m in Sources */,
-				EBD6D41A29B73BDD00E161CB /* lolm_actDetail_share_alert_view.swift in Sources */,
 				EB7F98F22966C0180071CD13 /* Moya++.swift in Sources */,
 				EB1355332974FE68002E310E /* WebViewController.swift in Sources */,
 				EB71F1A1295A8B53007FB8B8 /* Constants.swift in Sources */,
+				EBAB121A29D4243B003855FA /* CartItemCell.swift in Sources */,
 				EB71F194295A8B53007FB8B8 /* LaunchView.swift in Sources */,
-				EBD6D40D29B73BDD00E161CB /* Notification(ext).swift in Sources */,
 				EB71F1A2295A8B53007FB8B8 /* UIColor++.swift in Sources */,
 				EBB0C4A1295C132A004444EA /* SinglePicker.swift in Sources */,
 				EBB0C49D295C1255004444EA /* ConfirmView.swift in Sources */,
 				EB71F1DB295A8B53007FB8B8 /* FileTool.swift in Sources */,
 				EB71F1BD295A8B53007FB8B8 /* UITextFiled+Chain.swift in Sources */,
-				EBD6D3EF29B73BDD00E161CB /* KKJSBridgeModuleCookie.m in Sources */,
-				EBD6D3DF29B73BDD00E161CB /* KKJSBridgeSwizzle.m in Sources */,
-				EBD6D41429B73BDD00E161CB /* lolm_base_view.swift in Sources */,
 				EB828A7929640771000780D3 /* MyOrderView.swift in Sources */,
 				EB71F1F6295A941D007FB8B8 /* AppDelegate.swift in Sources */,
 				EB71F1FD295B0CD5007FB8B8 /* SwiftLoader.m in Sources */,
 				EB71F19A295A8B53007FB8B8 /* PolicyView.swift in Sources */,
 				EB71F193295A8B53007FB8B8 /* MapVC.swift in Sources */,
-				EBB3452A29C302D400D1E43D /* AuthChecker.swift in Sources */,
 				EB71F1BC295A8B53007FB8B8 /* UIView+Chain.swift in Sources */,
 				EB71F185295A8B53007FB8B8 /* LoginVC.swift in Sources */,
 				EB71F1C2295A8B53007FB8B8 /* UITextView+Chain.swift in Sources */,
-				EBD6D3F329B73BDD00E161CB /* KKJSBridgeURLRequestSerialization.m in Sources */,
 				EB71F1C6295A8B53007FB8B8 /* GEPopTool.swift in Sources */,
 				EB71F18D295A8B53007FB8B8 /* OrderStatusVC.swift in Sources */,
 				EB71F1B3295A8B53007FB8B8 /* Predefine.swift in Sources */,
-				EBD6D40E29B73BDD00E161CB /* LolmDFFileConfig.swift in Sources */,
-				EBD6D40B29B73BDD00E161CB /* UIFont(ext).swift in Sources */,
-				EBD6D3FA29B73BDD00E161CB /* LolmDFLoadingWidget.swift in Sources */,
 				EB71F1B4295A8B53007FB8B8 /* Chain.swift in Sources */,
 				EB71F18A295A8B53007FB8B8 /* FeedbackVC.swift in Sources */,
 				EB71F1F3295A93F0007FB8B8 /* String++.swift in Sources */,
@@ -1524,49 +990,31 @@
 				EB71F191295A8B53007FB8B8 /* ModuleContainer.swift in Sources */,
 				EB71F1C0295A8B53007FB8B8 /* UICollectionView+Chain.swift in Sources */,
 				EBB3452C29C3103400D1E43D /* Poster.swift in Sources */,
-				EBD6D41229B73BDD00E161CB /* LolmDFHttpUtil.swift in Sources */,
 				EB71F1C5295A8B53007FB8B8 /* UIView+VisualHelper.m in Sources */,
 				EB71F183295A8B53007FB8B8 /* ResetPwVC.swift in Sources */,
 				EB71F186295A8B53007FB8B8 /* ForgetPwVC.swift in Sources */,
 				EB71F19C295A8B53007FB8B8 /* CommonService.swift in Sources */,
-				EBD6D3DC29B73BDD00E161CB /* KKJSBridgeJSExecutor.m in Sources */,
 				EB71F1C1295A8B53007FB8B8 /* UIScrollView+Chain.swift in Sources */,
-				EBD6D3D529B73BDD00E161CB /* PKGManager.swift in Sources */,
-				EBD6D3DD29B73BDD00E161CB /* KKJSBridgeWeakScriptMessageDelegate.m in Sources */,
-				EBD6D40429B73BDD00E161CB /* Loldf_hmCloud_loadingView.swift in Sources */,
-				EBD6D3D629B73BDD00E161CB /* File++.swift in Sources */,
 				EB71F1CA295A8B53007FB8B8 /* Aspects.m in Sources */,
-				EBD6D41329B73BDD00E161CB /* LolmDFHttpFactory.swift in Sources */,
-				EBD6D40C29B73BDD00E161CB /* lolm_scan_dfvc.swift in Sources */,
 				EB71F1B8295A8B53007FB8B8 /* UITableView+Chain.swift in Sources */,
-				EBD6D3E729B73BDD00E161CB /* KKJSBridgeModuleMetaClass.m in Sources */,
-				EBD6D41729B73BDD00E161CB /* LolmDFConst.swift in Sources */,
-				EBD6D3F829B73BDD00E161CB /* URLProtocolHelper.m in Sources */,
 				EB71F1D9295A8B53007FB8B8 /* DateTools.swift in Sources */,
 				EB71F19B295A8B53007FB8B8 /* HomeVC.swift in Sources */,
 				EB71F19E295A8B53007FB8B8 /* DeviceListVC.swift in Sources */,
 				EB71F197295A8B53007FB8B8 /* SelectItemView.swift in Sources */,
-				EBD6D3D829B73BDD00E161CB /* ToGameModule.swift in Sources */,
 				EB71F1A9295A8B53007FB8B8 /* UserDefault++.swift in Sources */,
-				EBD6D40929B73BDD00E161CB /* LolmDFFunctions.swift in Sources */,
 				EB71F1C4295A8B53007FB8B8 /* UIButton+SYImagePosition.m in Sources */,
-				EBD6D40F29B73BDD00E161CB /* LolmDFHttpTool.swift in Sources */,
-				EBD6D3EB29B73BDD00E161CB /* WKWebView+KKJSBridgeEngine.m in Sources */,
 				EBB62B9F296EA09B00CA8433 /* DeviceListVC2.swift in Sources */,
 				EB71F1C9295A8B53007FB8B8 /* CancelaleTimer.swift in Sources */,
 				EB71F1DC295A8B53007FB8B8 /* LocationManager.swift in Sources */,
-				EBD6D41629B73BDD00E161CB /* UILabel(ext).swift in Sources */,
 				EB71F18F295A8B53007FB8B8 /* OrderListVC.swift in Sources */,
 				EBD9845D295D6A5300F468B9 /* RentCard.swift in Sources */,
-				EBD6D3F429B73BDD00E161CB /* KKJSBridgeAjaxURLProtocol.m in Sources */,
 				EB71F1A8295A8B53007FB8B8 /* ScrollView++.swift in Sources */,
 				EB71F1FA295B0516007FB8B8 /* UIView++.swift in Sources */,
-				EBD6D3E629B73BDD00E161CB /* KKJSBridgeMessage.m in Sources */,
-				EBD6D3F529B73BDD00E161CB /* KKJSBridgeXMLBodyCacheRequest.m in Sources */,
 				EB71F1A3295A8B53007FB8B8 /* NSObject++.swift in Sources */,
-				EBD6D3E529B73BDD00E161CB /* KKJSBridgeMessageDispatcher.m in Sources */,
 				EB71F1B9295A8B53007FB8B8 /* UILabel+Chain.swift in Sources */,
 				EB71F1F8295A9698007FB8B8 /* UIImage++.swift in Sources */,
+				EBAB121D29D42451003855FA /* CartItem.swift in Sources */,
+				EBAB121F29D42612003855FA /* CartComfirmVC.swift in Sources */,
 				EB71F195295A8B53007FB8B8 /* NavVC.swift in Sources */,
 				EB71F188295A8B53007FB8B8 /* LoginAPI.swift in Sources */,
 				EB71F196295A8B53007FB8B8 /* BaseView.swift in Sources */,
@@ -1577,19 +1025,11 @@
 				EB71F1DF295A8B53007FB8B8 /* AutoProgressHUD.swift in Sources */,
 				EB71F1AD295A8B53007FB8B8 /* NSAttributedString+Extensions.swift in Sources */,
 				EB71F19D295A8B53007FB8B8 /* BrandVC.swift in Sources */,
-				EBD6D3FB29B73BDD00E161CB /* LolmDFAPIConst.swift in Sources */,
 				EB71F18E295A8B53007FB8B8 /* OrderPageVC.swift in Sources */,
-				EBD6D3D729B73BDD00E161CB /* OfflinePackageController.m in Sources */,
-				EBD6D3F029B73BDD00E161CB /* KKJSBridgeAjaxBodyHelper.m in Sources */,
-				EBD6D40229B73BDD00E161CB /* lolm_base_dfvc.swift in Sources */,
-				EBD6D3F729B73BDD00E161CB /* OfflinePackageURLProtocol.m in Sources */,
 				EB71F1BA295A8B53007FB8B8 /* UIControl+Chain.swift in Sources */,
 				EB71F1BE295A8B53007FB8B8 /* UITapGestureRecognizer+Chain.swift in Sources */,
 				EBE17A6C2965659800E66C11 /* OrderAPI.swift in Sources */,
 				EB71F190295A8B53007FB8B8 /* TabbarVC.swift in Sources */,
-				EBD6D3F229B73BDD00E161CB /* KKJSBridgeStreamingMultipartFormData.m in Sources */,
-				EBD6D40329B73BDD00E161CB /* UIDevice+Utils.m in Sources */,
-				EBD6D3EA29B73BDD00E161CB /* WKWebView+KKWebViewExtension.m in Sources */,
 				EB71F199295A8B53007FB8B8 /* DatePicker.swift in Sources */,
 				EB71F1DA295A8B53007FB8B8 /* ThemeManager.swift in Sources */,
 			);
@@ -1771,7 +1211,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39VQ3U3DJL;
+				DEVELOPMENT_TEAM = 6475J8L3PC;
 				GCC_PREFIX_HEADER = "${SRCROOT}/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1795,7 +1235,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.dofan;
 				PRODUCT_NAME = "游易租";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1816,7 +1256,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39VQ3U3DJL;
+				DEVELOPMENT_TEAM = 6475J8L3PC;
 				GCC_PREFIX_HEADER = "${SRCROOT}/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1840,7 +1280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.shady;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqx.ferental.dofan;
 				PRODUCT_NAME = "游易租";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1853,7 +1293,6 @@
 		};
 		EB71EEEE295A8A1A007FB8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6AB61BA0111E22D24277692 /* Pods-ferentalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1874,7 +1313,6 @@
 		};
 		EB71EEEF295A8A1A007FB8B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 388A530ABD151BF1E78996CF /* Pods-ferentalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1895,7 +1333,6 @@
 		};
 		EB71EEF1295A8A1A007FB8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF3BBA9585019EE048B00510 /* Pods-ferental-ferentalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1914,7 +1351,6 @@
 		};
 		EB71EEF2295A8A1A007FB8B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C356B440BA7688C847451A91 /* Pods-ferental-ferentalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

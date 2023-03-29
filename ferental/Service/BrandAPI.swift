@@ -29,7 +29,11 @@ struct Brand: HandyJSON, Equatable{
     var id: String!
 }
 
-struct Device: HandyJSON{
+struct Device: HandyJSON, Equatable{
+    static func == (lhs: Device, rhs: Device) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     
     var memory: String?{
         params["memory"] as? String

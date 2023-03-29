@@ -57,7 +57,15 @@ class DFSuspendView: UIView {
         
         island = true
         
-        let   min_x = -myWidth/2
+        var    min_x = -myWidth/2
+        
+        let isRight = UIApplication.shared.statusBarOrientation == .landscapeRight
+        if isRight {
+                
+            min_x += superview!.safeAreaInsets.left
+          
+        }
+        
         
         frame = CGRect(x: min_x, y: (MaxHeight - myWidth)/2, width: myWidth, height: myWidth)
         
@@ -74,11 +82,50 @@ class DFSuspendView: UIView {
         
         addGestureRecognizer(tapgesture)
         
-
+        NotificationCenter.default.addObserver(self, selector: #selector(orientNotification), name: UIDevice.orientationDidChangeNotification, object: nil)
         
     }
     
+    @objc  func orientNotification()  {
 
+
+
+        let centerX = frame.midX
+        let centerY = frame.midY
+        
+        
+        if centerX <= MaxWidth/2  {
+            
+              
+                
+            var  mid_x:CGFloat = 0
+                
+            
+            let isRight = UIApplication.shared.statusBarOrientation == .landscapeRight
+            if isRight {
+                    
+                    mid_x += superview!.safeAreaInsets.left
+              
+            }
+            
+            self.center = CGPoint(x: mid_x, y: centerY)
+        }else{
+            
+            
+            var  mid_x:CGFloat = MaxWidth
+            
+            let isLeft = UIApplication.shared.statusBarOrientation == .landscapeLeft
+            
+            if isLeft {
+                
+                mid_x -= superview!.safeAreaInsets.right
+            }
+            self.center = CGPoint(x: mid_x, y: centerY)
+        }
+        
+        
+
+    }
     
     @objc  func buttonClicked()  {
         
@@ -115,13 +162,23 @@ class DFSuspendView: UIView {
             if endPoint.x <= MaxWidth/2 {
                 
                
-                let   mid_x:CGFloat = 0
+                var   mid_x:CGFloat = 0
                 
-               
+                let isRight = UIApplication.shared.statusBarOrientation == .landscapeRight
+                if isRight {
+                    
+                    mid_x += superview!.safeAreaInsets.right
+                }
                 adjustCenter.x = mid_x
             }else{
                 
-                let  mid_x:CGFloat = MaxWidth - superview!.safeAreaInsets.right
+                var  mid_x:CGFloat = MaxWidth
+                
+                let isLeft = UIApplication.shared.statusBarOrientation == .landscapeLeft
+                if isLeft {
+                    
+                    mid_x -= superview!.safeAreaInsets.left
+                }
                 
                 adjustCenter.x = mid_x
             }

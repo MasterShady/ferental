@@ -144,8 +144,10 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
     }
     
 
-    
-    
+    @objc func addToCart(){
+        AutoProgressHUD.showAutoHud("已添加到购物车")
+        CartManager.addDevice(self.device)
+    }
     
     
     
@@ -235,16 +237,40 @@ class DeviceDetailVC: BaseVC, UIScrollViewDelegate {
     lazy var rentView: UIView = {
         let rentView = UIView()
         rentView.backgroundColor = .white
+        
+        let statckView = UIStackView()
+        statckView.axis = .horizontal
+        statckView.spacing = 20
+        
+        let cartBtn = UIButton()
+        rentView.addSubview(cartBtn)
+        cartBtn.snp.makeConstraints { make in
+            make.size.equalTo(CGSize(width: 80, height: 44))
+                
+        }
+        statckView.addArrangedSubview(cartBtn)
+        
+        let cartImage = UIImage.init(named: "cart")?.resizeImageToSize(size: .init(width: 24, height: 24))
+        cartBtn.chain.normalImage(cartImage).corner(radius: 6).clipsToBounds(true).border(color: .kthemeColor).border(width: 2)
+        cartBtn.setTarget(self, action: #selector(addToCart), for: .touchUpInside)
+        
+        
+        
         let btn = UIButton()
-        rentView.addSubview(btn)
         btn.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(10)
-            make.size.equalTo(CGSize(width: 347, height: 44))
+            make.size.equalTo(CGSize(width: 247, height: 44))
         }
         btn.chain.backgroundColor(.kthemeColor).normalTitle(text: "立即租用").font(.boldSystemFont(ofSize: 16)).normalTitleColor(color: .kTextBlack)
             .corner(radius: 6).clipsToBounds(true)
         btn.addTarget(self, action: #selector(rent), for: .touchUpInside)
+        
+        statckView.addArrangedSubview(btn)
+        
+        rentView.addSubview(statckView)
+        statckView.snp.makeConstraints { make in
+            make.top.equalTo(10)
+            make.centerX.equalToSuperview()
+        }
         
         return rentView
     }()

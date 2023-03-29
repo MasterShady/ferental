@@ -9,9 +9,9 @@ import UIKit
 
 class OrderCompletedVC: BaseVC {
     
-    let order: Order
+    let order: Order?
     
-    init(order: Order) {
+    init(order: Order?) {
         self.order = order
         super.init(nibName: nil, bundle: nil)
     }
@@ -70,8 +70,18 @@ class OrderCompletedVC: BaseVC {
         checkBtn.chain.backgroundColor(.kthemeColor).normalTitle(text: "查看订单").font(.boldSystemFont(ofSize: 16)).corner(radius: 6).clipsToBounds(true).normalTitleColor(color: .kTextBlack)
         checkBtn.addBlock(for: .touchUpInside) { [weak self] _ in
             guard let self = self else {return}
-            let orderVC = OrderStatusVC(order:self.order)
-            self.navigationController?.pushViewController(orderVC, animated: true)
+            if let order = self.order{
+                let orderVC = OrderStatusVC(order:order)
+                self.navigationController?.pushViewController(orderVC, animated: true)
+            }else{
+                self.navigationController?.popToRootViewController(animated: true)
+                DispatchQueue.main.async {
+                    DispatchQueue.main.async {
+                        UIViewController.getCurrent().tabBarController?.selectedIndex = 2
+                    }
+                }
+                
+            }
         }
         
         setBackTitle("") {

@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, NTESLDErrorType) {
     NTESBaseLDAlgorithmWriteFailure,    // 算法写入沙盒失败
 };
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NTESBaseLDCollectModel : NSObject

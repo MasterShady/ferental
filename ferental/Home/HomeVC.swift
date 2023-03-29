@@ -10,6 +10,8 @@ import UIKit
 import YYKit
 import Kingfisher
 import AEAlertView
+import SnapKit
+import RxCocoa
 
 
 class Rental{
@@ -27,7 +29,41 @@ class Rental{
 }
 
 
-class HomeVC: BaseVC{
+class HomeVC: BaseVC, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    
+    var deviceSmallCardCellHeight: CGFloat?
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let device = hotDevices[indexPath.row]
+        let vc = DeviceDetailVC(device: device)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        hotDevices.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! DeviceSmallCardCell
+        cell.device = hotDevices[indexPath.row]
+        return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemWidth = (kScreenWidth - 40)/2
+        
+        if let deviceSmallCardCellHeight = deviceSmallCardCellHeight{
+            return CGSize(width: itemWidth, height: deviceSmallCardCellHeight)
+        }else{
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! DeviceSmallCardCell
+           cell.device = hotDevices[indexPath.row]
+           let itemHeight = cell.systemLayoutSizeFitting(CGSize(width: itemWidth, height: 1000),withHorizontalFittingPriority: .required,verticalFittingPriority: .fittingSizeLevel).height
+            deviceSmallCardCellHeight = itemHeight
+            return CGSize(width: itemWidth, height: itemHeight)
+        }
+    }
+    
     
     private var computerBtn: UIButton?
     private var phoneBtn: UIButton?
@@ -37,15 +73,24 @@ class HomeVC: BaseVC{
     private var startTimeItem: SelectItemView?
     private var durationItem: SelectItemView?
     private var scrollView = UIScrollView()
+    private var hotDevices = [Device]()
+    private var hotContainerHeightContraint : Constraint?
     
-    lazy var hotContainer: UIStackView = {
-        let container = UIStackView()
-        container.axis = .vertical
-        container.spacing = 8
+    lazy var hotContainer: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        
+        layout.minimumLineSpacing = 12
+        layout.minimumInteritemSpacing = 12
+        let container = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        container.register(DeviceSmallCardCell.self, forCellWithReuseIdentifier: "cellId")
+        container.delegate = self
+        container.dataSource = self
+        container.backgroundColor = .clear
+
         return container
     }()
     
-    var allDevices = [Device?](){
+    var allDevices = [Device](){
         didSet{
             updateHotDeviceView()
         }
@@ -154,17 +199,20 @@ class HomeVC: BaseVC{
     
     func updateHotDeviceView(){
         hotContainer.removeAllSubviews()
-        allDevices.reversed()[0..<min(10,allDevices.count)].forEach { device in
-            if let device = device{
-                let cell = DeviceCard(frame: .zero)
-                hotContainer.addArrangedSubview(cell)
-                cell.device = device
-                cell.chain.tap { [weak self] in
-                    let des = DeviceDetailVC(device: device)
-                    self?.navigationController?.pushViewController(des, animated: true)
-                }
-            }
-        }
+        hotDevices = Array(allDevices.reversed()[0..<min(10,allDevices.count)])
+        hotContainer.reloadData()
+        
+//        .forEach { device in
+//            if let device = device{
+//                let cell = DeviceCard(frame: .zero)
+//                hotContainer.addArrangedSubview(cell)
+//                cell.device = device
+//                cell.chain.tap { [weak self] in
+//                    let des = DeviceDetailVC(device: device)
+//                    self?.navigationController?.pushViewController(des, animated: true)
+//                }
+//            }
+//        }
     }
     
     
@@ -332,11 +380,21 @@ class HomeVC: BaseVC{
         }
         view.addSubview(hotContainer)
         hotContainer.snp.makeConstraints { make in
-            make.height.greaterThanOrEqualTo(400)
             make.top.equalTo(header.snp.bottom)
             make.left.right.bottom.equalToSuperview()
-
+            hotContainerHeightContraint = make.height.equalTo(300).constraint
         }
+        hotContainer.contentSize = CGSizeMake(kScreenWidth - 28, 300)
+
+        let _ = hotContainer.rx.observe(\.contentSize, options: [.new]).distinctUntilChanged().take(until: hotContainer.rx.deallocated).subscribe {[weak self] size in
+            if size.height > 300{
+                self?.hotContainer.snp.updateConstraints({ make in
+                    make.height.equalTo(size.height)
+                })
+                self?.hotContainer.reloadData()
+            }
+        }
+        
 
         return view
     }()

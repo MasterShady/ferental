@@ -46,7 +46,7 @@ PODS:
     - MBProgressHUD
     - SDWebImage
     - SnapKit
-  - DFFaceVerifyLib (1.0.4):
+  - DFFaceVerifyLib (1.0.5):
     - DFOCBaseLib (~> 1.1.0)
     - Masonry (~> 1.1.0)
     - NTESLiveDetect (~> 3.0.3)
@@ -59,7 +59,7 @@ PODS:
     - Masonry
     - MBProgressHUD
     - SDWebImage
-  - DFToGameLib (3.3.1):
+  - DFToGameLib (3.3.4):
     - Alamofire (~> 5.2.0)
     - CocoaAsyncSocket (~> 7.6.5)
     - DFBaseLib/extension (~> 0.6.0)
@@ -85,33 +85,27 @@ PODS:
   - lottie-ios (3.2.3)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
-  - mob_sharesdk (4.4.11):
-    - mob_sharesdk/ShareSDK (= 4.4.11)
-    - MOBFoundation (>= 3.2.9)
-  - mob_sharesdk/ShareSDK (4.4.11):
-    - MOBFoundation (>= 3.2.9)
-  - mob_sharesdk/ShareSDKExtension (4.4.11):
-    - mob_sharesdk/ShareSDK
-    - MOBFoundation (>= 3.2.9)
-  - mob_sharesdk/ShareSDKPlatforms/QQ (4.4.11):
-    - mob_sharesdk/ShareSDK
-    - MOBFoundation (>= 3.2.9)
-  - mob_sharesdk/ShareSDKPlatforms/WeChat (4.4.11):
-    - mob_sharesdk/ShareSDK
-    - MOBFoundation (>= 3.2.9)
-  - mob_sharesdk/ShareSDKUI (4.4.11):
-    - mob_sharesdk/ShareSDK
-    - MOBFoundation (>= 3.2.9)
-  - MOBFoundation (3.2.43)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.2)
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
-  - NTESBaseComponent (1.7)
+  - NTESBaseComponent (1.8)
   - NTESLiveDetect (3.0.9):
     - NTESBaseComponent
   - Parchment (3.2.0)
+  - PKGModule (1.7.0):
+    - AEAlertView (~> 2.3.5)
+    - AFNetworking (~> 4.0.1)
+    - Alamofire (~> 5.2.2)
+    - DFBaseLib (~> 0.6.9)
+    - DFFaceVerifyLib (>= 1.0.5)
+    - DFOCBaseLib (~> 1.1.0)
+    - DFToGameLib (>= 3.3.4)
+    - HandyJSON (~> 5.0.2)
+    - KeychainAccess (~> 4.2.2)
+    - lottie-ios (~> 3.2.3)
+    - ZipArchive (~> 1.4.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -132,9 +126,6 @@ PODS:
 DEPENDENCIES:
   - AEAlertView
   - AFNetworking
-  - DFBaseLib (~> 0.6.9)
-  - DFFaceVerifyLib (~> 1.0.3)
-  - DFToGameLib (~> 3.3.1)
   - EmptyDataSet-Swift (~> 5.0.0)
   - ESPullToRefresh
   - ETNavBarTransparent
@@ -146,13 +137,9 @@ DEPENDENCIES:
   - LookinServer
   - lottie-ios (~> 3.2.1)
   - MBProgressHUD
-  - mob_sharesdk
-  - mob_sharesdk/ShareSDKExtension
-  - mob_sharesdk/ShareSDKPlatforms/QQ
-  - mob_sharesdk/ShareSDKPlatforms/WeChat
-  - mob_sharesdk/ShareSDKUI
   - Moya/RxSwift (from `./Moya.podspec`)
   - Parchment (~> 3.2)
+  - PKGModule (~> 1.7.0)
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
   - SnapKit (~> 5.6.0)
@@ -161,11 +148,12 @@ DEPENDENCIES:
   - ZipArchive (~> 1.4.0)
 
 SPEC REPOS:
-  http://192.168.29.27/mengke/Specs.git:
+  http://git.zhw.com/mengke/Specs.git:
     - DFBaseLib
     - DFFaceVerifyLib
     - DFOCBaseLib
     - DFToGameLib
+    - PKGModule
   https://github.com/CocoaPods/Specs.git:
     - AEAlertView
     - AFNetworking
@@ -184,8 +172,6 @@ SPEC REPOS:
     - lottie-ios
     - Masonry
     - MBProgressHUD
-    - mob_sharesdk
-    - MOBFoundation
     - NTESBaseComponent
     - NTESLiveDetect
     - Parchment
@@ -209,9 +195,9 @@ SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DFBaseLib: 035b5a3f7b53ef90d8efa873ac9cd15847ff23f0
-  DFFaceVerifyLib: f0edb61dc748934c3993181f100226d8cbd459b9
+  DFFaceVerifyLib: 035d11b4c1c364fc7cb0b4b49e7dbef31e3ad3d2
   DFOCBaseLib: 96ef395a130adfb9fb906d2782c69bcfca0ac9eb
-  DFToGameLib: bdf2fbffdff2d83d222e3a7ce4ea7da1e1eb1d26
+  DFToGameLib: 7b08243ac5d97e1f5e045e614f8c5a652b2f7458
   EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
   ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
   ETNavBarTransparent: dd05fd593b31d5d786e05631149ceea1e13b30ef
@@ -225,12 +211,11 @@ SPEC CHECKSUMS:
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  mob_sharesdk: 65e19eaaa6686475777db6af1db1d82b0a20f633
-  MOBFoundation: bf80836435ba0ed5539a95f7f68dadd066ea492e
   Moya: 0faba8a65afa83ec8f5f961940ae1438b036d946
-  NTESBaseComponent: b1cdf3ac1e0b303dbba9d7099ddaff7960acdb03
+  NTESBaseComponent: 7b310e7e80bb6c27183176188b98356d200dbbc5
   NTESLiveDetect: 43c26fd2bcfe66b7ae7f3e6245c6686ad4e4f74b
   Parchment: a43c440b22c8a60f7e0196b74339446d4d1d18ea
+  PKGModule: 05c88ed514d1117bd56327e9361fe2e128421492
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
@@ -241,6 +226,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: ea2a72d108f721e925ba0e46cc76be002a1fdd26
+PODFILE CHECKSUM: c13ec7d88a9c9a2a64d9d8d24405ee3242396d21
 
 COCOAPODS: 1.11.3

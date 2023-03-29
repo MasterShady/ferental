@@ -23,7 +23,7 @@ class SWQQLogin: SWLoginGamePlatformProtocol {
     
     var tokenServer:SWLGqqTokenServer!
     
-    var loginStack:SWLGStack<SWQuickInfoQuickTypeModel> = .init(withDatas:[])
+    var loginStack:SWLGStack<SWQuickInfoQuickTypeModel> = .init(withDatas: [])
     
     var serverQuickType:SWQuickInfoQuickTypeModel? // 服务端上号quick type
     
@@ -64,10 +64,7 @@ class SWQQLogin: SWLoginGamePlatformProtocol {
         
          loadingView?.show()
         
-        sw_logingame_qq_getOrderInfo(withUnlockCode: withInfo.unlock_code) { (code,dic) in
-            
-            //self.loginStack = .init(withDatas:[])
-            
+         sw_logingame_qq_getOrderInfo(withUnlockCode: withInfo.unlock_code) { (code,dic) in
             /*
              rent_token_switch: false, 是否启用新流程
              weblogin_retry: "1", 是否验证重试次数
@@ -87,6 +84,7 @@ class SWQQLogin: SWLoginGamePlatformProtocol {
                 
                 SWLGError(withMsg: "数据返回异常code==-1")
                 self.loginErrorBlock?(LGECode.LGECode_Json_error,"数据异常")
+                
                 return
             }
  

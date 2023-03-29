@@ -11,7 +11,7 @@
 
 @implementation UIViewController (SYAdd)
 
-void * popActionKey;
+static void * popActionKey;
 
 -(void (^)(void))sy_popAction{
     return objc_getAssociatedObject(self, &popActionKey);

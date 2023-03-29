@@ -6,7 +6,7 @@
 //  Copyright © 2020 chenhui. All rights reserved.
 //
 
-#import <DFOCBaseLib/BaseContentView.h>
+@import DFOCBaseLib;
 
 NS_ASSUME_NONNULL_BEGIN
 

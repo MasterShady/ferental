@@ -82,7 +82,7 @@ extension Reactive where Base: NSObject {
     */
     public func observe<Element>(_ keyPath: KeyPath<Base, Element>,
                                  options: NSKeyValueObservingOptions = [.new, .initial]) -> Observable<Element> {
-        Observable<Element>.create { [weak base] observer in
+        return Observable<Element>.create { [weak base] observer in
             let observation = base?.observe(keyPath, options: options) { obj, _ in
                 observer.on(.next(obj[keyPath: keyPath]))
             }
