@@ -117,8 +117,3 @@ func kX(_ x: CGFloat) -> CGFloat{
 }
 
 
-struct BaseError: Error {
-    let message: String
-    var code: Int? = 0
-}
-
